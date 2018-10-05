@@ -13,6 +13,9 @@
 		F6769C6F21672B9100739EBA /* SocraticaPlus.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F6769C6D21672B9100739EBA /* SocraticaPlus.xcdatamodeld */; };
 		F6769C7121672B9300739EBA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F6769C7021672B9300739EBA /* Assets.xcassets */; };
 		F6769C7421672B9300739EBA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F6769C7221672B9300739EBA /* LaunchScreen.storyboard */; };
+		F6B481E221673DF500B5324A /* CustomLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6B481E121673DF500B5324A /* CustomLabel.swift */; };
+		F6B481E421673E1000B5324A /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6B481E321673E1000B5324A /* CustomButton.swift */; };
+		F6B481E621673E3A00B5324A /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6B481E521673E3A00B5324A /* CustomTextField.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +27,9 @@
 		F6769C7021672B9300739EBA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F6769C7321672B9300739EBA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F6769C7521672B9300739EBA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F6B481E121673DF500B5324A /* CustomLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomLabel.swift; sourceTree = "<group>"; };
+		F6B481E321673E1000B5324A /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
+		F6B481E521673E3A00B5324A /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +62,7 @@
 		F6769C6521672B9100739EBA /* SocraticaPlus */ = {
 			isa = PBXGroup;
 			children = (
+				F6B481E021673DB900B5324A /* CustomClasses */,
 				F6769C6621672B9100739EBA /* AppDelegate.swift */,
 				F6769C6821672B9100739EBA /* ViewController.swift */,
 				F6769C6A21672B9100739EBA /* Main.storyboard */,
@@ -65,6 +72,16 @@
 				F6769C6D21672B9100739EBA /* SocraticaPlus.xcdatamodeld */,
 			);
 			path = SocraticaPlus;
+			sourceTree = "<group>";
+		};
+		F6B481E021673DB900B5324A /* CustomClasses */ = {
+			isa = PBXGroup;
+			children = (
+				F6B481E121673DF500B5324A /* CustomLabel.swift */,
+				F6B481E321673E1000B5324A /* CustomButton.swift */,
+				F6B481E521673E3A00B5324A /* CustomTextField.swift */,
+			);
+			path = CustomClasses;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -140,7 +157,10 @@
 			files = (
 				F6769C6F21672B9100739EBA /* SocraticaPlus.xcdatamodeld in Sources */,
 				F6769C6921672B9100739EBA /* ViewController.swift in Sources */,
+				F6B481E621673E3A00B5324A /* CustomTextField.swift in Sources */,
 				F6769C6721672B9100739EBA /* AppDelegate.swift in Sources */,
+				F6B481E221673DF500B5324A /* CustomLabel.swift in Sources */,
+				F6B481E421673E1000B5324A /* CustomButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
