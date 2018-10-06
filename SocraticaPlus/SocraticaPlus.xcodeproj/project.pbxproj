@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F620E7F7216933EE001FFECC /* Poppins-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F620E7F1216933EE001FFECC /* Poppins-Light.ttf */; };
+		F620E7F8216933EE001FFECC /* Poppins-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F620E7F2216933EE001FFECC /* Poppins-Medium.ttf */; };
+		F620E7F9216933EE001FFECC /* OFL.txt in Resources */ = {isa = PBXBuildFile; fileRef = F620E7F3216933EE001FFECC /* OFL.txt */; };
+		F620E7FA216933EE001FFECC /* Poppins-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F620E7F4216933EE001FFECC /* Poppins-Regular.ttf */; };
+		F620E7FB216933EE001FFECC /* Poppins-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F620E7F5216933EE001FFECC /* Poppins-Bold.ttf */; };
+		F620E7FC216933EE001FFECC /* Poppins-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F620E7F6216933EE001FFECC /* Poppins-SemiBold.ttf */; };
+		F620E80021694087001FFECC /* image.png in Resources */ = {isa = PBXBuildFile; fileRef = F620E7FF21694087001FFECC /* image.png */; };
 		F6769C6721672B9100739EBA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6769C6621672B9100739EBA /* AppDelegate.swift */; };
 		F6769C6921672B9100739EBA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6769C6821672B9100739EBA /* ViewController.swift */; };
 		F6769C6C21672B9100739EBA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F6769C6A21672B9100739EBA /* Main.storyboard */; };
@@ -14,9 +21,21 @@
 		F6769C7121672B9300739EBA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F6769C7021672B9300739EBA /* Assets.xcassets */; };
 		F6769C7421672B9300739EBA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F6769C7221672B9300739EBA /* LaunchScreen.storyboard */; };
 		F6769C7C21674BE300739EBA /* OTPViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6769C7B21674BE300739EBA /* OTPViewController.swift */; };
+		F67ADBF721676A1B00FD5878 /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = F67ADBF421676A1A00FD5878 /* CustomTextField.swift */; };
+		F67ADBF821676A1B00FD5878 /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F67ADBF521676A1A00FD5878 /* CustomButton.swift */; };
+		F67ADBF921676A1B00FD5878 /* CustomLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F67ADBF621676A1B00FD5878 /* CustomLabel.swift */; };
+		F67ADBFC2167779000FD5878 /* CreatePwdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F67ADBFB2167779000FD5878 /* CreatePwdViewController.swift */; };
+		F67ADBFE21677D6300FD5878 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F67ADBFD21677D6300FD5878 /* HomeViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F620E7F1216933EE001FFECC /* Poppins-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Light.ttf"; sourceTree = "<group>"; };
+		F620E7F2216933EE001FFECC /* Poppins-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Medium.ttf"; sourceTree = "<group>"; };
+		F620E7F3216933EE001FFECC /* OFL.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = OFL.txt; sourceTree = "<group>"; };
+		F620E7F4216933EE001FFECC /* Poppins-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Regular.ttf"; sourceTree = "<group>"; };
+		F620E7F5216933EE001FFECC /* Poppins-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Bold.ttf"; sourceTree = "<group>"; };
+		F620E7F6216933EE001FFECC /* Poppins-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-SemiBold.ttf"; sourceTree = "<group>"; };
+		F620E7FF21694087001FFECC /* image.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = image.png; sourceTree = "<group>"; };
 		F6769C6321672B9100739EBA /* SocraticaPlus.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SocraticaPlus.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F6769C6621672B9100739EBA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F6769C6821672B9100739EBA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -26,6 +45,11 @@
 		F6769C7321672B9300739EBA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F6769C7521672B9300739EBA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F6769C7B21674BE300739EBA /* OTPViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OTPViewController.swift; sourceTree = "<group>"; };
+		F67ADBF421676A1A00FD5878 /* CustomTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
+		F67ADBF521676A1A00FD5878 /* CustomButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
+		F67ADBF621676A1B00FD5878 /* CustomLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomLabel.swift; sourceTree = "<group>"; };
+		F67ADBFB2167779000FD5878 /* CreatePwdViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreatePwdViewController.swift; sourceTree = "<group>"; };
+		F67ADBFD21677D6300FD5878 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,9 +63,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F620E7F0216933EE001FFECC /* Poppins */ = {
+			isa = PBXGroup;
+			children = (
+				F620E7F1216933EE001FFECC /* Poppins-Light.ttf */,
+				F620E7FF21694087001FFECC /* image.png */,
+				F620E7F2216933EE001FFECC /* Poppins-Medium.ttf */,
+				F620E7F3216933EE001FFECC /* OFL.txt */,
+				F620E7F4216933EE001FFECC /* Poppins-Regular.ttf */,
+				F620E7F5216933EE001FFECC /* Poppins-Bold.ttf */,
+				F620E7F6216933EE001FFECC /* Poppins-SemiBold.ttf */,
+			);
+			path = Poppins;
+			sourceTree = "<group>";
+		};
 		F6769C5A21672B9100739EBA = {
 			isa = PBXGroup;
 			children = (
+				F620E7F0216933EE001FFECC /* Poppins */,
 				F6769C6521672B9100739EBA /* SocraticaPlus */,
 				F6769C6421672B9100739EBA /* Products */,
 			);
@@ -58,9 +97,12 @@
 		F6769C6521672B9100739EBA /* SocraticaPlus */ = {
 			isa = PBXGroup;
 			children = (
+				F67ADBFA2167774000FD5878 /* CustomClasses */,
 				F6769C6621672B9100739EBA /* AppDelegate.swift */,
 				F6769C6821672B9100739EBA /* ViewController.swift */,
 				F6769C7B21674BE300739EBA /* OTPViewController.swift */,
+				F67ADBFB2167779000FD5878 /* CreatePwdViewController.swift */,
+				F67ADBFD21677D6300FD5878 /* HomeViewController.swift */,
 				F6769C6A21672B9100739EBA /* Main.storyboard */,
 				F6769C7021672B9300739EBA /* Assets.xcassets */,
 				F6769C7221672B9300739EBA /* LaunchScreen.storyboard */,
@@ -68,6 +110,17 @@
 				F6769C6D21672B9100739EBA /* SocraticaPlus.xcdatamodeld */,
 			);
 			path = SocraticaPlus;
+			sourceTree = "<group>";
+		};
+		F67ADBFA2167774000FD5878 /* CustomClasses */ = {
+			isa = PBXGroup;
+			children = (
+				F67ADBF521676A1A00FD5878 /* CustomButton.swift */,
+				F67ADBF621676A1B00FD5878 /* CustomLabel.swift */,
+				F67ADBF421676A1A00FD5878 /* CustomTextField.swift */,
+			);
+			name = CustomClasses;
+			path = "New Group";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -128,9 +181,16 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F620E7F9216933EE001FFECC /* OFL.txt in Resources */,
 				F6769C7421672B9300739EBA /* LaunchScreen.storyboard in Resources */,
+				F620E7FA216933EE001FFECC /* Poppins-Regular.ttf in Resources */,
+				F620E7FB216933EE001FFECC /* Poppins-Bold.ttf in Resources */,
 				F6769C7121672B9300739EBA /* Assets.xcassets in Resources */,
 				F6769C6C21672B9100739EBA /* Main.storyboard in Resources */,
+				F620E80021694087001FFECC /* image.png in Resources */,
+				F620E7FC216933EE001FFECC /* Poppins-SemiBold.ttf in Resources */,
+				F620E7F7216933EE001FFECC /* Poppins-Light.ttf in Resources */,
+				F620E7F8216933EE001FFECC /* Poppins-Medium.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -143,8 +203,13 @@
 			files = (
 				F6769C7C21674BE300739EBA /* OTPViewController.swift in Sources */,
 				F6769C6F21672B9100739EBA /* SocraticaPlus.xcdatamodeld in Sources */,
+				F67ADBF821676A1B00FD5878 /* CustomButton.swift in Sources */,
+				F67ADBF921676A1B00FD5878 /* CustomLabel.swift in Sources */,
 				F6769C6921672B9100739EBA /* ViewController.swift in Sources */,
+				F67ADBFE21677D6300FD5878 /* HomeViewController.swift in Sources */,
 				F6769C6721672B9100739EBA /* AppDelegate.swift in Sources */,
+				F67ADBFC2167779000FD5878 /* CreatePwdViewController.swift in Sources */,
+				F67ADBF721676A1B00FD5878 /* CustomTextField.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -288,6 +353,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = BW4M265R66;
 				INFOPLIST_FILE = SocraticaPlus/Info.plist;
@@ -297,6 +363,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.gaian.SocraticaPlus;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -306,6 +373,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = BW4M265R66;
 				INFOPLIST_FILE = SocraticaPlus/Info.plist;
@@ -315,6 +383,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.gaian.SocraticaPlus;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

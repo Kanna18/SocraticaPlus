@@ -17,5 +17,8 @@ class CustomLabel: UILabel {
         // Drawing code
     }
     */
-
+    override func awakeFromNib() {
+        super.awakeFromNib()
+        self.font = UIFont(name: "Poppins-Regular", size: 12.0)        
+    }
 }

@@ -13,11 +13,37 @@ class OTPViewController: UIViewController {
     @IBOutlet weak var otpTextFied: UITextField!
     
     
+    @IBOutlet weak var resendOTPBtn: UIButton!
+    @IBOutlet weak var nextBtn: UIButton!
+    
     @IBAction func goButtonClick(_ sender: Any) {
         
+        guard let text = otpTextFied.text, !text.isEmpty else {
+            
+            let alert = UIAlertController.init(title: "", message: "Please enter verification code", preferredStyle: UIAlertControllerStyle.alert)
+            let okAction = UIAlertAction.init(title: "OK", style: .default) { (alert) in
+                
+            }
+            alert.addAction(okAction)
+            self.present(alert, animated: true, completion: nil)
+            return
+        }
+        
+        let createPwdVC = self.storyboard?.instantiateViewController(withIdentifier: "createPwdViewController") as! CreatePwdViewController
+        self.navigationController?.pushViewController(createPwdVC, animated: true)
         
     }
     
+    @IBAction func resendOTPBtnAction(_ sender: Any) {
+        
+        let alert = UIAlertController.init(title: "", message: "A verification code has been sent to your mobile number please enter the number to continue ", preferredStyle: UIAlertControllerStyle.alert)
+        let okAction = UIAlertAction.init(title: "OK", style: .default) { (alert) in
+            
+        }
+        alert.addAction(okAction)
+        self.present(alert, animated: true, completion: nil)
+        
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
 

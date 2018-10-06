@@ -6,17 +6,49 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "SocraticaPlus/ViewController.swift"
-            timestampString = "560416789.681635"
+            timestampString = "560546290.240865"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "32"
-            endingLineNumber = "32"
+            startingLineNumber = "52"
+            endingLineNumber = "52"
             landmarkName = "nextBtnAction(_:)"
             landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "SocraticaPlus.ViewController.nextBtnAction(Any) -&gt; ()"
+                  moduleName = "SocraticaPlus"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/saldinsamuel/SocraticaPlus/SocraticaPlus/SocraticaPlus/ViewController.swift"
+                  timestampString = "560426619.564664"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "47"
+                  endingLineNumber = "47"
+                  offsetFromSymbolStart = "1238">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "SocraticaPlus.ViewController.nextBtnAction(Any) -&gt; ()"
+                  moduleName = "SocraticaPlus"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/saldinsamuel/SocraticaPlus/SocraticaPlus/SocraticaPlus/ViewController.swift"
+                  timestampString = "560426619.567026"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "47"
+                  endingLineNumber = "47"
+                  offsetFromSymbolStart = "7293">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -26,12 +58,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "SocraticaPlus/ViewController.swift"
-            timestampString = "560416789.682003"
+            timestampString = "560546290.241264"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "34"
-            endingLineNumber = "34"
-            landmarkName = "nextBtnAction(_:)"
+            startingLineNumber = "110"
+            endingLineNumber = "110"
+            landmarkName = "otpAlert()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
