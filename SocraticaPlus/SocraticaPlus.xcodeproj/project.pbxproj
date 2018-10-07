@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0FC595399C4C0024B280B495 /* Pods_SocraticaPlus.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BFC11E375682366FF64BCBF7 /* Pods_SocraticaPlus.framework */; };
 		F620E7F7216933EE001FFECC /* Poppins-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F620E7F1216933EE001FFECC /* Poppins-Light.ttf */; };
 		F620E7F8216933EE001FFECC /* Poppins-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F620E7F2216933EE001FFECC /* Poppins-Medium.ttf */; };
 		F620E7F9216933EE001FFECC /* OFL.txt in Resources */ = {isa = PBXBuildFile; fileRef = F620E7F3216933EE001FFECC /* OFL.txt */; };
@@ -29,6 +30,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		95BF2F27EFB33E25BB13709C /* Pods-SocraticaPlus.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SocraticaPlus.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SocraticaPlus/Pods-SocraticaPlus.debug.xcconfig"; sourceTree = "<group>"; };
+		BFC11E375682366FF64BCBF7 /* Pods_SocraticaPlus.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SocraticaPlus.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C3470F92FBCD3660C00162C9 /* Pods-SocraticaPlus.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SocraticaPlus.release.xcconfig"; path = "Pods/Target Support Files/Pods-SocraticaPlus/Pods-SocraticaPlus.release.xcconfig"; sourceTree = "<group>"; };
 		F620E7F1216933EE001FFECC /* Poppins-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Light.ttf"; sourceTree = "<group>"; };
 		F620E7F2216933EE001FFECC /* Poppins-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Medium.ttf"; sourceTree = "<group>"; };
 		F620E7F3216933EE001FFECC /* OFL.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = OFL.txt; sourceTree = "<group>"; };
@@ -57,12 +61,30 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0FC595399C4C0024B280B495 /* Pods_SocraticaPlus.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		045E1BD13A2E8084C4B6D926 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				95BF2F27EFB33E25BB13709C /* Pods-SocraticaPlus.debug.xcconfig */,
+				C3470F92FBCD3660C00162C9 /* Pods-SocraticaPlus.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		398E496D6F66F9067F2589A9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BFC11E375682366FF64BCBF7 /* Pods_SocraticaPlus.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		F620E7F0216933EE001FFECC /* Poppins */ = {
 			isa = PBXGroup;
 			children = (
@@ -83,6 +105,8 @@
 				F620E7F0216933EE001FFECC /* Poppins */,
 				F6769C6521672B9100739EBA /* SocraticaPlus */,
 				F6769C6421672B9100739EBA /* Products */,
+				045E1BD13A2E8084C4B6D926 /* Pods */,
+				398E496D6F66F9067F2589A9 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -130,9 +154,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F6769C7821672B9300739EBA /* Build configuration list for PBXNativeTarget "SocraticaPlus" */;
 			buildPhases = (
+				C04C950BE652C92ED484E07E /* [CP] Check Pods Manifest.lock */,
 				F6769C5F21672B9100739EBA /* Sources */,
 				F6769C6021672B9100739EBA /* Frameworks */,
 				F6769C6121672B9100739EBA /* Resources */,
+				36B128E7BEC7E875DA18C5F5 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -195,6 +221,45 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		36B128E7BEC7E875DA18C5F5 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-SocraticaPlus/Pods-SocraticaPlus-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/NKVPhonePicker/NKVPhonePicker.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/NKVPhonePicker.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SocraticaPlus/Pods-SocraticaPlus-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C04C950BE652C92ED484E07E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SocraticaPlus-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		F6769C5F21672B9100739EBA /* Sources */ = {
@@ -351,19 +416,17 @@
 		};
 		F6769C7921672B9300739EBA /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 95BF2F27EFB33E25BB13709C /* Pods-SocraticaPlus.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = BW4M265R66;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = 7CQW6NRRPC;
 				INFOPLIST_FILE = SocraticaPlus/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.gaian.SocraticaPlus;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.damac.salesapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = "";
+				PROVISIONING_PROFILE_SPECIFIER = HelloDamac1;
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -371,19 +434,17 @@
 		};
 		F6769C7A21672B9300739EBA /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C3470F92FBCD3660C00162C9 /* Pods-SocraticaPlus.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = BW4M265R66;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = 7CQW6NRRPC;
 				INFOPLIST_FILE = SocraticaPlus/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.gaian.SocraticaPlus;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.damac.salesapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = "";
+				PROVISIONING_PROFILE_SPECIFIER = HelloDamac1;
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

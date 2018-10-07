@@ -1,0 +1,6 @@
+framework module Pods_SocraticaPlus {
+  umbrella header "Pods-SocraticaPlus-umbrella.h"
+
+  export *
+  module * { export * }
+}

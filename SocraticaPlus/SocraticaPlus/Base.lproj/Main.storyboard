@@ -23,6 +23,55 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Cdi-QQ-evb">
+                                <rect key="frame" x="0.0" y="32" width="375" height="667"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DRO-ig-xXz">
+                                        <rect key="frame" x="40" y="233.5" width="295" height="200"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SE1-JL-qCy" customClass="CustomButton" customModule="SocraticaPlus" customModuleProvider="target">
+                                                <rect key="frame" x="117.5" y="134" width="60" height="46"/>
+                                                <color key="backgroundColor" red="0.0" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="46" id="SQP-AE-u5O"/>
+                                                    <constraint firstAttribute="width" constant="60" id="ee4-0O-nSL"/>
+                                                </constraints>
+                                                <state key="normal" title="Ok">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="okClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="TVr-xM-HtM"/>
+                                                </connections>
+                                            </button>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="A verification code has been sent to your mobile number please enter the code to continue" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jvI-PM-Tam" customClass="CustomLabel" customModule="SocraticaPlus" customModuleProvider="target">
+                                                <rect key="frame" x="30" y="20" width="235" height="100"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="100" id="jIN-j4-Bea"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" red="0.94117647058823528" green="0.92156862745098034" blue="0.92156862745098034" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstItem="jvI-PM-Tam" firstAttribute="top" secondItem="DRO-ig-xXz" secondAttribute="top" constant="20" id="0WZ-WA-y4c"/>
+                                            <constraint firstAttribute="trailing" secondItem="jvI-PM-Tam" secondAttribute="trailing" constant="30" id="2zh-ch-gbG"/>
+                                            <constraint firstAttribute="bottom" secondItem="SE1-JL-qCy" secondAttribute="bottom" constant="20" id="B7f-IF-04Q"/>
+                                            <constraint firstItem="SE1-JL-qCy" firstAttribute="centerX" secondItem="DRO-ig-xXz" secondAttribute="centerX" id="BmF-qd-Uht"/>
+                                            <constraint firstItem="jvI-PM-Tam" firstAttribute="leading" secondItem="DRO-ig-xXz" secondAttribute="leading" constant="30" id="BsK-4v-ag3"/>
+                                            <constraint firstAttribute="height" constant="200" id="goN-Br-hvG"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="DRO-ig-xXz" firstAttribute="centerY" secondItem="Cdi-QQ-evb" secondAttribute="centerY" id="DTT-8a-UHm"/>
+                                    <constraint firstItem="DRO-ig-xXz" firstAttribute="centerX" secondItem="Cdi-QQ-evb" secondAttribute="centerX" id="afe-uF-chp"/>
+                                    <constraint firstItem="DRO-ig-xXz" firstAttribute="leading" secondItem="Cdi-QQ-evb" secondAttribute="leading" constant="40" id="k2H-cT-HM9"/>
+                                    <constraint firstAttribute="trailing" secondItem="DRO-ig-xXz" secondAttribute="trailing" constant="40" id="ufH-DC-QgT"/>
+                                </constraints>
+                            </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mobile number" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Goe-sX-n3K" customClass="CustomLabel" customModule="SocraticaPlus" customModuleProvider="target">
                                 <rect key="frame" x="20" y="144" width="335" height="21"/>
                                 <constraints>
@@ -147,55 +196,6 @@
                                     <action selector="nextBtnAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="6ak-BN-C45"/>
                                 </connections>
                             </button>
-                            <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Cdi-QQ-evb">
-                                <rect key="frame" x="0.0" y="32" width="375" height="667"/>
-                                <subviews>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DRO-ig-xXz">
-                                        <rect key="frame" x="40" y="233.5" width="295" height="200"/>
-                                        <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SE1-JL-qCy" customClass="CustomButton" customModule="SocraticaPlus" customModuleProvider="target">
-                                                <rect key="frame" x="117.5" y="134" width="60" height="46"/>
-                                                <color key="backgroundColor" red="0.0" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="height" constant="46" id="SQP-AE-u5O"/>
-                                                    <constraint firstAttribute="width" constant="60" id="ee4-0O-nSL"/>
-                                                </constraints>
-                                                <state key="normal" title="Ok">
-                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                </state>
-                                                <connections>
-                                                    <action selector="okClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="TVr-xM-HtM"/>
-                                                </connections>
-                                            </button>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="A verification code has been sent to your mobile number please enter the code to continue" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jvI-PM-Tam" customClass="CustomLabel" customModule="SocraticaPlus" customModuleProvider="target">
-                                                <rect key="frame" x="30" y="20" width="235" height="100"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="height" constant="100" id="jIN-j4-Bea"/>
-                                                </constraints>
-                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                <nil key="textColor"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                        </subviews>
-                                        <color key="backgroundColor" red="0.94117647058823528" green="0.92156862745098034" blue="0.92156862745098034" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <constraints>
-                                            <constraint firstItem="jvI-PM-Tam" firstAttribute="top" secondItem="DRO-ig-xXz" secondAttribute="top" constant="20" id="0WZ-WA-y4c"/>
-                                            <constraint firstAttribute="trailing" secondItem="jvI-PM-Tam" secondAttribute="trailing" constant="30" id="2zh-ch-gbG"/>
-                                            <constraint firstAttribute="bottom" secondItem="SE1-JL-qCy" secondAttribute="bottom" constant="20" id="B7f-IF-04Q"/>
-                                            <constraint firstItem="SE1-JL-qCy" firstAttribute="centerX" secondItem="DRO-ig-xXz" secondAttribute="centerX" id="BmF-qd-Uht"/>
-                                            <constraint firstItem="jvI-PM-Tam" firstAttribute="leading" secondItem="DRO-ig-xXz" secondAttribute="leading" constant="30" id="BsK-4v-ag3"/>
-                                            <constraint firstAttribute="height" constant="200" id="goN-Br-hvG"/>
-                                        </constraints>
-                                    </view>
-                                </subviews>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <constraints>
-                                    <constraint firstItem="DRO-ig-xXz" firstAttribute="centerY" secondItem="Cdi-QQ-evb" secondAttribute="centerY" id="DTT-8a-UHm"/>
-                                    <constraint firstItem="DRO-ig-xXz" firstAttribute="centerX" secondItem="Cdi-QQ-evb" secondAttribute="centerX" id="afe-uF-chp"/>
-                                    <constraint firstItem="DRO-ig-xXz" firstAttribute="leading" secondItem="Cdi-QQ-evb" secondAttribute="leading" constant="40" id="k2H-cT-HM9"/>
-                                    <constraint firstAttribute="trailing" secondItem="DRO-ig-xXz" secondAttribute="trailing" constant="40" id="ufH-DC-QgT"/>
-                                </constraints>
-                            </view>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>

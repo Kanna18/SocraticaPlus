@@ -1,0 +1,16 @@
+PODS:
+  - NKVPhonePicker (2.0.1)
+
+DEPENDENCIES:
+  - NKVPhonePicker
+
+SPEC REPOS:
+  https://github.com/CocoaPods/Specs.git:
+    - NKVPhonePicker
+
+SPEC CHECKSUMS:
+  NKVPhonePicker: 736e64165a7d873380608178d7ccd988b88268ed
+
+PODFILE CHECKSUM: 554e03a61ae5067dddb9f8ab6d98b041303d493e
+
+COCOAPODS: 1.5.0

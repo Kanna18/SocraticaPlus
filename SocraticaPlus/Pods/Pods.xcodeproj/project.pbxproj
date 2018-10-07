@@ -1,0 +1,643 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0E39784AD2A4185E5825BB040373E132 /* NKVSourcesHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 241D46553DCCE90904DFE44DB95DEEBC /* NKVSourcesHelper.swift */; };
+		2B8F87D678B93C38864C913A7A393002 /* CountryCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10E839C4407D3BD08E0C509A273932A0 /* CountryCode.swift */; };
+		381F94E0A3FE216D4A230ADE2FA8D92F /* NKVPhonePicker-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 5719D7A6B3FA67B8166AD6F4C97552EC /* NKVPhonePicker-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5EF9B43C427B81B7F41EBB84247BDB8E /* Pods-SocraticaPlus-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 30CB0AED775C2606ECD42BA547029545 /* Pods-SocraticaPlus-dummy.m */; };
+		621C1E98793CF11562BFD3807CDD1ECA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		70A03BD8DB081AFE5433C0D58575C0AA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		756A39C1F24A69078BFED5E1271DD481 /* NKVPhonePickerTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CC07400876925251FCB20A801777D29 /* NKVPhonePickerTextField.swift */; };
+		938FDBD909D6798EF4797D02E249B5FB /* NKVPhoneFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24674BB183CD2FED304ADF600516D18E /* NKVPhoneFormatter.swift */; };
+		A2E3C6457461D143F66B0100A390A6EA /* NKVPhonePickerPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D1B889E26A9E47DDC26D0144BBBF8B8 /* NKVPhonePickerPresenter.swift */; };
+		A370C5C1EEEF9253369889F0F7A6E65A /* CountriesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A25BD5B3D3D9B8300141441E87DEF5D /* CountriesViewController.swift */; };
+		AB6426046E333F7C3E2842B94CC51DAF /* Countries.bundle in Resources */ = {isa = PBXBuildFile; fileRef = F698E0B44FF4DF0B2F53957A132D45BC /* Countries.bundle */; };
+		B490DDAA41C75733EE0C500B47C5C542 /* CountriesViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA3605CD0C49A268858E8E5D7A660FF3 /* CountriesViewController.storyboard */; };
+		B7E369640E0F36A18F5EF9EF045A83D7 /* NKVPhonePicker-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 59C6C314440829E3D64B9CFE7C19CCC0 /* NKVPhonePicker-dummy.m */; };
+		BA3F60E3E529F1C3A95792EA9E0A8346 /* TextFieldWithPattern.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE993937530618C61B851192AA11984E /* TextFieldWithPattern.swift */; };
+		BD54AAFB5F9EF035364905A8DFC51EE4 /* NKVLocalizationHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79A1DAA64E75B8D7167758DC572E81D0 /* NKVLocalizationHelper.swift */; };
+		D85BA348378D6D98AAEE1AB80186E043 /* Country.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78824F91CF09C00CD8BF28C86B0CE60C /* Country.swift */; };
+		D9B275621BD5CCED7636545CDD1F6E04 /* PhoneExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A54ACF0C3587EA771467DA9D09420AD /* PhoneExtension.swift */; };
+		E4F3AC099CA548FD18103A7A572E7BF0 /* NKVFlagView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46EB02A8E00621B173583ADC849BB768 /* NKVFlagView.swift */; };
+		FBB4094D0675AC53A9BAB12EEE786C8D /* Pods-SocraticaPlus-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = CBCBE64BEF1BBD4EC74FDBAB17920B90 /* Pods-SocraticaPlus-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FC594D28C5A33F306EB6252886D0FB57 /* NKVSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB08A392FDC1EE540D6FE6A0331B8993 /* NKVSource.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1F4D1339759D59A57EBAE9447DFAD078 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B95B9283D45368A0FDBCBAF265E9EC17;
+			remoteInfo = NKVPhonePicker;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		06CD402406A99AFA38AA5E6BCBE595C5 /* Pods-SocraticaPlus.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SocraticaPlus.debug.xcconfig"; sourceTree = "<group>"; };
+		0D1B889E26A9E47DDC26D0144BBBF8B8 /* NKVPhonePickerPresenter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NKVPhonePickerPresenter.swift; path = Sources/Main/NKVPhonePickerPresenter.swift; sourceTree = "<group>"; };
+		10E839C4407D3BD08E0C509A273932A0 /* CountryCode.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CountryCode.swift; path = Sources/Models/CountryCode.swift; sourceTree = "<group>"; };
+		13C0224A63E2315A4019E4FCEF7E1B56 /* Pods-SocraticaPlus-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SocraticaPlus-resources.sh"; sourceTree = "<group>"; };
+		1A54ACF0C3587EA771467DA9D09420AD /* PhoneExtension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PhoneExtension.swift; path = Sources/Models/PhoneExtension.swift; sourceTree = "<group>"; };
+		1CC07400876925251FCB20A801777D29 /* NKVPhonePickerTextField.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NKVPhonePickerTextField.swift; path = Sources/Main/NKVPhonePickerTextField.swift; sourceTree = "<group>"; };
+		1E092F93883EBC94F87F254CE07C10CF /* NKVPhonePicker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = NKVPhonePicker.framework; path = NKVPhonePicker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		241D46553DCCE90904DFE44DB95DEEBC /* NKVSourcesHelper.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NKVSourcesHelper.swift; path = Sources/Helpers/NKVSourcesHelper.swift; sourceTree = "<group>"; };
+		24674BB183CD2FED304ADF600516D18E /* NKVPhoneFormatter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NKVPhoneFormatter.swift; path = Sources/Helpers/NKVPhoneFormatter.swift; sourceTree = "<group>"; };
+		30CB0AED775C2606ECD42BA547029545 /* Pods-SocraticaPlus-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-SocraticaPlus-dummy.m"; sourceTree = "<group>"; };
+		3430CF626C50B02813D18BE5958AB20F /* Pods-SocraticaPlus-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SocraticaPlus-frameworks.sh"; sourceTree = "<group>"; };
+		40B0B23D7876B5B9F9ED819A411101EA /* Pods-SocraticaPlus-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-SocraticaPlus-acknowledgements.markdown"; sourceTree = "<group>"; };
+		46EB02A8E00621B173583ADC849BB768 /* NKVFlagView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NKVFlagView.swift; path = Sources/Main/NKVFlagView.swift; sourceTree = "<group>"; };
+		4E2C480935841FD1C709F4D52DDF17BB /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5719D7A6B3FA67B8166AD6F4C97552EC /* NKVPhonePicker-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NKVPhonePicker-umbrella.h"; sourceTree = "<group>"; };
+		59C6C314440829E3D64B9CFE7C19CCC0 /* NKVPhonePicker-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "NKVPhonePicker-dummy.m"; sourceTree = "<group>"; };
+		5A25BD5B3D3D9B8300141441E87DEF5D /* CountriesViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CountriesViewController.swift; path = Sources/Main/CountriesViewController.swift; sourceTree = "<group>"; };
+		6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		78824F91CF09C00CD8BF28C86B0CE60C /* Country.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Country.swift; path = Sources/Models/Country.swift; sourceTree = "<group>"; };
+		79A1DAA64E75B8D7167758DC572E81D0 /* NKVLocalizationHelper.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NKVLocalizationHelper.swift; path = Sources/Helpers/NKVLocalizationHelper.swift; sourceTree = "<group>"; };
+		7D0A2C4A2AB95CA7D49A629B04863C2E /* Pods-SocraticaPlus.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-SocraticaPlus.modulemap"; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9BE8A812B9CD9A72C5171DB84297F04C /* NKVPhonePicker.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = NKVPhonePicker.xcconfig; sourceTree = "<group>"; };
+		B7150F3A9796EBEDDD9B810563EC0D58 /* Pods-SocraticaPlus-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SocraticaPlus-acknowledgements.plist"; sourceTree = "<group>"; };
+		BD5B0E2419762C60EDBB3FA62CC777C1 /* Pods_SocraticaPlus.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_SocraticaPlus.framework; path = "Pods-SocraticaPlus.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BE0BF5D933457B90B2191557296C8739 /* NKVPhonePicker.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = NKVPhonePicker.modulemap; sourceTree = "<group>"; };
+		C74122F7F030D6A723438BE70352BD3E /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CB08A392FDC1EE540D6FE6A0331B8993 /* NKVSource.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NKVSource.swift; path = Sources/Models/NKVSource.swift; sourceTree = "<group>"; };
+		CBCBE64BEF1BBD4EC74FDBAB17920B90 /* Pods-SocraticaPlus-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-SocraticaPlus-umbrella.h"; sourceTree = "<group>"; };
+		DA3605CD0C49A268858E8E5D7A660FF3 /* CountriesViewController.storyboard */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.storyboard; name = CountriesViewController.storyboard; path = Sources/Bundle/CountriesViewController.storyboard; sourceTree = "<group>"; };
+		DE5624647465DDEBFFC89FE05D386CB4 /* NKVPhonePicker-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NKVPhonePicker-prefix.pch"; sourceTree = "<group>"; };
+		E83171CC22955302B031796D935937C1 /* Pods-SocraticaPlus.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SocraticaPlus.release.xcconfig"; sourceTree = "<group>"; };
+		F698E0B44FF4DF0B2F53957A132D45BC /* Countries.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = Countries.bundle; path = Sources/Bundle/Countries.bundle; sourceTree = "<group>"; };
+		FE993937530618C61B851192AA11984E /* TextFieldWithPattern.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TextFieldWithPattern.swift; path = Sources/Main/TextFieldWithPattern.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8EA8B6E4B58B6C15E88E896119DC52E4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				621C1E98793CF11562BFD3807CDD1ECA /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E7865C5DD82909A035CF88BF52D1FD0F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				70A03BD8DB081AFE5433C0D58575C0AA /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1317631D52BAF4024B332924D822CE5E /* NKVPhonePicker */ = {
+			isa = PBXGroup;
+			children = (
+				5A25BD5B3D3D9B8300141441E87DEF5D /* CountriesViewController.swift */,
+				78824F91CF09C00CD8BF28C86B0CE60C /* Country.swift */,
+				10E839C4407D3BD08E0C509A273932A0 /* CountryCode.swift */,
+				46EB02A8E00621B173583ADC849BB768 /* NKVFlagView.swift */,
+				79A1DAA64E75B8D7167758DC572E81D0 /* NKVLocalizationHelper.swift */,
+				24674BB183CD2FED304ADF600516D18E /* NKVPhoneFormatter.swift */,
+				0D1B889E26A9E47DDC26D0144BBBF8B8 /* NKVPhonePickerPresenter.swift */,
+				1CC07400876925251FCB20A801777D29 /* NKVPhonePickerTextField.swift */,
+				CB08A392FDC1EE540D6FE6A0331B8993 /* NKVSource.swift */,
+				241D46553DCCE90904DFE44DB95DEEBC /* NKVSourcesHelper.swift */,
+				1A54ACF0C3587EA771467DA9D09420AD /* PhoneExtension.swift */,
+				FE993937530618C61B851192AA11984E /* TextFieldWithPattern.swift */,
+				51CFB2AD95C8451802B42A0E6FAE4765 /* Resources */,
+				48A24EDAC04C330DF52CF535A9C94705 /* Support Files */,
+			);
+			name = NKVPhonePicker;
+			path = NKVPhonePicker;
+			sourceTree = "<group>";
+		};
+		295BB622A12ACC269536E0C39E865B09 /* Pods-SocraticaPlus */ = {
+			isa = PBXGroup;
+			children = (
+				4E2C480935841FD1C709F4D52DDF17BB /* Info.plist */,
+				7D0A2C4A2AB95CA7D49A629B04863C2E /* Pods-SocraticaPlus.modulemap */,
+				40B0B23D7876B5B9F9ED819A411101EA /* Pods-SocraticaPlus-acknowledgements.markdown */,
+				B7150F3A9796EBEDDD9B810563EC0D58 /* Pods-SocraticaPlus-acknowledgements.plist */,
+				30CB0AED775C2606ECD42BA547029545 /* Pods-SocraticaPlus-dummy.m */,
+				3430CF626C50B02813D18BE5958AB20F /* Pods-SocraticaPlus-frameworks.sh */,
+				13C0224A63E2315A4019E4FCEF7E1B56 /* Pods-SocraticaPlus-resources.sh */,
+				CBCBE64BEF1BBD4EC74FDBAB17920B90 /* Pods-SocraticaPlus-umbrella.h */,
+				06CD402406A99AFA38AA5E6BCBE595C5 /* Pods-SocraticaPlus.debug.xcconfig */,
+				E83171CC22955302B031796D935937C1 /* Pods-SocraticaPlus.release.xcconfig */,
+			);
+			name = "Pods-SocraticaPlus";
+			path = "Target Support Files/Pods-SocraticaPlus";
+			sourceTree = "<group>";
+		};
+		48A24EDAC04C330DF52CF535A9C94705 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				C74122F7F030D6A723438BE70352BD3E /* Info.plist */,
+				BE0BF5D933457B90B2191557296C8739 /* NKVPhonePicker.modulemap */,
+				9BE8A812B9CD9A72C5171DB84297F04C /* NKVPhonePicker.xcconfig */,
+				59C6C314440829E3D64B9CFE7C19CCC0 /* NKVPhonePicker-dummy.m */,
+				DE5624647465DDEBFFC89FE05D386CB4 /* NKVPhonePicker-prefix.pch */,
+				5719D7A6B3FA67B8166AD6F4C97552EC /* NKVPhonePicker-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/NKVPhonePicker";
+			sourceTree = "<group>";
+		};
+		51CFB2AD95C8451802B42A0E6FAE4765 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				F698E0B44FF4DF0B2F53957A132D45BC /* Countries.bundle */,
+				DA3605CD0C49A268858E8E5D7A660FF3 /* CountriesViewController.storyboard */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		56A5A611B56F490EAEFEAD7A1ED14C0E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1317631D52BAF4024B332924D822CE5E /* NKVPhonePicker */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
+				56A5A611B56F490EAEFEAD7A1ED14C0E /* Pods */,
+				DAE94E4890059CF4418D1F2CCB7E777D /* Products */,
+				E874AA07F81FC5AC73FBE448A5D17465 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D35AF013A5F0BAD4F32504907A52519E /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D35AF013A5F0BAD4F32504907A52519E /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		DAE94E4890059CF4418D1F2CCB7E777D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1E092F93883EBC94F87F254CE07C10CF /* NKVPhonePicker.framework */,
+				BD5B0E2419762C60EDBB3FA62CC777C1 /* Pods_SocraticaPlus.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E874AA07F81FC5AC73FBE448A5D17465 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				295BB622A12ACC269536E0C39E865B09 /* Pods-SocraticaPlus */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		5621B4F28CDF90A19BE4509FAEEE0B60 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FBB4094D0675AC53A9BAB12EEE786C8D /* Pods-SocraticaPlus-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E9223484A16A7ED1E7869740B13719C3 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				381F94E0A3FE216D4A230ADE2FA8D92F /* NKVPhonePicker-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		B95B9283D45368A0FDBCBAF265E9EC17 /* NKVPhonePicker */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 36426FFF19395DB121849EC2F659D497 /* Build configuration list for PBXNativeTarget "NKVPhonePicker" */;
+			buildPhases = (
+				FFFAF8C9138FC041DA03D5923DEBC40B /* Sources */,
+				E7865C5DD82909A035CF88BF52D1FD0F /* Frameworks */,
+				55BDC55816B2CDCF0E6EEAC6FA1EEB86 /* Resources */,
+				E9223484A16A7ED1E7869740B13719C3 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NKVPhonePicker;
+			productName = NKVPhonePicker;
+			productReference = 1E092F93883EBC94F87F254CE07C10CF /* NKVPhonePicker.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		DFD13B8C5A0FE7C22C6C2610AD7D6EAA /* Pods-SocraticaPlus */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EAD409A2BE35B28F58C9D3EFF2001FBC /* Build configuration list for PBXNativeTarget "Pods-SocraticaPlus" */;
+			buildPhases = (
+				AECD98F9E63787887829088B21CA9ECC /* Sources */,
+				8EA8B6E4B58B6C15E88E896119DC52E4 /* Frameworks */,
+				5621B4F28CDF90A19BE4509FAEEE0B60 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3861D5BFD2BC713651973F2FDCE3DB45 /* PBXTargetDependency */,
+			);
+			name = "Pods-SocraticaPlus";
+			productName = "Pods-SocraticaPlus";
+			productReference = BD5B0E2419762C60EDBB3FA62CC777C1 /* Pods_SocraticaPlus.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0930;
+				LastUpgradeCheck = 0930;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = DAE94E4890059CF4418D1F2CCB7E777D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B95B9283D45368A0FDBCBAF265E9EC17 /* NKVPhonePicker */,
+				DFD13B8C5A0FE7C22C6C2610AD7D6EAA /* Pods-SocraticaPlus */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		55BDC55816B2CDCF0E6EEAC6FA1EEB86 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AB6426046E333F7C3E2842B94CC51DAF /* Countries.bundle in Resources */,
+				B490DDAA41C75733EE0C500B47C5C542 /* CountriesViewController.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AECD98F9E63787887829088B21CA9ECC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5EF9B43C427B81B7F41EBB84247BDB8E /* Pods-SocraticaPlus-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FFFAF8C9138FC041DA03D5923DEBC40B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A370C5C1EEEF9253369889F0F7A6E65A /* CountriesViewController.swift in Sources */,
+				D85BA348378D6D98AAEE1AB80186E043 /* Country.swift in Sources */,
+				2B8F87D678B93C38864C913A7A393002 /* CountryCode.swift in Sources */,
+				E4F3AC099CA548FD18103A7A572E7BF0 /* NKVFlagView.swift in Sources */,
+				BD54AAFB5F9EF035364905A8DFC51EE4 /* NKVLocalizationHelper.swift in Sources */,
+				938FDBD909D6798EF4797D02E249B5FB /* NKVPhoneFormatter.swift in Sources */,
+				B7E369640E0F36A18F5EF9EF045A83D7 /* NKVPhonePicker-dummy.m in Sources */,
+				A2E3C6457461D143F66B0100A390A6EA /* NKVPhonePickerPresenter.swift in Sources */,
+				756A39C1F24A69078BFED5E1271DD481 /* NKVPhonePickerTextField.swift in Sources */,
+				FC594D28C5A33F306EB6252886D0FB57 /* NKVSource.swift in Sources */,
+				0E39784AD2A4185E5825BB040373E132 /* NKVSourcesHelper.swift in Sources */,
+				D9B275621BD5CCED7636545CDD1F6E04 /* PhoneExtension.swift in Sources */,
+				BA3F60E3E529F1C3A95792EA9E0A8346 /* TextFieldWithPattern.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3861D5BFD2BC713651973F2FDCE3DB45 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = NKVPhonePicker;
+			target = B95B9283D45368A0FDBCBAF265E9EC17 /* NKVPhonePicker */;
+			targetProxy = 1F4D1339759D59A57EBAE9447DFAD078 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		3A3437A34EA6F4A1EB1C2EB0713EB5A1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E83171CC22955302B031796D935937C1 /* Pods-SocraticaPlus.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-SocraticaPlus/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-SocraticaPlus/Pods-SocraticaPlus.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		5DC0083F57E9AB706B46C5B5D73B38D8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		AEEA80476F98EB645C4DD53EB2BB6D88 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		B640F3F66EF4A140DC321F348EB66B0B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9BE8A812B9CD9A72C5171DB84297F04C /* NKVPhonePicker.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/NKVPhonePicker/NKVPhonePicker-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/NKVPhonePicker/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/NKVPhonePicker/NKVPhonePicker.modulemap";
+				PRODUCT_MODULE_NAME = NKVPhonePicker;
+				PRODUCT_NAME = NKVPhonePicker;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		F1D14720E07DDFFD6E51D3418D9691EF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 06CD402406A99AFA38AA5E6BCBE595C5 /* Pods-SocraticaPlus.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-SocraticaPlus/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-SocraticaPlus/Pods-SocraticaPlus.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		FA447371C95E2B077E605746F2923E95 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9BE8A812B9CD9A72C5171DB84297F04C /* NKVPhonePicker.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/NKVPhonePicker/NKVPhonePicker-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/NKVPhonePicker/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/NKVPhonePicker/NKVPhonePicker.modulemap";
+				PRODUCT_MODULE_NAME = NKVPhonePicker;
+				PRODUCT_NAME = NKVPhonePicker;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5DC0083F57E9AB706B46C5B5D73B38D8 /* Debug */,
+				AEEA80476F98EB645C4DD53EB2BB6D88 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		36426FFF19395DB121849EC2F659D497 /* Build configuration list for PBXNativeTarget "NKVPhonePicker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B640F3F66EF4A140DC321F348EB66B0B /* Debug */,
+				FA447371C95E2B077E605746F2923E95 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EAD409A2BE35B28F58C9D3EFF2001FBC /* Build configuration list for PBXNativeTarget "Pods-SocraticaPlus" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F1D14720E07DDFFD6E51D3418D9691EF /* Debug */,
+				3A3437A34EA6F4A1EB1C2EB0713EB5A1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}
