@@ -7,81 +7,157 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0E39784AD2A4185E5825BB040373E132 /* NKVSourcesHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 241D46553DCCE90904DFE44DB95DEEBC /* NKVSourcesHelper.swift */; };
-		2B8F87D678B93C38864C913A7A393002 /* CountryCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10E839C4407D3BD08E0C509A273932A0 /* CountryCode.swift */; };
-		381F94E0A3FE216D4A230ADE2FA8D92F /* NKVPhonePicker-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 5719D7A6B3FA67B8166AD6F4C97552EC /* NKVPhonePicker-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		5EF9B43C427B81B7F41EBB84247BDB8E /* Pods-SocraticaPlus-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 30CB0AED775C2606ECD42BA547029545 /* Pods-SocraticaPlus-dummy.m */; };
-		621C1E98793CF11562BFD3807CDD1ECA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
-		70A03BD8DB081AFE5433C0D58575C0AA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
-		756A39C1F24A69078BFED5E1271DD481 /* NKVPhonePickerTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CC07400876925251FCB20A801777D29 /* NKVPhonePickerTextField.swift */; };
-		938FDBD909D6798EF4797D02E249B5FB /* NKVPhoneFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24674BB183CD2FED304ADF600516D18E /* NKVPhoneFormatter.swift */; };
-		A2E3C6457461D143F66B0100A390A6EA /* NKVPhonePickerPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D1B889E26A9E47DDC26D0144BBBF8B8 /* NKVPhonePickerPresenter.swift */; };
-		A370C5C1EEEF9253369889F0F7A6E65A /* CountriesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A25BD5B3D3D9B8300141441E87DEF5D /* CountriesViewController.swift */; };
-		AB6426046E333F7C3E2842B94CC51DAF /* Countries.bundle in Resources */ = {isa = PBXBuildFile; fileRef = F698E0B44FF4DF0B2F53957A132D45BC /* Countries.bundle */; };
-		B490DDAA41C75733EE0C500B47C5C542 /* CountriesViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA3605CD0C49A268858E8E5D7A660FF3 /* CountriesViewController.storyboard */; };
-		B7E369640E0F36A18F5EF9EF045A83D7 /* NKVPhonePicker-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 59C6C314440829E3D64B9CFE7C19CCC0 /* NKVPhonePicker-dummy.m */; };
-		BA3F60E3E529F1C3A95792EA9E0A8346 /* TextFieldWithPattern.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE993937530618C61B851192AA11984E /* TextFieldWithPattern.swift */; };
-		BD54AAFB5F9EF035364905A8DFC51EE4 /* NKVLocalizationHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79A1DAA64E75B8D7167758DC572E81D0 /* NKVLocalizationHelper.swift */; };
-		D85BA348378D6D98AAEE1AB80186E043 /* Country.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78824F91CF09C00CD8BF28C86B0CE60C /* Country.swift */; };
-		D9B275621BD5CCED7636545CDD1F6E04 /* PhoneExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A54ACF0C3587EA771467DA9D09420AD /* PhoneExtension.swift */; };
-		E4F3AC099CA548FD18103A7A572E7BF0 /* NKVFlagView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46EB02A8E00621B173583ADC849BB768 /* NKVFlagView.swift */; };
-		FBB4094D0675AC53A9BAB12EEE786C8D /* Pods-SocraticaPlus-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = CBCBE64BEF1BBD4EC74FDBAB17920B90 /* Pods-SocraticaPlus-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		FC594D28C5A33F306EB6252886D0FB57 /* NKVSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB08A392FDC1EE540D6FE6A0331B8993 /* NKVSource.swift */; };
+		0C487014890363EF5C7EB149FBDBAFC6 /* ZVActivityIndicatorView-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 35325FD0C48F6D06FFFE4546B86EB366 /* ZVActivityIndicatorView-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0E39784AD2A4185E5825BB040373E132 /* NKVSourcesHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E78B4AADDEDD7B43C1A7A2AC76CB1AE /* NKVSourcesHelper.swift */; };
+		2102A4C56EF9AF0D1992BA67A289D9D3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A8F0C69F29CD3879E340617573F11526 /* Foundation.framework */; };
+		253A7AD889C60B17D5DA131AB154CA00 /* ZVProgressHUD.h in Headers */ = {isa = PBXBuildFile; fileRef = 81CC1C30419F0A0D49811D25241B61FF /* ZVProgressHUD.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2B8F87D678B93C38864C913A7A393002 /* CountryCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEFB99DE3C9ED3253C80B965A997E28E /* CountryCode.swift */; };
+		32E8E526261AF9AE895FAF6B92200506 /* ZVActivityIndicatorView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0DB66C2EF79C18CCA5ACA929A0AB512B /* ZVActivityIndicatorView.framework */; };
+		381E36E57925DFB666BB905B80D1AD79 /* ZVActivityIndicatorView.h in Headers */ = {isa = PBXBuildFile; fileRef = A0A03A22126E1A8028BA54AD955247B7 /* ZVActivityIndicatorView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		381F94E0A3FE216D4A230ADE2FA8D92F /* NKVPhonePicker-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 638B908CCFDCE8EBCC1396BA4757678B /* NKVPhonePicker-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		636ECC9BF9C68AA63CB5D312575CCB5C /* ZVProgressHUD.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBB93AE0935E0D4563A76B2FA7A93151 /* ZVProgressHUD.swift */; };
+		70A03BD8DB081AFE5433C0D58575C0AA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A8F0C69F29CD3879E340617573F11526 /* Foundation.framework */; };
+		756A39C1F24A69078BFED5E1271DD481 /* NKVPhonePickerTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47AE98776E48A959328976D723B9DA03 /* NKVPhonePickerTextField.swift */; };
+		84CF525CDF58B3F1DA621B0709A7BBDE /* ZVActivityIndicatorView-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F260C07B16F15A6B0D01604FC42DFAE /* ZVActivityIndicatorView-dummy.m */; };
+		8A30556A7E9CB4158CBCBBE2A3992725 /* Pods-SocraticaPlus-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = CBCBE64BEF1BBD4EC74FDBAB17920B90 /* Pods-SocraticaPlus-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		938FDBD909D6798EF4797D02E249B5FB /* NKVPhoneFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3CAAAE30DD96E62C0C3D28C8AD3BC8E /* NKVPhoneFormatter.swift */; };
+		9CFE35123FDFC53A6E60B23562D7F91A /* ZVProgressHUD-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 673B1B69A33AF62299382027FF33ECF3 /* ZVProgressHUD-dummy.m */; };
+		A2E3C6457461D143F66B0100A390A6EA /* NKVPhonePickerPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FD21A8A7686557303176C4724B3E5B3 /* NKVPhonePickerPresenter.swift */; };
+		A370C5C1EEEF9253369889F0F7A6E65A /* CountriesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FD8FA233C0FC9A67176EBA2631F7ECF /* CountriesViewController.swift */; };
+		AB6426046E333F7C3E2842B94CC51DAF /* Countries.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 5E0E0F1E253BE4C495F8ED46F27CB971 /* Countries.bundle */; };
+		B1230B657245935A245DB65D0DD83BAD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A8F0C69F29CD3879E340617573F11526 /* Foundation.framework */; };
+		B490DDAA41C75733EE0C500B47C5C542 /* CountriesViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC6D5060E7DEF794DBB0BEDDCF5E7EBB /* CountriesViewController.storyboard */; };
+		B7E369640E0F36A18F5EF9EF045A83D7 /* NKVPhonePicker-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = BF51F03118B817EE0D4117DC26323F68 /* NKVPhonePicker-dummy.m */; };
+		BA3F60E3E529F1C3A95792EA9E0A8346 /* TextFieldWithPattern.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2128E45D6B53A38E0AA0F56168D078E /* TextFieldWithPattern.swift */; };
+		BD54AAFB5F9EF035364905A8DFC51EE4 /* NKVLocalizationHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = A017ECEF40806A9CB80CC476B565DE88 /* NKVLocalizationHelper.swift */; };
+		C3637690BA7D30C43AB2BB0C53616C65 /* ProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE809322A26BD457A94858D888AD39FF /* ProgressView.swift */; };
+		C6ED86307B759B0F07E2D99591DEC44E /* ZVProgressHUD-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = AA8DA3034D6F512D36BCD690D8A41CC2 /* ZVProgressHUD-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C92D343C6A497807DE9C8F9215712752 /* Resource.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 5FB99AB31378E4C4AEEE63E97706FC34 /* Resource.bundle */; };
+		C973A904AA3ADFBCD550BB2D257D53AB /* ZVProgressHUD+PF.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98EDD19E3BD0FF2CF2384423D6A66ADF /* ZVProgressHUD+PF.swift */; };
+		D707FC7C7D5E82567C3B180FA3149A2D /* IndicatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5625CAC7E27E712C111EB6F8FA508051 /* IndicatorView.swift */; };
+		D85BA348378D6D98AAEE1AB80186E043 /* Country.swift in Sources */ = {isa = PBXBuildFile; fileRef = 541E0A4F0AF032F03625D6608D79FB21 /* Country.swift */; };
+		D9B275621BD5CCED7636545CDD1F6E04 /* PhoneExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCB8F532F3A4BF10E203911466F74105 /* PhoneExtension.swift */; };
+		E3BD061348286F3FE26C116A47D56377 /* Pods-SocraticaPlus-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 30CB0AED775C2606ECD42BA547029545 /* Pods-SocraticaPlus-dummy.m */; };
+		E4F3AC099CA548FD18103A7A572E7BF0 /* NKVFlagView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7239CC3EC7FCA5A8F30E47E695BBDF10 /* NKVFlagView.swift */; };
+		E5E5AD744046CEA7C27C9BB57AB1392E /* ZVActivityIndicatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA8340948D2266DA790385946BDB2D93 /* ZVActivityIndicatorView.swift */; };
+		F0D8AB8AF8DE6EAA26BDA0202CD0A10E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A8F0C69F29CD3879E340617573F11526 /* Foundation.framework */; };
+		FC594D28C5A33F306EB6252886D0FB57 /* NKVSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DED9BE8F1AD081D9F2AD52D172ADD25 /* NKVSource.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		1F4D1339759D59A57EBAE9447DFAD078 /* PBXContainerItemProxy */ = {
+		5982E5299782A22C20C06D3F2048F569 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = B95B9283D45368A0FDBCBAF265E9EC17;
 			remoteInfo = NKVPhonePicker;
 		};
+		6C9E58589793CE976CB242CBCEC0D806 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 45E2D799C1F573E75F16F569BB8E0D66;
+			remoteInfo = ZVActivityIndicatorView;
+		};
+		D65D99A16BADFA6A84428A5B66269E3D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 45E2D799C1F573E75F16F569BB8E0D66;
+			remoteInfo = ZVActivityIndicatorView;
+		};
+		DB09188810BFF1D0EF354866F54BB08D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3B0ADB58B6A3D280C55694A146A899D5;
+			remoteInfo = ZVProgressHUD;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0053468705457671267172B418C3F2FA /* NKVPhonePicker.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = NKVPhonePicker.modulemap; sourceTree = "<group>"; };
+		05054BCAD5C9768F27881E0CF93C15ED /* NKVPhonePicker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = NKVPhonePicker.framework; path = NKVPhonePicker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		06CD402406A99AFA38AA5E6BCBE595C5 /* Pods-SocraticaPlus.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SocraticaPlus.debug.xcconfig"; sourceTree = "<group>"; };
-		0D1B889E26A9E47DDC26D0144BBBF8B8 /* NKVPhonePickerPresenter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NKVPhonePickerPresenter.swift; path = Sources/Main/NKVPhonePickerPresenter.swift; sourceTree = "<group>"; };
-		10E839C4407D3BD08E0C509A273932A0 /* CountryCode.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CountryCode.swift; path = Sources/Models/CountryCode.swift; sourceTree = "<group>"; };
+		0DB66C2EF79C18CCA5ACA929A0AB512B /* ZVActivityIndicatorView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ZVActivityIndicatorView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0FD21A8A7686557303176C4724B3E5B3 /* NKVPhonePickerPresenter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NKVPhonePickerPresenter.swift; path = Sources/Main/NKVPhonePickerPresenter.swift; sourceTree = "<group>"; };
+		0FD8FA233C0FC9A67176EBA2631F7ECF /* CountriesViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CountriesViewController.swift; path = Sources/Main/CountriesViewController.swift; sourceTree = "<group>"; };
 		13C0224A63E2315A4019E4FCEF7E1B56 /* Pods-SocraticaPlus-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SocraticaPlus-resources.sh"; sourceTree = "<group>"; };
-		1A54ACF0C3587EA771467DA9D09420AD /* PhoneExtension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PhoneExtension.swift; path = Sources/Models/PhoneExtension.swift; sourceTree = "<group>"; };
-		1CC07400876925251FCB20A801777D29 /* NKVPhonePickerTextField.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NKVPhonePickerTextField.swift; path = Sources/Main/NKVPhonePickerTextField.swift; sourceTree = "<group>"; };
-		1E092F93883EBC94F87F254CE07C10CF /* NKVPhonePicker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = NKVPhonePicker.framework; path = NKVPhonePicker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		241D46553DCCE90904DFE44DB95DEEBC /* NKVSourcesHelper.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NKVSourcesHelper.swift; path = Sources/Helpers/NKVSourcesHelper.swift; sourceTree = "<group>"; };
-		24674BB183CD2FED304ADF600516D18E /* NKVPhoneFormatter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NKVPhoneFormatter.swift; path = Sources/Helpers/NKVPhoneFormatter.swift; sourceTree = "<group>"; };
+		2BAEC61E3D5BBD7BBB037FEEEAEFF95D /* ZVActivityIndicatorView.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = ZVActivityIndicatorView.modulemap; sourceTree = "<group>"; };
 		30CB0AED775C2606ECD42BA547029545 /* Pods-SocraticaPlus-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-SocraticaPlus-dummy.m"; sourceTree = "<group>"; };
 		3430CF626C50B02813D18BE5958AB20F /* Pods-SocraticaPlus-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SocraticaPlus-frameworks.sh"; sourceTree = "<group>"; };
+		35325FD0C48F6D06FFFE4546B86EB366 /* ZVActivityIndicatorView-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ZVActivityIndicatorView-umbrella.h"; sourceTree = "<group>"; };
+		3B55E6BF4898D3DDC0584DA062B0AD27 /* ZVProgressHUD-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ZVProgressHUD-prefix.pch"; sourceTree = "<group>"; };
 		40B0B23D7876B5B9F9ED819A411101EA /* Pods-SocraticaPlus-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-SocraticaPlus-acknowledgements.markdown"; sourceTree = "<group>"; };
-		46EB02A8E00621B173583ADC849BB768 /* NKVFlagView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NKVFlagView.swift; path = Sources/Main/NKVFlagView.swift; sourceTree = "<group>"; };
+		45C3BC2EB8D06CFCA50EC6D90EE384F8 /* NKVPhonePicker-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NKVPhonePicker-prefix.pch"; sourceTree = "<group>"; };
+		47AE98776E48A959328976D723B9DA03 /* NKVPhonePickerTextField.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NKVPhonePickerTextField.swift; path = Sources/Main/NKVPhonePickerTextField.swift; sourceTree = "<group>"; };
+		4CA1948BE29B1D918D629C73CBDC0319 /* ZVActivityIndicatorView.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ZVActivityIndicatorView.xcconfig; sourceTree = "<group>"; };
 		4E2C480935841FD1C709F4D52DDF17BB /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		5719D7A6B3FA67B8166AD6F4C97552EC /* NKVPhonePicker-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NKVPhonePicker-umbrella.h"; sourceTree = "<group>"; };
-		59C6C314440829E3D64B9CFE7C19CCC0 /* NKVPhonePicker-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "NKVPhonePicker-dummy.m"; sourceTree = "<group>"; };
-		5A25BD5B3D3D9B8300141441E87DEF5D /* CountriesViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CountriesViewController.swift; path = Sources/Main/CountriesViewController.swift; sourceTree = "<group>"; };
-		6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		78824F91CF09C00CD8BF28C86B0CE60C /* Country.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Country.swift; path = Sources/Models/Country.swift; sourceTree = "<group>"; };
-		79A1DAA64E75B8D7167758DC572E81D0 /* NKVLocalizationHelper.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NKVLocalizationHelper.swift; path = Sources/Helpers/NKVLocalizationHelper.swift; sourceTree = "<group>"; };
+		541E0A4F0AF032F03625D6608D79FB21 /* Country.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Country.swift; path = Sources/Models/Country.swift; sourceTree = "<group>"; };
+		5625CAC7E27E712C111EB6F8FA508051 /* IndicatorView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IndicatorView.swift; path = ZVProgressHUD/IndicatorView.swift; sourceTree = "<group>"; };
+		5E0E0F1E253BE4C495F8ED46F27CB971 /* Countries.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = Countries.bundle; path = Sources/Bundle/Countries.bundle; sourceTree = "<group>"; };
+		5F260C07B16F15A6B0D01604FC42DFAE /* ZVActivityIndicatorView-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ZVActivityIndicatorView-dummy.m"; sourceTree = "<group>"; };
+		5FB99AB31378E4C4AEEE63E97706FC34 /* Resource.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = Resource.bundle; path = ZVProgressHUD/Resource.bundle; sourceTree = "<group>"; };
+		638B908CCFDCE8EBCC1396BA4757678B /* NKVPhonePicker-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NKVPhonePicker-umbrella.h"; sourceTree = "<group>"; };
+		673B1B69A33AF62299382027FF33ECF3 /* ZVProgressHUD-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ZVProgressHUD-dummy.m"; sourceTree = "<group>"; };
+		7239CC3EC7FCA5A8F30E47E695BBDF10 /* NKVFlagView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NKVFlagView.swift; path = Sources/Main/NKVFlagView.swift; sourceTree = "<group>"; };
 		7D0A2C4A2AB95CA7D49A629B04863C2E /* Pods-SocraticaPlus.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-SocraticaPlus.modulemap"; sourceTree = "<group>"; };
+		7DED9BE8F1AD081D9F2AD52D172ADD25 /* NKVSource.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NKVSource.swift; path = Sources/Models/NKVSource.swift; sourceTree = "<group>"; };
+		7E8C9BB8FBF967E15080E220E84D66BA /* Pods_SocraticaPlus.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_SocraticaPlus.framework; path = "Pods-SocraticaPlus.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		81CC1C30419F0A0D49811D25241B61FF /* ZVProgressHUD.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ZVProgressHUD.h; path = ZVProgressHUD/ZVProgressHUD.h; sourceTree = "<group>"; };
+		8E78B4AADDEDD7B43C1A7A2AC76CB1AE /* NKVSourcesHelper.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NKVSourcesHelper.swift; path = Sources/Helpers/NKVSourcesHelper.swift; sourceTree = "<group>"; };
+		9303D3486EACFA2AE4B84EB0C647D6B3 /* ZVProgressHUD.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = ZVProgressHUD.framework; path = ZVProgressHUD.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		9BE8A812B9CD9A72C5171DB84297F04C /* NKVPhonePicker.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = NKVPhonePicker.xcconfig; sourceTree = "<group>"; };
+		952BA0AE6838DBE21552E1AF2770E391 /* NKVPhonePicker.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = NKVPhonePicker.xcconfig; sourceTree = "<group>"; };
+		98EDD19E3BD0FF2CF2384423D6A66ADF /* ZVProgressHUD+PF.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "ZVProgressHUD+PF.swift"; path = "ZVProgressHUD/ZVProgressHUD+PF.swift"; sourceTree = "<group>"; };
+		9BA8A28EAC295CDC6A6A1D8E3667B00A /* ZVProgressHUD.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = ZVProgressHUD.modulemap; sourceTree = "<group>"; };
+		9FA9296CD64D64CE1F6EAD599E1F23CB /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A017ECEF40806A9CB80CC476B565DE88 /* NKVLocalizationHelper.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NKVLocalizationHelper.swift; path = Sources/Helpers/NKVLocalizationHelper.swift; sourceTree = "<group>"; };
+		A0A03A22126E1A8028BA54AD955247B7 /* ZVActivityIndicatorView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ZVActivityIndicatorView.h; path = ZVActivityIndicatorView/ZVActivityIndicatorView.h; sourceTree = "<group>"; };
+		A8F0C69F29CD3879E340617573F11526 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		AA8DA3034D6F512D36BCD690D8A41CC2 /* ZVProgressHUD-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ZVProgressHUD-umbrella.h"; sourceTree = "<group>"; };
+		AC6D5060E7DEF794DBB0BEDDCF5E7EBB /* CountriesViewController.storyboard */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.storyboard; name = CountriesViewController.storyboard; path = Sources/Bundle/CountriesViewController.storyboard; sourceTree = "<group>"; };
+		AD48323EF4110138EACB1A1A2FB227D4 /* ZVActivityIndicatorView-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ZVActivityIndicatorView-prefix.pch"; sourceTree = "<group>"; };
+		B67608063C9A24100BE13542DBD9B8B2 /* ZVProgressHUD.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ZVProgressHUD.xcconfig; sourceTree = "<group>"; };
 		B7150F3A9796EBEDDD9B810563EC0D58 /* Pods-SocraticaPlus-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SocraticaPlus-acknowledgements.plist"; sourceTree = "<group>"; };
-		BD5B0E2419762C60EDBB3FA62CC777C1 /* Pods_SocraticaPlus.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_SocraticaPlus.framework; path = "Pods-SocraticaPlus.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		BE0BF5D933457B90B2191557296C8739 /* NKVPhonePicker.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = NKVPhonePicker.modulemap; sourceTree = "<group>"; };
-		C74122F7F030D6A723438BE70352BD3E /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		CB08A392FDC1EE540D6FE6A0331B8993 /* NKVSource.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NKVSource.swift; path = Sources/Models/NKVSource.swift; sourceTree = "<group>"; };
+		BF51F03118B817EE0D4117DC26323F68 /* NKVPhonePicker-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "NKVPhonePicker-dummy.m"; sourceTree = "<group>"; };
 		CBCBE64BEF1BBD4EC74FDBAB17920B90 /* Pods-SocraticaPlus-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-SocraticaPlus-umbrella.h"; sourceTree = "<group>"; };
-		DA3605CD0C49A268858E8E5D7A660FF3 /* CountriesViewController.storyboard */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.storyboard; name = CountriesViewController.storyboard; path = Sources/Bundle/CountriesViewController.storyboard; sourceTree = "<group>"; };
-		DE5624647465DDEBFFC89FE05D386CB4 /* NKVPhonePicker-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NKVPhonePicker-prefix.pch"; sourceTree = "<group>"; };
+		CCB8F532F3A4BF10E203911466F74105 /* PhoneExtension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PhoneExtension.swift; path = Sources/Models/PhoneExtension.swift; sourceTree = "<group>"; };
+		CE809322A26BD457A94858D888AD39FF /* ProgressView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ProgressView.swift; path = ZVProgressHUD/ProgressView.swift; sourceTree = "<group>"; };
+		DA8340948D2266DA790385946BDB2D93 /* ZVActivityIndicatorView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ZVActivityIndicatorView.swift; path = ZVActivityIndicatorView/ZVActivityIndicatorView.swift; sourceTree = "<group>"; };
+		E55F46D3685B940BF2F96371487D3201 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E7AEC00B59D4D68508F354887A1692CB /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E83171CC22955302B031796D935937C1 /* Pods-SocraticaPlus.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SocraticaPlus.release.xcconfig"; sourceTree = "<group>"; };
-		F698E0B44FF4DF0B2F53957A132D45BC /* Countries.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = Countries.bundle; path = Sources/Bundle/Countries.bundle; sourceTree = "<group>"; };
-		FE993937530618C61B851192AA11984E /* TextFieldWithPattern.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TextFieldWithPattern.swift; path = Sources/Main/TextFieldWithPattern.swift; sourceTree = "<group>"; };
+		EB8DB13E7AF955415383BFDE2759FB7F /* ZVActivityIndicatorView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = ZVActivityIndicatorView.framework; path = ZVActivityIndicatorView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F2128E45D6B53A38E0AA0F56168D078E /* TextFieldWithPattern.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TextFieldWithPattern.swift; path = Sources/Main/TextFieldWithPattern.swift; sourceTree = "<group>"; };
+		F3CAAAE30DD96E62C0C3D28C8AD3BC8E /* NKVPhoneFormatter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NKVPhoneFormatter.swift; path = Sources/Helpers/NKVPhoneFormatter.swift; sourceTree = "<group>"; };
+		FBB93AE0935E0D4563A76B2FA7A93151 /* ZVProgressHUD.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ZVProgressHUD.swift; path = ZVProgressHUD/ZVProgressHUD.swift; sourceTree = "<group>"; };
+		FEFB99DE3C9ED3253C80B965A997E28E /* CountryCode.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CountryCode.swift; path = Sources/Models/CountryCode.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		8EA8B6E4B58B6C15E88E896119DC52E4 /* Frameworks */ = {
+		03520D0EA3C74D8322E8F9AEE6A6014E /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				621C1E98793CF11562BFD3807CDD1ECA /* Foundation.framework in Frameworks */,
+				2102A4C56EF9AF0D1992BA67A289D9D3 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B7F5265AAB51A71CA45659CC57C8B682 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B1230B657245935A245DB65D0DD83BAD /* Foundation.framework in Frameworks */,
+				32E8E526261AF9AE895FAF6B92200506 /* ZVActivityIndicatorView.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CC551299469C8E567BCED8FC6D902506 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F0D8AB8AF8DE6EAA26BDA0202CD0A10E /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -96,26 +172,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		1317631D52BAF4024B332924D822CE5E /* NKVPhonePicker */ = {
+		100ADC41134A043404563A7079E13651 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				5A25BD5B3D3D9B8300141441E87DEF5D /* CountriesViewController.swift */,
-				78824F91CF09C00CD8BF28C86B0CE60C /* Country.swift */,
-				10E839C4407D3BD08E0C509A273932A0 /* CountryCode.swift */,
-				46EB02A8E00621B173583ADC849BB768 /* NKVFlagView.swift */,
-				79A1DAA64E75B8D7167758DC572E81D0 /* NKVLocalizationHelper.swift */,
-				24674BB183CD2FED304ADF600516D18E /* NKVPhoneFormatter.swift */,
-				0D1B889E26A9E47DDC26D0144BBBF8B8 /* NKVPhonePickerPresenter.swift */,
-				1CC07400876925251FCB20A801777D29 /* NKVPhonePickerTextField.swift */,
-				CB08A392FDC1EE540D6FE6A0331B8993 /* NKVSource.swift */,
-				241D46553DCCE90904DFE44DB95DEEBC /* NKVSourcesHelper.swift */,
-				1A54ACF0C3587EA771467DA9D09420AD /* PhoneExtension.swift */,
-				FE993937530618C61B851192AA11984E /* TextFieldWithPattern.swift */,
-				51CFB2AD95C8451802B42A0E6FAE4765 /* Resources */,
-				48A24EDAC04C330DF52CF535A9C94705 /* Support Files */,
+				9FA9296CD64D64CE1F6EAD599E1F23CB /* Info.plist */,
+				2BAEC61E3D5BBD7BBB037FEEEAEFF95D /* ZVActivityIndicatorView.modulemap */,
+				4CA1948BE29B1D918D629C73CBDC0319 /* ZVActivityIndicatorView.xcconfig */,
+				5F260C07B16F15A6B0D01604FC42DFAE /* ZVActivityIndicatorView-dummy.m */,
+				AD48323EF4110138EACB1A1A2FB227D4 /* ZVActivityIndicatorView-prefix.pch */,
+				35325FD0C48F6D06FFFE4546B86EB366 /* ZVActivityIndicatorView-umbrella.h */,
 			);
-			name = NKVPhonePicker;
-			path = NKVPhonePicker;
+			name = "Support Files";
+			path = "../Target Support Files/ZVActivityIndicatorView";
 			sourceTree = "<group>";
 		};
 		295BB622A12ACC269536E0C39E865B09 /* Pods-SocraticaPlus */ = {
@@ -136,71 +204,127 @@
 			path = "Target Support Files/Pods-SocraticaPlus";
 			sourceTree = "<group>";
 		};
-		48A24EDAC04C330DF52CF535A9C94705 /* Support Files */ = {
+		2E84BA40012FC43071FC4A2547B66911 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				C74122F7F030D6A723438BE70352BD3E /* Info.plist */,
-				BE0BF5D933457B90B2191557296C8739 /* NKVPhonePicker.modulemap */,
-				9BE8A812B9CD9A72C5171DB84297F04C /* NKVPhonePicker.xcconfig */,
-				59C6C314440829E3D64B9CFE7C19CCC0 /* NKVPhonePicker-dummy.m */,
-				DE5624647465DDEBFFC89FE05D386CB4 /* NKVPhonePicker-prefix.pch */,
-				5719D7A6B3FA67B8166AD6F4C97552EC /* NKVPhonePicker-umbrella.h */,
+				E55F46D3685B940BF2F96371487D3201 /* Info.plist */,
+				9BA8A28EAC295CDC6A6A1D8E3667B00A /* ZVProgressHUD.modulemap */,
+				B67608063C9A24100BE13542DBD9B8B2 /* ZVProgressHUD.xcconfig */,
+				673B1B69A33AF62299382027FF33ECF3 /* ZVProgressHUD-dummy.m */,
+				3B55E6BF4898D3DDC0584DA062B0AD27 /* ZVProgressHUD-prefix.pch */,
+				AA8DA3034D6F512D36BCD690D8A41CC2 /* ZVProgressHUD-umbrella.h */,
 			);
 			name = "Support Files";
-			path = "../Target Support Files/NKVPhonePicker";
+			path = "../Target Support Files/ZVProgressHUD";
 			sourceTree = "<group>";
 		};
-		51CFB2AD95C8451802B42A0E6FAE4765 /* Resources */ = {
+		6CE85532632D02000C68BB070DAB3C72 /* NKVPhonePicker */ = {
 			isa = PBXGroup;
 			children = (
-				F698E0B44FF4DF0B2F53957A132D45BC /* Countries.bundle */,
-				DA3605CD0C49A268858E8E5D7A660FF3 /* CountriesViewController.storyboard */,
+				0FD8FA233C0FC9A67176EBA2631F7ECF /* CountriesViewController.swift */,
+				541E0A4F0AF032F03625D6608D79FB21 /* Country.swift */,
+				FEFB99DE3C9ED3253C80B965A997E28E /* CountryCode.swift */,
+				7239CC3EC7FCA5A8F30E47E695BBDF10 /* NKVFlagView.swift */,
+				A017ECEF40806A9CB80CC476B565DE88 /* NKVLocalizationHelper.swift */,
+				F3CAAAE30DD96E62C0C3D28C8AD3BC8E /* NKVPhoneFormatter.swift */,
+				0FD21A8A7686557303176C4724B3E5B3 /* NKVPhonePickerPresenter.swift */,
+				47AE98776E48A959328976D723B9DA03 /* NKVPhonePickerTextField.swift */,
+				7DED9BE8F1AD081D9F2AD52D172ADD25 /* NKVSource.swift */,
+				8E78B4AADDEDD7B43C1A7A2AC76CB1AE /* NKVSourcesHelper.swift */,
+				CCB8F532F3A4BF10E203911466F74105 /* PhoneExtension.swift */,
+				F2128E45D6B53A38E0AA0F56168D078E /* TextFieldWithPattern.swift */,
+				B3922C94841077373B7DC3AB70C038C3 /* Resources */,
+				E10B050BD9F1E7A16AAF9D6DD34CA083 /* Support Files */,
 			);
-			name = Resources;
-			sourceTree = "<group>";
-		};
-		56A5A611B56F490EAEFEAD7A1ED14C0E /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				1317631D52BAF4024B332924D822CE5E /* NKVPhonePicker */,
-			);
-			name = Pods;
+			name = NKVPhonePicker;
+			path = NKVPhonePicker;
 			sourceTree = "<group>";
 		};
 		7DB346D0F39D3F0E887471402A8071AB = {
 			isa = PBXGroup;
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
-				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
-				56A5A611B56F490EAEFEAD7A1ED14C0E /* Pods */,
-				DAE94E4890059CF4418D1F2CCB7E777D /* Products */,
+				8BD28214571061BC2A9D038F1510CE82 /* Frameworks */,
+				831A350F6AA4C4FE451A72AB91E758A7 /* Pods */,
+				FFDD2355190C3FABACE6D40546114EC5 /* Products */,
 				E874AA07F81FC5AC73FBE448A5D17465 /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
-		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
+		831A350F6AA4C4FE451A72AB91E758A7 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				D35AF013A5F0BAD4F32504907A52519E /* iOS */,
+				6CE85532632D02000C68BB070DAB3C72 /* NKVPhonePicker */,
+				CAC9C483C89F05C9E6FB675C358BB4BA /* ZVActivityIndicatorView */,
+				DFEFFA2715E793B9E6C54548AC5121E7 /* ZVProgressHUD */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		8BD28214571061BC2A9D038F1510CE82 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0DB66C2EF79C18CCA5ACA929A0AB512B /* ZVActivityIndicatorView.framework */,
+				E15F1ACFD256578A100F6F417C85B976 /* iOS */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		D35AF013A5F0BAD4F32504907A52519E /* iOS */ = {
+		B3922C94841077373B7DC3AB70C038C3 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */,
+				5E0E0F1E253BE4C495F8ED46F27CB971 /* Countries.bundle */,
+				AC6D5060E7DEF794DBB0BEDDCF5E7EBB /* CountriesViewController.storyboard */,
 			);
-			name = iOS;
+			name = Resources;
 			sourceTree = "<group>";
 		};
-		DAE94E4890059CF4418D1F2CCB7E777D /* Products */ = {
+		CAC9C483C89F05C9E6FB675C358BB4BA /* ZVActivityIndicatorView */ = {
 			isa = PBXGroup;
 			children = (
-				1E092F93883EBC94F87F254CE07C10CF /* NKVPhonePicker.framework */,
-				BD5B0E2419762C60EDBB3FA62CC777C1 /* Pods_SocraticaPlus.framework */,
+				A0A03A22126E1A8028BA54AD955247B7 /* ZVActivityIndicatorView.h */,
+				DA8340948D2266DA790385946BDB2D93 /* ZVActivityIndicatorView.swift */,
+				100ADC41134A043404563A7079E13651 /* Support Files */,
 			);
-			name = Products;
+			name = ZVActivityIndicatorView;
+			path = ZVActivityIndicatorView;
+			sourceTree = "<group>";
+		};
+		DFEFFA2715E793B9E6C54548AC5121E7 /* ZVProgressHUD */ = {
+			isa = PBXGroup;
+			children = (
+				5625CAC7E27E712C111EB6F8FA508051 /* IndicatorView.swift */,
+				CE809322A26BD457A94858D888AD39FF /* ProgressView.swift */,
+				81CC1C30419F0A0D49811D25241B61FF /* ZVProgressHUD.h */,
+				FBB93AE0935E0D4563A76B2FA7A93151 /* ZVProgressHUD.swift */,
+				98EDD19E3BD0FF2CF2384423D6A66ADF /* ZVProgressHUD+PF.swift */,
+				F6D315556A1AD50FA64B7EB5AEE40AB3 /* Resources */,
+				2E84BA40012FC43071FC4A2547B66911 /* Support Files */,
+			);
+			name = ZVProgressHUD;
+			path = ZVProgressHUD;
+			sourceTree = "<group>";
+		};
+		E10B050BD9F1E7A16AAF9D6DD34CA083 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				E7AEC00B59D4D68508F354887A1692CB /* Info.plist */,
+				0053468705457671267172B418C3F2FA /* NKVPhonePicker.modulemap */,
+				952BA0AE6838DBE21552E1AF2770E391 /* NKVPhonePicker.xcconfig */,
+				BF51F03118B817EE0D4117DC26323F68 /* NKVPhonePicker-dummy.m */,
+				45C3BC2EB8D06CFCA50EC6D90EE384F8 /* NKVPhonePicker-prefix.pch */,
+				638B908CCFDCE8EBCC1396BA4757678B /* NKVPhonePicker-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/NKVPhonePicker";
+			sourceTree = "<group>";
+		};
+		E15F1ACFD256578A100F6F417C85B976 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				A8F0C69F29CD3879E340617573F11526 /* Foundation.framework */,
+			);
+			name = iOS;
 			sourceTree = "<group>";
 		};
 		E874AA07F81FC5AC73FBE448A5D17465 /* Targets Support Files */ = {
@@ -211,14 +335,51 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
+		F6D315556A1AD50FA64B7EB5AEE40AB3 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				5FB99AB31378E4C4AEEE63E97706FC34 /* Resource.bundle */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		FFDD2355190C3FABACE6D40546114EC5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				05054BCAD5C9768F27881E0CF93C15ED /* NKVPhonePicker.framework */,
+				7E8C9BB8FBF967E15080E220E84D66BA /* Pods_SocraticaPlus.framework */,
+				EB8DB13E7AF955415383BFDE2759FB7F /* ZVActivityIndicatorView.framework */,
+				9303D3486EACFA2AE4B84EB0C647D6B3 /* ZVProgressHUD.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		5621B4F28CDF90A19BE4509FAEEE0B60 /* Headers */ = {
+		6E4D624CF7CBD2CE041C078D506C805A /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FBB4094D0675AC53A9BAB12EEE786C8D /* Pods-SocraticaPlus-umbrella.h in Headers */,
+				C6ED86307B759B0F07E2D99591DEC44E /* ZVProgressHUD-umbrella.h in Headers */,
+				253A7AD889C60B17D5DA131AB154CA00 /* ZVProgressHUD.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BD8756A177D034290B5ABB68CB7A650D /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0C487014890363EF5C7EB149FBDBAFC6 /* ZVActivityIndicatorView-umbrella.h in Headers */,
+				381E36E57925DFB666BB905B80D1AD79 /* ZVActivityIndicatorView.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DE40971FA1BEDEECEBD38C05E2F33EE4 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8A30556A7E9CB4158CBCBBE2A3992725 /* Pods-SocraticaPlus-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -233,6 +394,62 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		17F73366BD17FA34B487484996D68AB4 /* Pods-SocraticaPlus */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 500DB55CDD4B159923A00C8873749BE7 /* Build configuration list for PBXNativeTarget "Pods-SocraticaPlus" */;
+			buildPhases = (
+				85FC90C28271D7F94E23D9AF35A103D6 /* Sources */,
+				CC551299469C8E567BCED8FC6D902506 /* Frameworks */,
+				DE40971FA1BEDEECEBD38C05E2F33EE4 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CB4B65CD0525925E817D5A3EAFBABB22 /* PBXTargetDependency */,
+				613945944AD29BB14FBA98E89EB4CB4E /* PBXTargetDependency */,
+				84F35E43C027368CDC58FA479FF67F36 /* PBXTargetDependency */,
+			);
+			name = "Pods-SocraticaPlus";
+			productName = "Pods-SocraticaPlus";
+			productReference = 7E8C9BB8FBF967E15080E220E84D66BA /* Pods_SocraticaPlus.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		3B0ADB58B6A3D280C55694A146A899D5 /* ZVProgressHUD */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 70C25724EFB19B2617C7B763D8022684 /* Build configuration list for PBXNativeTarget "ZVProgressHUD" */;
+			buildPhases = (
+				93B7EA00DA46F662D7781C2671DF7486 /* Sources */,
+				B7F5265AAB51A71CA45659CC57C8B682 /* Frameworks */,
+				6E4D624CF7CBD2CE041C078D506C805A /* Headers */,
+				FDB19A5170C6AF7E0C5F443EE5B14051 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9B0EA77E997241F24A536E98FEE4DFAD /* PBXTargetDependency */,
+			);
+			name = ZVProgressHUD;
+			productName = ZVProgressHUD;
+			productReference = 9303D3486EACFA2AE4B84EB0C647D6B3 /* ZVProgressHUD.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		45E2D799C1F573E75F16F569BB8E0D66 /* ZVActivityIndicatorView */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4DC2D00E939911AF7FE184C1EC4A7AB2 /* Build configuration list for PBXNativeTarget "ZVActivityIndicatorView" */;
+			buildPhases = (
+				D670435EEEC10050B221A67F74A02B3D /* Sources */,
+				03520D0EA3C74D8322E8F9AEE6A6014E /* Frameworks */,
+				BD8756A177D034290B5ABB68CB7A650D /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ZVActivityIndicatorView;
+			productName = ZVActivityIndicatorView;
+			productReference = EB8DB13E7AF955415383BFDE2759FB7F /* ZVActivityIndicatorView.framework */;
+			productType = "com.apple.product-type.framework";
+		};
 		B95B9283D45368A0FDBCBAF265E9EC17 /* NKVPhonePicker */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 36426FFF19395DB121849EC2F659D497 /* Build configuration list for PBXNativeTarget "NKVPhonePicker" */;
@@ -248,25 +465,7 @@
 			);
 			name = NKVPhonePicker;
 			productName = NKVPhonePicker;
-			productReference = 1E092F93883EBC94F87F254CE07C10CF /* NKVPhonePicker.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		DFD13B8C5A0FE7C22C6C2610AD7D6EAA /* Pods-SocraticaPlus */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = EAD409A2BE35B28F58C9D3EFF2001FBC /* Build configuration list for PBXNativeTarget "Pods-SocraticaPlus" */;
-			buildPhases = (
-				AECD98F9E63787887829088B21CA9ECC /* Sources */,
-				8EA8B6E4B58B6C15E88E896119DC52E4 /* Frameworks */,
-				5621B4F28CDF90A19BE4509FAEEE0B60 /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				3861D5BFD2BC713651973F2FDCE3DB45 /* PBXTargetDependency */,
-			);
-			name = "Pods-SocraticaPlus";
-			productName = "Pods-SocraticaPlus";
-			productReference = BD5B0E2419762C60EDBB3FA62CC777C1 /* Pods_SocraticaPlus.framework */;
+			productReference = 05054BCAD5C9768F27881E0CF93C15ED /* NKVPhonePicker.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -286,12 +485,14 @@
 				en,
 			);
 			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = DAE94E4890059CF4418D1F2CCB7E777D /* Products */;
+			productRefGroup = FFDD2355190C3FABACE6D40546114EC5 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				B95B9283D45368A0FDBCBAF265E9EC17 /* NKVPhonePicker */,
-				DFD13B8C5A0FE7C22C6C2610AD7D6EAA /* Pods-SocraticaPlus */,
+				17F73366BD17FA34B487484996D68AB4 /* Pods-SocraticaPlus */,
+				45E2D799C1F573E75F16F569BB8E0D66 /* ZVActivityIndicatorView */,
+				3B0ADB58B6A3D280C55694A146A899D5 /* ZVProgressHUD */,
 			);
 		};
 /* End PBXProject section */
@@ -306,14 +507,43 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		FDB19A5170C6AF7E0C5F443EE5B14051 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C92D343C6A497807DE9C8F9215712752 /* Resource.bundle in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		AECD98F9E63787887829088B21CA9ECC /* Sources */ = {
+		85FC90C28271D7F94E23D9AF35A103D6 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5EF9B43C427B81B7F41EBB84247BDB8E /* Pods-SocraticaPlus-dummy.m in Sources */,
+				E3BD061348286F3FE26C116A47D56377 /* Pods-SocraticaPlus-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		93B7EA00DA46F662D7781C2671DF7486 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D707FC7C7D5E82567C3B180FA3149A2D /* IndicatorView.swift in Sources */,
+				C3637690BA7D30C43AB2BB0C53616C65 /* ProgressView.swift in Sources */,
+				C973A904AA3ADFBCD550BB2D257D53AB /* ZVProgressHUD+PF.swift in Sources */,
+				9CFE35123FDFC53A6E60B23562D7F91A /* ZVProgressHUD-dummy.m in Sources */,
+				636ECC9BF9C68AA63CB5D312575CCB5C /* ZVProgressHUD.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D670435EEEC10050B221A67F74A02B3D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84CF525CDF58B3F1DA621B0709A7BBDE /* ZVActivityIndicatorView-dummy.m in Sources */,
+				E5E5AD744046CEA7C27C9BB57AB1392E /* ZVActivityIndicatorView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -340,16 +570,34 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		3861D5BFD2BC713651973F2FDCE3DB45 /* PBXTargetDependency */ = {
+		613945944AD29BB14FBA98E89EB4CB4E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = ZVActivityIndicatorView;
+			target = 45E2D799C1F573E75F16F569BB8E0D66 /* ZVActivityIndicatorView */;
+			targetProxy = 6C9E58589793CE976CB242CBCEC0D806 /* PBXContainerItemProxy */;
+		};
+		84F35E43C027368CDC58FA479FF67F36 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = ZVProgressHUD;
+			target = 3B0ADB58B6A3D280C55694A146A899D5 /* ZVProgressHUD */;
+			targetProxy = DB09188810BFF1D0EF354866F54BB08D /* PBXContainerItemProxy */;
+		};
+		9B0EA77E997241F24A536E98FEE4DFAD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = ZVActivityIndicatorView;
+			target = 45E2D799C1F573E75F16F569BB8E0D66 /* ZVActivityIndicatorView */;
+			targetProxy = D65D99A16BADFA6A84428A5B66269E3D /* PBXContainerItemProxy */;
+		};
+		CB4B65CD0525925E817D5A3EAFBABB22 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = NKVPhonePicker;
 			target = B95B9283D45368A0FDBCBAF265E9EC17 /* NKVPhonePicker */;
-			targetProxy = 1F4D1339759D59A57EBAE9447DFAD078 /* PBXContainerItemProxy */;
+			targetProxy = 5982E5299782A22C20C06D3F2048F569 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		3A3437A34EA6F4A1EB1C2EB0713EB5A1 /* Release */ = {
+		18670FFD04A9FC23370933E537D50210 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = E83171CC22955302B031796D935937C1 /* Pods-SocraticaPlus.release.xcconfig */;
 			buildSettings = {
@@ -448,6 +696,172 @@
 			};
 			name = Debug;
 		};
+		6830B5CE73ACD4AA63F93AE96B69CF96 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B67608063C9A24100BE13542DBD9B8B2 /* ZVProgressHUD.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/ZVProgressHUD/ZVProgressHUD-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/ZVProgressHUD/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/ZVProgressHUD/ZVProgressHUD.modulemap";
+				PRODUCT_MODULE_NAME = ZVProgressHUD;
+				PRODUCT_NAME = ZVProgressHUD;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		7C5A5CA3D7C2C245F5EBCCAD3688B3EF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 06CD402406A99AFA38AA5E6BCBE595C5 /* Pods-SocraticaPlus.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-SocraticaPlus/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-SocraticaPlus/Pods-SocraticaPlus.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		873BD6656CE8479987627C528AF2442B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4CA1948BE29B1D918D629C73CBDC0319 /* ZVActivityIndicatorView.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/ZVActivityIndicatorView/ZVActivityIndicatorView-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/ZVActivityIndicatorView/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/ZVActivityIndicatorView/ZVActivityIndicatorView.modulemap";
+				PRODUCT_MODULE_NAME = ZVActivityIndicatorView;
+				PRODUCT_NAME = ZVActivityIndicatorView;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		9FB2363E7AA4948BD710D023B3454AD0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4CA1948BE29B1D918D629C73CBDC0319 /* ZVActivityIndicatorView.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/ZVActivityIndicatorView/ZVActivityIndicatorView-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/ZVActivityIndicatorView/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/ZVActivityIndicatorView/ZVActivityIndicatorView.modulemap";
+				PRODUCT_MODULE_NAME = ZVActivityIndicatorView;
+				PRODUCT_NAME = ZVActivityIndicatorView;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		A271BD70FE6EBDCC8FB9116C9B54F471 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B67608063C9A24100BE13542DBD9B8B2 /* ZVProgressHUD.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/ZVProgressHUD/ZVProgressHUD-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/ZVProgressHUD/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/ZVProgressHUD/ZVProgressHUD.modulemap";
+				PRODUCT_MODULE_NAME = ZVProgressHUD;
+				PRODUCT_NAME = ZVProgressHUD;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
 		AEEA80476F98EB645C4DD53EB2BB6D88 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -508,7 +922,7 @@
 		};
 		B640F3F66EF4A140DC321F348EB66B0B /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9BE8A812B9CD9A72C5171DB84297F04C /* NKVPhonePicker.xcconfig */;
+			baseConfigurationReference = 952BA0AE6838DBE21552E1AF2770E391 /* NKVPhonePicker.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -538,45 +952,9 @@
 			};
 			name = Debug;
 		};
-		F1D14720E07DDFFD6E51D3418D9691EF /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 06CD402406A99AFA38AA5E6BCBE595C5 /* Pods-SocraticaPlus.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-SocraticaPlus/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-SocraticaPlus/Pods-SocraticaPlus.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
 		FA447371C95E2B077E605746F2923E95 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9BE8A812B9CD9A72C5171DB84297F04C /* NKVPhonePicker.xcconfig */;
+			baseConfigurationReference = 952BA0AE6838DBE21552E1AF2770E391 /* NKVPhonePicker.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -628,11 +1006,29 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		EAD409A2BE35B28F58C9D3EFF2001FBC /* Build configuration list for PBXNativeTarget "Pods-SocraticaPlus" */ = {
+		4DC2D00E939911AF7FE184C1EC4A7AB2 /* Build configuration list for PBXNativeTarget "ZVActivityIndicatorView" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				F1D14720E07DDFFD6E51D3418D9691EF /* Debug */,
-				3A3437A34EA6F4A1EB1C2EB0713EB5A1 /* Release */,
+				873BD6656CE8479987627C528AF2442B /* Debug */,
+				9FB2363E7AA4948BD710D023B3454AD0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		500DB55CDD4B159923A00C8873749BE7 /* Build configuration list for PBXNativeTarget "Pods-SocraticaPlus" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7C5A5CA3D7C2C245F5EBCCAD3688B3EF /* Debug */,
+				18670FFD04A9FC23370933E537D50210 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		70C25724EFB19B2617C7B763D8022684 /* Build configuration list for PBXNativeTarget "ZVProgressHUD" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A271BD70FE6EBDCC8FB9116C9B54F471 /* Debug */,
+				6830B5CE73ACD4AA63F93AE96B69CF96 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

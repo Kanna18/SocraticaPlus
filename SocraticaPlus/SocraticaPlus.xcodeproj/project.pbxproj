@@ -27,6 +27,7 @@
 		F67ADBF921676A1B00FD5878 /* CustomLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F67ADBF621676A1B00FD5878 /* CustomLabel.swift */; };
 		F67ADBFC2167779000FD5878 /* CreatePwdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F67ADBFB2167779000FD5878 /* CreatePwdViewController.swift */; };
 		F67ADBFE21677D6300FD5878 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F67ADBFD21677D6300FD5878 /* HomeViewController.swift */; };
+		F6EF318E216A77AC008DA4F5 /* popup.png in Resources */ = {isa = PBXBuildFile; fileRef = F6EF318D216A77AC008DA4F5 /* popup.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -54,6 +55,7 @@
 		F67ADBF621676A1B00FD5878 /* CustomLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomLabel.swift; sourceTree = "<group>"; };
 		F67ADBFB2167779000FD5878 /* CreatePwdViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreatePwdViewController.swift; sourceTree = "<group>"; };
 		F67ADBFD21677D6300FD5878 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		F6EF318D216A77AC008DA4F5 /* popup.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = popup.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -127,6 +129,7 @@
 				F6769C7B21674BE300739EBA /* OTPViewController.swift */,
 				F67ADBFB2167779000FD5878 /* CreatePwdViewController.swift */,
 				F67ADBFD21677D6300FD5878 /* HomeViewController.swift */,
+				F6EF318D216A77AC008DA4F5 /* popup.png */,
 				F6769C6A21672B9100739EBA /* Main.storyboard */,
 				F6769C7021672B9300739EBA /* Assets.xcassets */,
 				F6769C7221672B9300739EBA /* LaunchScreen.storyboard */,
@@ -207,6 +210,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F6EF318E216A77AC008DA4F5 /* popup.png in Resources */,
 				F620E7F9216933EE001FFECC /* OFL.txt in Resources */,
 				F6769C7421672B9300739EBA /* LaunchScreen.storyboard in Resources */,
 				F620E7FA216933EE001FFECC /* Poppins-Regular.ttf in Resources */,
@@ -231,10 +235,14 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-SocraticaPlus/Pods-SocraticaPlus-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/NKVPhonePicker/NKVPhonePicker.framework",
+				"${BUILT_PRODUCTS_DIR}/ZVActivityIndicatorView/ZVActivityIndicatorView.framework",
+				"${BUILT_PRODUCTS_DIR}/ZVProgressHUD/ZVProgressHUD.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/NKVPhonePicker.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ZVActivityIndicatorView.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ZVProgressHUD.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -423,7 +431,10 @@
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = 7CQW6NRRPC;
 				INFOPLIST_FILE = SocraticaPlus/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.damac.salesapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = HelloDamac1;
@@ -441,7 +452,10 @@
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = 7CQW6NRRPC;
 				INFOPLIST_FILE = SocraticaPlus/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.damac.salesapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = HelloDamac1;

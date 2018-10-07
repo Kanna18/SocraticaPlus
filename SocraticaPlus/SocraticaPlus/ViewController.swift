@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import NKVPhonePicker
 
 class ViewController: UIViewController,UITextFieldDelegate {
     @IBOutlet weak var alertBaseView: UIView!    
@@ -14,21 +15,31 @@ class ViewController: UIViewController,UITextFieldDelegate {
     @IBOutlet weak var checkImg: UIImageView!
     @IBOutlet weak var nextBtn: UIButton!
     @IBOutlet weak var checkBtn: CustomButton!
-    @IBOutlet weak var phoneTxtField: CustomTextField!
+    @IBOutlet weak var phoneTxtField: NKVPhonePickerTextField?
     @IBOutlet weak var emailTxtField: CustomTextField!
-
+    @IBOutlet weak var popupImageView: UIImageView!
     var reqEmail: Bool = true
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         customAlertView.dropShadow()
         alertBaseView.isHidden = true
+        self.pickerTextfield()
+//        let tapGe = UITapGestureRecognizer.init(target: self, action: #selector(moveTonextVC))
+//        tapGe.numberOfTapsRequired = 1
+//        tapGe.numberOfTouchesRequired = 1
+//        popupImageView.addGestureRecognizer(tapGe)
     }
+//    @objc func moveTonextVC() {
+//        let otpVC = self.storyboard?.instantiateViewController(withIdentifier: "oTPViewController") as! OTPViewController
+//        self.navigationController?.pushViewController(otpVC, animated: true)
+//    }
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(true)
         self.navigationController?.isNavigationBarHidden = true
     }
-
+    
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
@@ -39,17 +50,28 @@ class ViewController: UIViewController,UITextFieldDelegate {
         let otpVC = self.storyboard?.instantiateViewController(withIdentifier: "oTPViewController") as! OTPViewController
         self.navigationController?.pushViewController(otpVC, animated: true)
     }
+    func pickerTextfield() {
+        phoneTxtField?.phonePickerDelegate = self
+        phoneTxtField?.favoriteCountriesLocaleIdentifiers = ["RU", "ER", "JM"]
+        phoneTxtField?.enablePlusPrefix = true
+        
+        // Setting initial custom country
+        let country = Country.country(for: NKVSource.init(countryCode: "AU"))
+        phoneTxtField?.country = country
+        
+
+    }
     
     @IBAction func nextBtnAction(_ sender: Any) {
         
-        phoneTxtField .resignFirstResponder()
+        phoneTxtField?.resignFirstResponder()
         emailTxtField.resignFirstResponder()
-        guard let text = phoneTxtField.text, !text.isEmpty else {
+        guard let text = phoneTxtField?.text, !text.isEmpty else {
             
             return
         }
         
-        if(!(phoneTxtField.text?.isPhoneNumber)!)
+        if(!(phoneTxtField?.phoneNumber?.isPhoneNumber)!)
         {
             let alert = UIAlertController.init(title: "", message: "Please enter valid phone number", preferredStyle: UIAlertControllerStyle.alert)
             let okAction = UIAlertAction.init(title: "Ok", style: .default) { (alert) in
@@ -114,10 +136,14 @@ class ViewController: UIViewController,UITextFieldDelegate {
             checkBtn.isSelected = false
             checkImg.isHighlighted = true
             reqEmail = false
+            emailTxtField.isEnabled = false
+//            emailTxtField.backgroundColor = UIColor.lightGray
         }else {
             checkBtn.isSelected = true
             checkImg.isHighlighted = false
             reqEmail = true
+            emailTxtField.isEnabled = true
+            emailTxtField.backgroundColor = UIColor.clear
         }
     }
     
@@ -125,17 +151,17 @@ class ViewController: UIViewController,UITextFieldDelegate {
     {
         return true
     }
-    func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
-        if textField == phoneTxtField
-        {
-            let maxLength = 13
-            let currentString: NSString = textField.text! as NSString
-            let newString: NSString =
-                currentString.replacingCharacters(in: range, with: string) as NSString
-            return newString.length <= maxLength
-        }
-       return true
-    }
+//    func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
+//        if textField == phoneTxtField
+//        {
+//            let maxLength = 13
+//            let currentString: NSString = (phoneTxtField?.phoneNumber)! as NSString
+//            let newString: NSString =
+//                currentString.replacingCharacters(in: range, with: string) as NSString
+//            return newString.length <= maxLength
+//        }
+//       return true
+//    }
     
     
 }
@@ -177,7 +203,7 @@ extension UIView {
         layer.shadowColor = UIColor.lightGray.cgColor
         layer.shadowOpacity = 0.8
         layer.shadowRadius = 3.0
-        layer.shadowOffset = CGSize.init(width: 2.0, height: 2.0)
+        layer.shadowOffset = CGSize.init(width: 3.0, height: 3.0)
         
         
 //        layer.cornerRadius = 20

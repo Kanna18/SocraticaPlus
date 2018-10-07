@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import ZVProgressHUD
 
 class CreatePwdViewController: UIViewController,UITextFieldDelegate {
 
@@ -16,6 +17,7 @@ class CreatePwdViewController: UIViewController,UITextFieldDelegate {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        ZVProgressHUD.displayStyle = .dark
     }
 
     override func didReceiveMemoryWarning() {
@@ -26,11 +28,11 @@ class CreatePwdViewController: UIViewController,UITextFieldDelegate {
     @IBAction func nextBtnAction(_ sender: Any) {
         
         guard let text = pwdTxtField.text, !text.isEmpty else {
-            
+            ZVProgressHUD.showWarning(with: "password field shoud not be empty")
             return
         }
         guard let text1 = confirmPwdTxtField.text, !text1.isEmpty else {
-            
+            ZVProgressHUD.showWarning(with: "confirm password filed  shoud not be empty")
             return
         }
         if pwdTxtField.text != confirmPwdTxtField.text
@@ -47,6 +49,7 @@ class CreatePwdViewController: UIViewController,UITextFieldDelegate {
             let homeVC = self.storyboard?.instantiateViewController(withIdentifier: "homeViewController") as! HomeViewController
             self.navigationController?.pushViewController(homeVC, animated: true)
         }
+        
     }
     
     /*
