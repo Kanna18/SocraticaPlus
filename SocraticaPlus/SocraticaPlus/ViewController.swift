@@ -7,7 +7,6 @@
 //
 
 import UIKit
-import NKVPhonePicker
 
 class ViewController: UIViewController,UITextFieldDelegate {
     @IBOutlet weak var alertBaseView: UIView!    
@@ -15,9 +14,11 @@ class ViewController: UIViewController,UITextFieldDelegate {
     @IBOutlet weak var checkImg: UIImageView!
     @IBOutlet weak var nextBtn: UIButton!
     @IBOutlet weak var checkBtn: CustomButton!
-    @IBOutlet weak var phoneTxtField: NKVPhonePickerTextField?
+    @IBOutlet weak var phoneTxtField: NKVPhonePickerTextField!
     @IBOutlet weak var emailTxtField: CustomTextField!
     @IBOutlet weak var popupImageView: UIImageView!
+    
+    
     var reqEmail: Bool = true
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -29,6 +30,8 @@ class ViewController: UIViewController,UITextFieldDelegate {
 //        tapGe.numberOfTapsRequired = 1
 //        tapGe.numberOfTouchesRequired = 1
 //        popupImageView.addGestureRecognizer(tapGe)
+        self.navigationController?.isNavigationBarHidden = true
+        self.title = "Registration"
     }
 //    @objc func moveTonextVC() {
 //        let otpVC = self.storyboard?.instantiateViewController(withIdentifier: "oTPViewController") as! OTPViewController
@@ -36,10 +39,11 @@ class ViewController: UIViewController,UITextFieldDelegate {
 //    }
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(true)
-        self.navigationController?.isNavigationBarHidden = true
     }
     
-    
+    @IBAction func backButtonClick(_ sender: Any) {
+        self.navigationController?.popViewController(animated: true)
+    }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
@@ -51,15 +55,15 @@ class ViewController: UIViewController,UITextFieldDelegate {
         self.navigationController?.pushViewController(otpVC, animated: true)
     }
     func pickerTextfield() {
-        phoneTxtField?.phonePickerDelegate = self
-        phoneTxtField?.favoriteCountriesLocaleIdentifiers = ["RU", "ER", "JM"]
-        phoneTxtField?.enablePlusPrefix = true
         
+        phoneTxtField.phonePickerDelegate = self
+//        phoneTxtField.favoriteCountriesLocaleIdentifiers = ["RU", "ER", "JM"]
+        phoneTxtField.enablePlusPrefix = true
         // Setting initial custom country
-        let country = Country.country(for: NKVSource.init(countryCode: "AU"))
+        let country = Country.country(for: NKVSource.init(countryCode: Locale.isoCurrencyCodes[0]))
         phoneTxtField?.country = country
+        phoneTxtField.shouldScrollToSelectedCountry = true
         
-
     }
     
     @IBAction func nextBtnAction(_ sender: Any) {
@@ -117,18 +121,17 @@ class ViewController: UIViewController,UITextFieldDelegate {
     }
     private func otpAlert()
     {
-        UIView.animate(withDuration: 0.3) {
-            self.alertBaseView.isHidden = false
-        }
-//        UIView.transition(from: self.view, to: alertBaseView, duration: 0.2, options:.curveEaseOut, completion: nil)
-//        let alert = UIAlertController.init(title: "", message: "A verification code has been sent to your mobile number please enter the number to continue ", preferredStyle: UIAlertControllerStyle.alert)
-//        let okAction = UIAlertAction.init(title: "OK", style: .default) { (alert) in
-//
-//            let otpVC = self.storyboard?.instantiateViewController(withIdentifier: "oTPViewController") as! OTPViewController
-//            self.navigationController?.pushViewController(otpVC, animated: true)
+//        UIView.animate(withDuration: 0.3) {
+//            self.alertBaseView.isHidden = false
 //        }
-//        alert.addAction(okAction)
-//        self.present(alert, animated: true, completion: nil)
+        let alert = UIAlertController.init(title: "", message: "A verification code has been sent to your mobile number please enter the number to continue ", preferredStyle: UIAlertControllerStyle.alert)
+        let okAction = UIAlertAction.init(title: "OK", style: .default) { (alert) in
+
+            let otpVC = self.storyboard?.instantiateViewController(withIdentifier: "oTPViewController") as! OTPViewController
+            self.navigationController?.pushViewController(otpVC, animated: true)
+        }
+        alert.addAction(okAction)
+        self.present(alert, animated: true, completion: nil)
     }
     @IBAction func checkBtnAction(_ sender: Any) {
         
@@ -163,7 +166,9 @@ class ViewController: UIViewController,UITextFieldDelegate {
 //       return true
 //    }
     
-    
+    override open func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {        
+        self.view.endEditing(true)
+    }
 }
 extension String {
     var isPhoneNumber: Bool {
@@ -190,7 +195,10 @@ extension String {
             return false
         }
     }
+
+
 }
+
 
 extension UIView {
     
@@ -232,5 +240,6 @@ extension UIView {
         layer.shouldRasterize = true
         layer.rasterizationScale = scale ? UIScreen.main.scale : 1
     }
+    
 }
 

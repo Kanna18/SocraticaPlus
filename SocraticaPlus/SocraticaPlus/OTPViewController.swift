@@ -7,9 +7,11 @@
 //
 
 import UIKit
+import ZVProgressHUD
 
 class OTPViewController: UIViewController {
-
+   
+    
     @IBOutlet weak var otpTextFied: UITextField!
     
     
@@ -29,9 +31,18 @@ class OTPViewController: UIViewController {
             return
         }
         
+        guard text == "123456" else{
+            ZVProgressHUD.showError(with: "Please enter valid OTP", in: self.view, delay: 0.0)
+           return
+        }
+        
         let createPwdVC = self.storyboard?.instantiateViewController(withIdentifier: "createPwdViewController") as! CreatePwdViewController
         self.navigationController?.pushViewController(createPwdVC, animated: true)
         
+    }
+    @IBAction func backClick(_ sender: Any) {
+        
+        self.navigationController?.popViewController(animated: true)
     }
     
     @IBAction func resendOTPBtnAction(_ sender: Any) {
@@ -46,8 +57,11 @@ class OTPViewController: UIViewController {
     }
     override func viewDidLoad() {
         super.viewDidLoad()
+        ZVProgressHUD.displayStyle = .dark
+        ZVProgressHUD.animationType = .native
 
         // Do any additional setup after loading the view.
+        self.title = "OTP"
     }
 
     override func didReceiveMemoryWarning() {

@@ -7,12 +7,12 @@
 
 import UIKit
 
-public protocol CountriesViewControllerDelegate {
+@objc public protocol CountriesViewControllerDelegate {
     func countriesViewControllerDidCancel(_ sender: CountriesViewController)
     func countriesViewController(_ sender: CountriesViewController, didSelectCountry country: Country)
 }
 
-public final class CountriesViewController: UITableViewController {
+public class CountriesViewController: UITableViewController {
     @IBOutlet public weak var cancelBarButtonItem: UIBarButtonItem!
     @IBOutlet public weak var countriesVCNavigationItem: UINavigationItem!
    
@@ -21,7 +21,7 @@ public final class CountriesViewController: UITableViewController {
     /// A class function for retrieving standart controller for picking countries.
     ///
     /// - Returns: Instance of the country picker controller.
-    public class func standardController() -> CountriesViewController {
+    @objc public class func standardController() -> CountriesViewController {
         return UIStoryboard(name: "CountriesViewController", bundle: Bundle(for: self)).instantiateViewController(withIdentifier: "CountryPickerVC") as! CountriesViewController
     }
     
@@ -38,7 +38,7 @@ public final class CountriesViewController: UITableViewController {
     public var shouldScrollToSelectedCountry: Bool = true
 
     /// A delegate for <CountriesViewControllerDelegate>.
-    public var delegate: CountriesViewControllerDelegate?
+    @objc public var delegate: CountriesViewControllerDelegate?
 
     /// The current selected country.
     public var selectedCountry: Country?
@@ -97,7 +97,6 @@ public final class CountriesViewController: UITableViewController {
         searchController.delegate = self
         searchController.searchResultsUpdater = self
         searchController.dimsBackgroundDuringPresentation = false
-        searchController.searchBar.delegate = self
         searchController.searchBar.sizeToFit()
         searchController.searchBar.searchBarStyle = .minimal
         searchController.searchBar.tintColor = UIColor.black
@@ -139,80 +138,147 @@ public final class CountriesViewController: UITableViewController {
         }
         return sortedSections
     }
+    
+        public override func numberOfSections(in tableView: UITableView) -> Int {
+            return filteredCountries.count
+        }
+        
+        public override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+            return filteredCountries[section].count
+        }
+        
+        public  override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+            let cell = self.tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath as IndexPath)
+            
+            let country = filteredCountries[indexPath.section][indexPath.row]
+            
+            cell.textLabel?.text = country.name
+            cell.textLabel?.adjustsFontSizeToFitWidth = true
+            cell.textLabel?.minimumScaleFactor = 0.5
+            
+            cell.detailTextLabel?.text = "+" + country.phoneExtension
+            
+            // Setting custom font
+            if let cellsFont = cellsFont {
+                cell.textLabel?.font = cellsFont
+                cell.detailTextLabel?.font = cellsFont
+            }
+            
+            cell.imageView?.image = country.flag
+            cell.imageView?.contentMode = .scaleAspectFit
+            cell.imageView?.clipsToBounds = true
+            cell.imageView?.layer.cornerRadius = 3
+            cell.imageView?.transform = CGAffineTransform(scaleX: 0.8, y: 0.8)
+            
+            cell.accessoryType = .none
+            if let selectedCountry = selectedCountry, country == selectedCountry {
+                cell.accessoryType = .checkmark
+            }
+            
+            return cell
+        }
+        
+        // Sections headers
+        public override func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+            let countries = filteredCountries[section]
+            if countries.isEmpty {
+                return nil
+            }
+            if section == 0 {
+                return ""
+            }
+            return UILocalizedIndexedCollation.current().sectionTitles[section - 1]
+        }
+        
+        // Indexes
+        public override func sectionIndexTitles(for tableView: UITableView) -> [String]? {
+            return searchController.isActive ? nil : UILocalizedIndexedCollation.current().sectionTitles
+        }
+        
+        public override func tableView(_ tableView: UITableView, sectionForSectionIndexTitle title: String, at index: Int) -> Int {
+            return UILocalizedIndexedCollation.current().section(forSectionIndexTitle: index + 1)
+        }
+    
+        public override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+            tableView.deselectRow(at: indexPath, animated: true)
+            delegate?.countriesViewController(self, didSelectCountry: filteredCountries[indexPath.section][indexPath.row])
+            searchController.isActive = false
+            self.dismiss(animated: true, completion: nil)
+        }
 }
 
 // MARK: - TableView Data Source
-extension CountriesViewController {
-    public override func numberOfSections(in tableView: UITableView) -> Int {
-        return filteredCountries.count
-    }
-    
-    public override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return filteredCountries[section].count
-    }
-    
-    public  override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = self.tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath as IndexPath)
-        
-        let country = filteredCountries[indexPath.section][indexPath.row]
-        
-        cell.textLabel?.text = country.name
-        cell.textLabel?.adjustsFontSizeToFitWidth = true
-        cell.textLabel?.minimumScaleFactor = 0.5
-        
-        cell.detailTextLabel?.text = "+" + country.phoneExtension
-        
-        // Setting custom font
-        if let cellsFont = cellsFont {
-            cell.textLabel?.font = cellsFont
-            cell.detailTextLabel?.font = cellsFont
-        }
-
-        cell.imageView?.image = country.flag
-        cell.imageView?.contentMode = .scaleAspectFit
-        cell.imageView?.clipsToBounds = true
-        cell.imageView?.layer.cornerRadius = 3
-        cell.imageView?.transform = CGAffineTransform(scaleX: 0.8, y: 0.8)
-        
-        cell.accessoryType = .none
-        if let selectedCountry = selectedCountry, country == selectedCountry {
-            cell.accessoryType = .checkmark
-        }
-        
-        return cell
-    }
-    
-    // Sections headers
-    public override func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
-        let countries = filteredCountries[section]
-        if countries.isEmpty {
-            return nil
-        }
-        if section == 0 {
-            return ""
-        }
-        return UILocalizedIndexedCollation.current().sectionTitles[section - 1]
-    }
-    
-    // Indexes
-    public override func sectionIndexTitles(for tableView: UITableView) -> [String]? {
-        return searchController.isActive ? nil : UILocalizedIndexedCollation.current().sectionTitles
-    }
-    
-    public override func tableView(_ tableView: UITableView, sectionForSectionIndexTitle title: String, at index: Int) -> Int {
-        return UILocalizedIndexedCollation.current().section(forSectionIndexTitle: index + 1)
-    }
-}
-
-// MARK: TableView Delegate
-extension CountriesViewController {
-    public override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        tableView.deselectRow(at: indexPath, animated: true)
-        delegate?.countriesViewController(self, didSelectCountry: filteredCountries[indexPath.section][indexPath.row])
-        if searchController.isActive { searchController.dismiss(animated: false, completion: nil) }
-        self.dismiss(animated: true, completion: nil)
-    }
-}
+//extension CountriesViewController {
+//    public override func numberOfSections(in tableView: UITableView) -> Int {
+//        return filteredCountries.count
+//    }
+//
+//    public override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+//        return filteredCountries[section].count
+//    }
+//
+//    public  override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+//        let cell = self.tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath as IndexPath)
+//
+//        let country = filteredCountries[indexPath.section][indexPath.row]
+//
+//        cell.textLabel?.text = country.name
+//        cell.textLabel?.adjustsFontSizeToFitWidth = true
+//        cell.textLabel?.minimumScaleFactor = 0.5
+//
+//        cell.detailTextLabel?.text = "+" + country.phoneExtension
+//
+//        // Setting custom font
+//        if let cellsFont = cellsFont {
+//            cell.textLabel?.font = cellsFont
+//            cell.detailTextLabel?.font = cellsFont
+//        }
+//
+//        cell.imageView?.image = country.flag
+//        cell.imageView?.contentMode = .scaleAspectFit
+//        cell.imageView?.clipsToBounds = true
+//        cell.imageView?.layer.cornerRadius = 3
+//        cell.imageView?.transform = CGAffineTransform(scaleX: 0.8, y: 0.8)
+//
+//        cell.accessoryType = .none
+//        if let selectedCountry = selectedCountry, country == selectedCountry {
+//            cell.accessoryType = .checkmark
+//        }
+//
+//        return cell
+//    }
+//
+//    // Sections headers
+//    public override func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+//        let countries = filteredCountries[section]
+//        if countries.isEmpty {
+//            return nil
+//        }
+//        if section == 0 {
+//            return ""
+//        }
+//        return UILocalizedIndexedCollation.current().sectionTitles[section - 1]
+//    }
+//
+//    // Indexes
+//    public override func sectionIndexTitles(for tableView: UITableView) -> [String]? {
+//        return searchController.isActive ? nil : UILocalizedIndexedCollation.current().sectionTitles
+//    }
+//
+//    public override func tableView(_ tableView: UITableView, sectionForSectionIndexTitle title: String, at index: Int) -> Int {
+//        return UILocalizedIndexedCollation.current().section(forSectionIndexTitle: index + 1)
+//    }
+//}
+//
+//// MARK: TableView Delegate
+//extension CountriesViewController {
+//    public override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+//        tableView.deselectRow(at: indexPath, animated: true)
+//        delegate?.countriesViewController(self, didSelectCountry: filteredCountries[indexPath.section][indexPath.row])
+//        searchController.isActive = false
+//        self.dismiss(animated: true, completion: nil)
+//    }
+//}
 
 // MARK: - Search
 extension CountriesViewController: UISearchControllerDelegate {
@@ -248,13 +314,6 @@ extension CountriesViewController: UISearchResultsUpdating {
             }
             filteredCountries.insert([], at: 0) //Empty section for our favorites
         }
-        tableView.reloadData()
-    }
-}
-
-extension CountriesViewController: UISearchBarDelegate {
-    public func searchBarTextDidEndEditing(_ searchBar: UISearchBar) {
-        filteredCountries = unfilteredCountries
         tableView.reloadData()
     }
 }

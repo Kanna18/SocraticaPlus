@@ -1,32 +1,20 @@
 PODS:
-  - NKVPhonePicker (2.0.1)
   - ZVActivityIndicatorView (0.1.2)
   - ZVProgressHUD (2.0.0):
     - ZVActivityIndicatorView
 
 DEPENDENCIES:
-  - NKVPhonePicker
-  - ZVProgressHUD (from `https://github.com/zevwings/ZVProgressHUD.git`)
+  - ZVProgressHUD
 
 SPEC REPOS:
   https://github.com/CocoaPods/Specs.git:
-    - NKVPhonePicker
     - ZVActivityIndicatorView
-
-EXTERNAL SOURCES:
-  ZVProgressHUD:
-    :git: https://github.com/zevwings/ZVProgressHUD.git
-
-CHECKOUT OPTIONS:
-  ZVProgressHUD:
-    :commit: cb37a61400ddc7e7a90f4f4f75e287d87fb6f27e
-    :git: https://github.com/zevwings/ZVProgressHUD.git
+    - ZVProgressHUD
 
 SPEC CHECKSUMS:
-  NKVPhonePicker: 736e64165a7d873380608178d7ccd988b88268ed
   ZVActivityIndicatorView: 14668601b0616d2b749004d8fa42913fc813e151
   ZVProgressHUD: b90892e51d56fb6dd03f8147f158594450ce354c
 
-PODFILE CHECKSUM: fdc3184aaf248300c448fe5be75a61f54b1595d1
+PODFILE CHECKSUM: fddb7e05602c9d1744cf6fd2cd8428e8f9e1087e
 
 COCOAPODS: 1.5.0

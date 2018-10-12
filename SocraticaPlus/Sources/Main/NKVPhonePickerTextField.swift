@@ -17,6 +17,12 @@ open class NKVPhonePickerTextField: TextFieldPatternFormat {
     /// Set this property in order to present the CountryPickerViewController
     /// when user clicks on the flag button
     @IBOutlet public weak var phonePickerDelegate: UIViewController?
+    
+    /// Use this var for setting priority of countries when they have the same phone extension
+    /// Ex:
+    ///
+    ///     NKVPhonePickerTextField.samePhoneExtensionCountryPriorities = ["1": "US"]
+    public static var samePhoneExtensionCountryPriorities: [String: String]?
 
     /// Use this var for setting countries in the top of the tableView
     /// Ex:
@@ -28,7 +34,7 @@ open class NKVPhonePickerTextField: TextFieldPatternFormat {
     /// Ex:
     ///
     ///     textField.customPhoneFormats = ["RU" : "# ### ### ## ##", "GB": "# #### #########"]
-    public var customPhoneFormats: [String: String]?
+    public var customPhoneFormats: [String: String]? { didSet { presenter.didSetCustomPhoneFormats() } }
     
     /// Set to 'false' if you don't need the '+' prefix to be visible
     public var enablePlusPrefix: Bool = true { didSet { presenter.plusPrefix(on: enablePlusPrefix) } }
@@ -38,6 +44,9 @@ open class NKVPhonePickerTextField: TextFieldPatternFormat {
     
     /// Set to true for languages where flag and + must be at the right. For example for Arabic.
     public var rightToLeftOrientation: Bool = false { didSet { presenter.isRightToLeftMode(on: rightToLeftOrientation) } }
+    
+    /// If true the flag icon and country can be changed only by code. For ex: topTextField.country = Country.country(for: NKVSource(countryCode: "EG"))
+    public var isFlagFixed: Bool = false
     
     // MARK: - Get
     
@@ -243,7 +252,9 @@ open class NKVPhonePickerTextField: TextFieldPatternFormat {
 
 extension NKVPhonePickerTextField: CountriesViewControllerDelegate {
     public func countriesViewController(_ sender: CountriesViewController, didSelectCountry country: Country) {
-        self.country = country
+        if isFlagFixed == false {
+            self.country = country
+        }
     }
     
     open func countriesViewControllerDidCancel(_ sender: CountriesViewController) {
@@ -253,7 +264,7 @@ extension NKVPhonePickerTextField: CountriesViewControllerDelegate {
 
 extension NKVPhonePickerTextField: UITextFieldDelegate {
     @objc fileprivate func textFieldDidChange() {
-        if let newString = self.text {
+        if let newString = self.text, isFlagFixed == false {
             if newString.count == 1 || newString.count == 0 {
                 self.setFlag(source: NKVSource(country: Country.empty))
             }

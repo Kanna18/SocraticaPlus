@@ -143,12 +143,10 @@ strip_invalid_archs() {
 
 
 if [[ "$CONFIGURATION" == "Debug" ]]; then
-  install_framework "${BUILT_PRODUCTS_DIR}/NKVPhonePicker/NKVPhonePicker.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/ZVActivityIndicatorView/ZVActivityIndicatorView.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/ZVProgressHUD/ZVProgressHUD.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
-  install_framework "${BUILT_PRODUCTS_DIR}/NKVPhonePicker/NKVPhonePicker.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/ZVActivityIndicatorView/ZVActivityIndicatorView.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/ZVProgressHUD/ZVProgressHUD.framework"
 fi
