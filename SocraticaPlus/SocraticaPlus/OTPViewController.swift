@@ -120,7 +120,12 @@ class OTPViewController: UIViewController {
         }
         alert.addAction(okAction)
         self.present(alert, animated: true, completion: nil)
-        
+        if(isForgotPasswordOTP){
+         self.resendOTPforForgotPassword()
+        }
+        if(isRegistrationOTP){
+            self.resendOTPforRegistrarion()
+        }
     }
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -146,6 +151,30 @@ class OTPViewController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
+    
+    func resendOTPforForgotPassword() {
+        let url = "\(ServiceDataConst.kForgotPassword)"
+        let requestURL = URL.init(string: url);
+        var request = URLRequest.init(url: requestURL!)
+        
+        let json = "{\"phoneNumber\":\"\(phoneNumberWhileForgot)\",\"isParentLogin\":\"\(true)\"}"
+        request.httpBody = json.data(using: .utf8)
+        SocraticaWebserviceCalls().sendPOST(request, withSuccess: { (data) in
+            guard let data = data else {
+                print("Error: No data to decode")
+                return
+            }
+            do{
+                let myDict = try JSONSerialization.jsonObject(with: data, options: []) as? [String : AnyObject]
+                print(myDict!)
+            }catch{
+                print("Error")
+            }
+        }) { (error) in
+            print(error?.localizedDescription as Any)
+            
+        }
+    }
     
     func resendOTPforRegistrarion() {
         let url = "\(ServiceDataConst.kParentRegistration)"

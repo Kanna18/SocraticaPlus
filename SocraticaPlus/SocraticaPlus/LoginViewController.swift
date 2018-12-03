@@ -83,7 +83,7 @@ class LoginViewController: UIViewController {
             do{
                 let myDict = try JSONSerialization.jsonObject(with: data, options: []) as? [String : AnyObject]
                 print(myDict!)
-                self.movetoTabbarAfterSuccessfulllogin(dict: myDict!)
+                self.perform(#selector(self.movetoTabbarAfterSuccessfulllogin(dict:)), on: .main, with: myDict, waitUntilDone: true)
             }catch{
                 print("Error")
             }
@@ -93,10 +93,10 @@ class LoginViewController: UIViewController {
         }
     }
     
-    func movetoTabbarAfterSuccessfulllogin(dict : Dictionary<String, AnyObject>) {
+    @objc func movetoTabbarAfterSuccessfulllogin(dict : Dictionary<String, AnyObject>) {
         
-        let boolVal = dict["status"] as! Bool
-        if(boolVal){
+        let boolVal = dict["token"]
+        if(boolVal != nil){
             let tabB = self.storyboard?.instantiateViewController(withIdentifier: "myTabBar") as! UITabBarController
             self.navigationController?.pushViewController(tabB, animated: true)
             let defa = UserDefaults.standard
