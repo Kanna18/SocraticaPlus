@@ -52,17 +52,13 @@ class LoginViewController: UIViewController {
             ZVProgressHUD.showError(with: "Please enter a valid phone number", in: self.view, delay: 0.0)
             return
         }
-        guard let password = passwordTF.text, password == "123456" else {
+        guard let password = passwordTF.text, !password.isEmpty else {
             ZVProgressHUD.showError(with: "Please enter a valid password", in: self.view, delay: 0.0)
             return
         }
         
-        
-        let tabB = self.storyboard?.instantiateViewController(withIdentifier: "myTabBar") as! UITabBarController
-        self.navigationController?.pushViewController(tabB, animated: true)
-        
-        
-        
+        self.loginParentFunction(a: "+\(phoneNum)", b: password)
+
     }
     @IBAction func forgotpasswordClick(_ sender: Any) {
     }
@@ -70,6 +66,47 @@ class LoginViewController: UIViewController {
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         self.view.endEditing(true)
     }
+    
+    
+    func loginParentFunction(a: String, b: String) {
+        let url = "\(ServiceDataConst.kParentLogin)"
+        let requestURL = URL.init(string: url);
+        var request = URLRequest.init(url: requestURL!)
+        
+         let json = "{\"phoneNumber\":\"\(a)\",\"password\":\"\(b)\",\"isParentLogin\":\"\(true)\"}"        
+        request.httpBody = json.data(using: .utf8)
+        SocraticaWebserviceCalls().sendPOST(request, withSuccess: { (data) in
+            guard let data = data else {
+                print("Error: No data to decode")
+                return
+            }
+            do{
+                let myDict = try JSONSerialization.jsonObject(with: data, options: []) as? [String : AnyObject]
+                print(myDict!)
+                self.movetoTabbarAfterSuccessfulllogin(dict: myDict!)
+            }catch{
+                print("Error")
+            }
+        }) { (error) in
+            print(error?.localizedDescription as Any)
+            
+        }
+    }
+    
+    func movetoTabbarAfterSuccessfulllogin(dict : Dictionary<String, AnyObject>) {
+        
+        let boolVal = dict["status"] as! Bool
+        if(boolVal){
+            let tabB = self.storyboard?.instantiateViewController(withIdentifier: "myTabBar") as! UITabBarController
+            self.navigationController?.pushViewController(tabB, animated: true)
+            let defa = UserDefaults.standard
+            defa.set(phoneTextField.text , forKey: savedPhoneNumber)
+            defa.set(passwordTF.text , forKey: savedPassword)
+        }else{
+            ZVProgressHUD.showText(dict["message"] as! String)
+        }
+    }
+    
 
 
 }

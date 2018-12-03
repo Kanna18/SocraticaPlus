@@ -7,8 +7,11 @@
 //
 
 import UIKit
+import ZVProgressHUD
+
 
 class ViewController: UIViewController,UITextFieldDelegate {
+    
     @IBOutlet weak var alertBaseView: UIView!    
     @IBOutlet weak var customAlertView: UIView!
     @IBOutlet weak var checkImg: UIImageView!
@@ -16,7 +19,7 @@ class ViewController: UIViewController,UITextFieldDelegate {
     @IBOutlet weak var checkBtn: CustomButton!
     @IBOutlet weak var phoneTxtField: NKVPhonePickerTextField!
     @IBOutlet weak var emailTxtField: CustomTextField!
-    @IBOutlet weak var popupImageView: UIImageView!
+    @IBOutlet weak var popupImageView: UIImageView!    
     
     
     var reqEmail: Bool = true
@@ -33,10 +36,7 @@ class ViewController: UIViewController,UITextFieldDelegate {
         self.navigationController?.isNavigationBarHidden = true
         self.title = "Registration"
     }
-//    @objc func moveTonextVC() {
-//        let otpVC = self.storyboard?.instantiateViewController(withIdentifier: "oTPViewController") as! OTPViewController
-//        self.navigationController?.pushViewController(otpVC, animated: true)
-//    }
+
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(true)
     }
@@ -75,59 +75,63 @@ class ViewController: UIViewController,UITextFieldDelegate {
             return
         }
         
-        if(!(phoneTxtField?.phoneNumber?.isPhoneNumber)!)
-        {
-            let alert = UIAlertController.init(title: "", message: "Please enter valid phone number", preferredStyle: UIAlertControllerStyle.alert)
-            let okAction = UIAlertAction.init(title: "Ok", style: .default) { (alert) in
-
-            }
-            alert.addAction(okAction)
-            self.present(alert, animated: true, completion: nil)
+        
+        guard let phoneNumberText = phoneTxtField.phoneNumber , phoneNumberText.isPhoneNumber  else {
+            ZVProgressHUD.showText("Please enter a valid phone number")
             return
         }
-        else
-        {
-            if !reqEmail
-            {
-                self.otpAlert()
-                return
-            }
-            guard let text = emailTxtField.text, !text.isEmpty else {
-                
-                let alert = UIAlertController.init(title: "", message: "Please enter email", preferredStyle: UIAlertControllerStyle.alert)
-                let okAction = UIAlertAction.init(title: "Ok", style: .default) { (alert) in
-                    
-                    
-                }
-                alert.addAction(okAction)
-                self.present(alert, animated: true, completion: nil)
-                return
-            }
-            
-            if(!(emailTxtField.text?.isValidEmail)!)
-            {
-                let alert = UIAlertController.init(title: "", message: "Please enter valid email", preferredStyle: UIAlertControllerStyle.alert)
-                let okAction = UIAlertAction.init(title: "Ok", style: .default) { (alert) in
-                    
-                    
-                }
-                alert.addAction(okAction)
-                self.present(alert, animated: true, completion: nil)
-                return
-            }
+        guard let passwordtext = emailTxtField.text, passwordtext.isValidPassword else {
+            ZVProgressHUD.showText("Please should contain atleast 6 letters")
+         return
         }
-       self.otpAlert()
-        
+        self.loParentFunction(a: "+\(phoneNumberText)", b: passwordtext)
+        ZVProgressHUD.showProgress(0.0)
     }
-    private func otpAlert()
+    
+    func loParentFunction(a: String, b: String) {
+        let url = "\(ServiceDataConst.kParentRegistration)"
+        let requestURL = URL.init(string: url);
+        var request = URLRequest.init(url: requestURL!)
+        
+        let json = "{\"phoneNumber\":\"\(a)\",\"password\":\"\(b)\",\"isParentLogin\":\"\(true)\"}"
+        request.httpBody = json.data(using: .utf8)
+        SocraticaWebserviceCalls().sendPOST(request, withSuccess: { (data) in
+            guard let data = data else {
+                print("Error: No data to decode")
+                return
+            }
+            do{
+                let myDict = try JSONSerialization.jsonObject(with: data, options: []) as? [String : AnyObject]
+                print(myDict!)
+                SocraticaSharedClass.shared.registrationDict = myDict!
+                if((myDict!["status"] as! Bool) == true){
+                    
+                    self.perform(#selector(self.otpAlert), on: .main, with: nil, waitUntilDone: true)
+                }else{
+                    ZVProgressHUD.showText(myDict!["message"] as! String)
+                }
+                
+            }catch{
+                print("Error")
+            }
+        }) { (error) in
+            print(error?.localizedDescription as Any)
+        }
+    }
+    
+   @objc private func otpAlert()
     {
 //        UIView.animate(withDuration: 0.3) {
 //            self.alertBaseView.isHidden = false
 //        }
+        ZVProgressHUD.dismiss()
         let alert = UIAlertController.init(title: "", message: "A verification code has been sent to your mobile number please enter the number to continue ", preferredStyle: UIAlertControllerStyle.alert)
         let okAction = UIAlertAction.init(title: "OK", style: .default) { (alert) in
 
             let otpVC = self.storyboard?.instantiateViewController(withIdentifier: "oTPViewController") as! OTPViewController
+            otpVC.passwordWhileRegistration = self.emailTxtField.text!
+            otpVC.isRegistrationOTP = true
+            otpVC.phoneNumberWhileForgot = "+\(self.phoneTxtField.phoneNumber!)"
             self.navigationController?.pushViewController(otpVC, animated: true)
         }
         alert.addAction(okAction)
@@ -195,8 +199,14 @@ extension String {
             return false
         }
     }
-
-
+    var isValidPassword : Bool {
+            let result = self.count
+            if( result >= 6){
+            return true
+            }else{
+                return false
+        }
+    }
 }
 
 

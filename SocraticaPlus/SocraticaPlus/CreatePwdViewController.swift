@@ -11,6 +11,9 @@ import ZVProgressHUD
 
 class CreatePwdViewController: UIViewController,UITextFieldDelegate {
 
+    var phoneNumber = String()
+    var email = String()
+
     @IBOutlet weak var confirmPwdTxtField: UITextField!
     @IBOutlet weak var pwdTxtField: UITextField!
     override func viewDidLoad() {
@@ -51,10 +54,7 @@ class CreatePwdViewController: UIViewController,UITextFieldDelegate {
         }
         else
         {
-            let tabB = self.storyboard?.instantiateViewController(withIdentifier: "myTabBar") as! UITabBarController
-            
-            let homeVC = self.storyboard?.instantiateViewController(withIdentifier: "homeViewController") as! HomeViewController
-            self.navigationController?.pushViewController(tabB, animated: true)
+            self.createaNewPassword()
         }
         
     }
@@ -73,7 +73,36 @@ class CreatePwdViewController: UIViewController,UITextFieldDelegate {
         }
     }
 
-    
+    func createaNewPassword() {
+        let url = "\(ServiceDataConst.kChangePasswordPassword)"
+        let requestURL = URL.init(string: url);
+        var request = URLRequest.init(url: requestURL!)
+        
+        let json = "{\"phoneNumber\":\"\(phoneNumber)\",\"password\":\"\(confirmPwdTxtField.text!)\",\"VerifyPassword\":\"\(confirmPwdTxtField.text!)\",\"email\":\"\(email)\"}"
+        request.httpBody = json.data(using: .utf8)
+        SocraticaWebserviceCalls().sendPOST(request, withSuccess: { (data) in
+            guard let data = data else {
+                print("Error: No data to decode")
+                return
+            }
+            do{
+                let myDict = try JSONSerialization.jsonObject(with: data, options: []) as? [String : AnyObject]
+                print(myDict!)
+                
+                ZVProgressHUD.showText(myDict?["message"] as! String)
+                self.perform(#selector(self.movetologinVC), on: .main, with: nil, waitUntilDone: true)
+            }catch{
+                print("Error")
+            }
+        }) { (error) in
+            print(error?.localizedDescription as Any)
+        }
+    }
+    @objc func movetologinVC() {
+        
+        let tabB = self.storyboard?.instantiateViewController(withIdentifier: "myTabBar") as! UITabBarController
+        self.navigationController?.pushViewController(tabB, animated: true)
+    }
     /*
     // MARK: - Navigation
 

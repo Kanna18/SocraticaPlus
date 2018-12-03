@@ -14,13 +14,17 @@ class OTPViewController: UIViewController {
     
     @IBOutlet weak var otpTextFied: UITextField!
     
-    
     @IBOutlet weak var resendOTPBtn: UIButton!
     @IBOutlet weak var nextBtn: UIButton!
     
+    var phoneNumberWhileForgot = String()
+    var passwordWhileRegistration = String()
+    var isRegistrationOTP = false
+    var isForgotPasswordOTP = false
+    
     @IBAction func goButtonClick(_ sender: Any) {
         
-        guard let text = otpTextFied.text, !text.isEmpty else {
+        guard let textOtp = otpTextFied.text, !textOtp.isEmpty else {
             
             let alert = UIAlertController.init(title: "", message: "Please enter verification code", preferredStyle: UIAlertControllerStyle.alert)
             let okAction = UIAlertAction.init(title: "OK", style: .default) { (alert) in
@@ -30,16 +34,79 @@ class OTPViewController: UIViewController {
             self.present(alert, animated: true, completion: nil)
             return
         }
+//        let createPwdVC = self.storyboard?.instantiateViewController(withIdentifier: "createPwdViewController") as! CreatePwdViewController
+//        self.navigationController?.pushViewController(createPwdVC, animated: true)
         
-        guard text == "123456" else{
-            ZVProgressHUD.showError(with: "Please enter valid OTP", in: self.view, delay: 0.0)
-           return
+        if(isRegistrationOTP){
+            self.verifyOTPforRegistrarion()
+        }
+        else if(isForgotPasswordOTP){
+            self.verifyOTPforForgotPassword()
+        }else{
+            ZVProgressHUD.showText("error")
         }
         
-        let createPwdVC = self.storyboard?.instantiateViewController(withIdentifier: "createPwdViewController") as! CreatePwdViewController
-        self.navigationController?.pushViewController(createPwdVC, animated: true)
-        
     }
+    //MARK: Registration Flow
+    func verifyOTPforRegistrarion() {
+        let url = "\(ServiceDataConst.kRegistrationConfirmphone)"
+        let requestURL = URL.init(string: url);
+        var request = URLRequest.init(url: requestURL!)
+        let refDict = SocraticaSharedClass.shared.registrationDict
+        
+        let json = "{\"phoneNumber\":\"\(refDict["phoneNumber"] as! String)\",\"email\":\"\(refDict["email"] as! String)\",\"token\":\"\(otpTextFied.text!)\"}"
+        request.httpBody = json.data(using: .utf8)
+        SocraticaWebserviceCalls().sendPOST(request, withSuccess: { (data) in
+            guard let data = data else {
+                print("Error: No data to decode")
+                return
+            }
+            do{
+                let myDict = try JSONSerialization.jsonObject(with: data, options: []) as? [String : AnyObject]
+                self.movetoTabbarAfterOTPisverifiedforRegistration(boolVal: (myDict!["status"] as! Bool))
+                print(myDict!)                                                
+            }catch{
+                print("Error")
+            }
+        }) { (error) in
+            print(error?.localizedDescription as Any)
+        }
+    }
+    //MARK: ForgotPasswprd Flow
+    func verifyOTPforForgotPassword() {
+        let url = "\(ServiceDataConst.kVerifyOTPForgotPassword)"
+        let requestURL = URL.init(string: url);
+        var request = URLRequest.init(url: requestURL!)
+        
+        let json = "{\"phoneNumber\":\"\(phoneNumberWhileForgot)\",\"token\":\"\(otpTextFied.text!)\"}"
+        request.httpBody = json.data(using: .utf8)
+        SocraticaWebserviceCalls().sendPOST(request, withSuccess: { (data) in
+            guard let data = data else {
+                print("Error: No data to decode")
+                return
+            }
+            do{
+                let myDict = try JSONSerialization.jsonObject(with: data, options: []) as? [String : AnyObject]
+                print(myDict!)
+                if((myDict!["status"] as! Bool) == true){
+                self.perform(#selector(self.moveToChangePasswordVC(jsonDict:)), on: .main, with: myDict, waitUntilDone: true)
+                }
+            }catch{
+                print("Error")
+            }
+        }) { (error) in
+            print(error?.localizedDescription as Any)
+        }
+    }
+    
+    @objc func moveToChangePasswordVC(jsonDict : [String : AnyObject]) {
+        
+        let createPwdVC = self.storyboard?.instantiateViewController(withIdentifier: "createPwdViewController") as! CreatePwdViewController
+        createPwdVC.phoneNumber = phoneNumberWhileForgot
+        createPwdVC.email = jsonDict["email"] as! String
+        self.navigationController?.pushViewController(createPwdVC, animated: true)
+    }
+    
     @IBAction func backClick(_ sender: Any) {
         
         self.navigationController?.popViewController(animated: true)
@@ -79,5 +146,43 @@ class OTPViewController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
+    
+    func resendOTPforRegistrarion() {
+        let url = "\(ServiceDataConst.kParentRegistration)"
+        let requestURL = URL.init(string: url);
+        var request = URLRequest.init(url: requestURL!)
+        
+//        let refDict = SocraticaSharedClass.shared.registrationDict
+        
+        let json = "{\"phoneNumber\":\"\(phoneNumberWhileForgot)\",\"password\":\"\(passwordWhileRegistration)\",\"isParentLogin\":\"\(true)\"}"
+        request.httpBody = json.data(using: .utf8)
+        SocraticaWebserviceCalls().sendPOST(request, withSuccess: { (data) in
+            guard let data = data else {
+                print("Error: No data to decode")
+                return
+            }
+            do{
+                let myDict = try JSONSerialization.jsonObject(with: data, options: []) as? [String : AnyObject]
+                print(myDict!)
+                SocraticaSharedClass.shared.registrationDict = myDict!
+            }catch{
+                print("Error")
+            }
+        }) { (error) in
+            print(error?.localizedDescription as Any)
+        }
+    }
+    func movetoTabbarAfterOTPisverifiedforRegistration(boolVal : Bool) {
+        if(boolVal){
+            let refDict = SocraticaSharedClass.shared.registrationDict
+            let tabB = self.storyboard?.instantiateViewController(withIdentifier: "myTabBar") as! UITabBarController
+            self.navigationController?.pushViewController(tabB, animated: true)
+            let defa = UserDefaults.standard
+            defa.set(phoneNumberWhileForgot , forKey: savedPhoneNumber)
+            defa.set(passwordWhileRegistration , forKey: savedPassword)
+        }else{
+            ZVProgressHUD.showText("Please enter valid OTP")
+        }
+    }
 
 }
