@@ -15,10 +15,10 @@
         </array>
     </customFonts>
     <scenes>
-        <!--Forgot PasswordVC-->
+        <!--Forgot Password-->
         <scene sceneID="HpR-R4-oOd">
             <objects>
-                <viewController storyboardIdentifier="forgotPasswordVC" id="nhQ-PZ-P82" customClass="ForgotPasswordVC" customModule="SocraticaPlus" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="forgotPasswordVC" title="Forgot Password" id="nhQ-PZ-P82" customClass="ForgotPasswordVC" customModule="SocraticaPlus" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="1HQ-zD-Hsq">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -31,7 +31,7 @@
                                         <constraints>
                                             <constraint firstAttribute="height" constant="21" id="VaF-6F-iDp"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                        <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="16"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
@@ -92,7 +92,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sKF-gK-40O">
-                                <rect key="frame" x="25" y="74" width="44" height="44"/>
+                                <rect key="frame" x="15" y="74" width="44" height="44"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="44" id="4by-T2-hub"/>
                                     <constraint firstAttribute="height" constant="44" id="BGm-bG-K0X"/>
@@ -111,7 +111,7 @@
                             <constraint firstItem="sKF-gK-40O" firstAttribute="top" secondItem="Kdk-jm-nGc" secondAttribute="top" constant="10" id="F8p-iC-dAV"/>
                             <constraint firstItem="NsI-G5-XhL" firstAttribute="leading" secondItem="Kdk-jm-nGc" secondAttribute="leading" constant="25" id="NLR-W3-DXx"/>
                             <constraint firstItem="8pj-3a-6bg" firstAttribute="top" secondItem="NsI-G5-XhL" secondAttribute="bottom" constant="30" id="g2k-ud-9P9"/>
-                            <constraint firstItem="sKF-gK-40O" firstAttribute="leading" secondItem="Kdk-jm-nGc" secondAttribute="leading" constant="25" id="ySf-6i-1TR"/>
+                            <constraint firstItem="sKF-gK-40O" firstAttribute="leading" secondItem="Kdk-jm-nGc" secondAttribute="leading" constant="15" id="ySf-6i-1TR"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Kdk-jm-nGc"/>
                     </view>
@@ -127,7 +127,7 @@
         <!--Phone Picker Delegate-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="SocraticaPlus" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="REGISTRATION" id="BYZ-38-t0r" customClass="ViewController" customModule="SocraticaPlus" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -153,7 +153,7 @@
                                                 </connections>
                                             </button>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="A verification code has been sent to your mobile number please enter the code to continue" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jvI-PM-Tam" customClass="CustomLabel" customModule="SocraticaPlus" customModuleProvider="target">
-                                                <rect key="frame" x="30" y="20" width="235" height="100"/>
+                                                <rect key="frame" x="30" y="20" width="221" height="100"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="100" id="jIN-j4-Bea"/>
                                                 </constraints>
@@ -165,7 +165,7 @@
                                         <color key="backgroundColor" red="0.75294117647058822" green="0.73725490196078436" blue="0.73725490196078436" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstItem="jvI-PM-Tam" firstAttribute="top" secondItem="DRO-ig-xXz" secondAttribute="top" constant="20" id="0WZ-WA-y4c"/>
-                                            <constraint firstAttribute="trailing" secondItem="jvI-PM-Tam" secondAttribute="trailing" constant="30" id="2zh-ch-gbG"/>
+                                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="jvI-PM-Tam" secondAttribute="trailing" symbolic="YES" id="2zh-ch-gbG"/>
                                             <constraint firstAttribute="bottom" secondItem="SE1-JL-qCy" secondAttribute="bottom" constant="20" id="B7f-IF-04Q"/>
                                             <constraint firstItem="SE1-JL-qCy" firstAttribute="centerX" secondItem="DRO-ig-xXz" secondAttribute="centerX" id="BmF-qd-Uht"/>
                                             <constraint firstItem="jvI-PM-Tam" firstAttribute="leading" secondItem="DRO-ig-xXz" secondAttribute="leading" constant="30" id="BsK-4v-ag3"/>
@@ -181,22 +181,22 @@
                                     <constraint firstAttribute="trailing" secondItem="DRO-ig-xXz" secondAttribute="trailing" constant="40" id="ufH-DC-QgT"/>
                                 </constraints>
                             </view>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mobile number" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Goe-sX-n3K" customClass="CustomLabel" customModule="SocraticaPlus" customModuleProvider="target">
-                                <rect key="frame" x="25" y="214" width="325" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mobile number" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Goe-sX-n3K" customClass="CustomLabel" customModule="SocraticaPlus" customModuleProvider="target">
+                                <rect key="frame" x="25" y="214" width="325" height="40"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="21" id="ZhV-c3-ZuF"/>
+                                    <constraint firstAttribute="height" constant="40" id="ZhV-c3-ZuF"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="18"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nL8-ci-eLD">
-                                <rect key="frame" x="25" y="245" width="325" height="30"/>
+                                <rect key="frame" x="25" y="264" width="325" height="30"/>
                                 <subviews>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" minimumFontSize="14" translatesAutoresizingMaskIntoConstraints="NO" id="SDh-5J-c7u" customClass="NKVPhonePickerTextField" customModule="SocraticaPlus">
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" adjustsFontSizeToFit="NO" minimumFontSize="14" translatesAutoresizingMaskIntoConstraints="NO" id="SDh-5J-c7u" customClass="NKVPhonePickerTextField" customModule="SocraticaPlus">
                                         <rect key="frame" x="0.0" y="0.0" width="325" height="30"/>
                                         <nil key="textColor"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="16"/>
                                         <textInputTraits key="textInputTraits" keyboardType="phonePad" returnKeyType="done"/>
                                         <connections>
                                             <outlet property="phonePickerDelegate" destination="BYZ-38-t0r" id="czu-02-ikF"/>
@@ -213,33 +213,33 @@
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NVb-Nb-eek">
-                                <rect key="frame" x="25" y="277" width="325" height="1"/>
+                                <rect key="frame" x="25" y="296" width="325" height="1"/>
                                 <color key="backgroundColor" red="0.0" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="1" id="v77-4C-HIL"/>
                                 </constraints>
                             </view>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="  password" textAlignment="natural" minimumFontSize="14" translatesAutoresizingMaskIntoConstraints="NO" id="jZ8-IS-Lg3" customClass="CustomTextField" customModule="SocraticaPlus" customModuleProvider="target">
-                                <rect key="frame" x="25" y="298" width="325" height="30"/>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="  create password" textAlignment="natural" adjustsFontSizeToFit="NO" minimumFontSize="14" translatesAutoresizingMaskIntoConstraints="NO" id="jZ8-IS-Lg3" customClass="CustomTextField" customModule="SocraticaPlus" customModuleProvider="target">
+                                <rect key="frame" x="25" y="317" width="325" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="gDs-5R-R68"/>
                                 </constraints>
                                 <nil key="textColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" keyboardType="emailAddress" returnKeyType="done"/>
+                                <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="16"/>
+                                <textInputTraits key="textInputTraits" keyboardType="emailAddress" returnKeyType="done" secureTextEntry="YES"/>
                                 <connections>
                                     <outlet property="delegate" destination="BYZ-38-t0r" id="UjK-qY-cFO"/>
                                 </connections>
                             </textField>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OXy-dL-0Z4">
-                                <rect key="frame" x="25" y="330" width="325" height="1"/>
+                                <rect key="frame" x="25" y="349" width="325" height="1"/>
                                 <color key="backgroundColor" red="0.0" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="1" id="eNL-cU-lPN"/>
                                 </constraints>
                             </view>
                             <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SRl-uI-ggd">
-                                <rect key="frame" x="25" y="346" width="325" height="30"/>
+                                <rect key="frame" x="25" y="365" width="325" height="30"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="uncheck" highlightedImage="check" translatesAutoresizingMaskIntoConstraints="NO" id="0Qp-Pe-Hj1">
                                         <rect key="frame" x="5" y="5" width="20" height="20"/>
@@ -280,7 +280,7 @@
                                 </constraints>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lye-oV-NG8">
-                                <rect key="frame" x="300" y="358" width="50" height="50"/>
+                                <rect key="frame" x="300" y="377" width="50" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="91o-1A-5nA"/>
                                     <constraint firstAttribute="width" constant="50" id="ZTa-wy-cDK"/>
@@ -292,7 +292,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tLn-BD-zHc">
-                                <rect key="frame" x="25" y="74" width="44" height="44"/>
+                                <rect key="frame" x="15" y="74" width="44" height="44"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="44" id="m93-Ix-IAi"/>
                                     <constraint firstAttribute="height" constant="44" id="yHL-Lh-kE0"/>
@@ -305,7 +305,7 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="tLn-BD-zHc" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="25" id="B7i-9W-xFX"/>
+                            <constraint firstItem="tLn-BD-zHc" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="15" id="B7i-9W-xFX"/>
                             <constraint firstItem="NVb-Nb-eek" firstAttribute="leading" secondItem="Goe-sX-n3K" secondAttribute="leading" id="ENh-4X-dLr"/>
                             <constraint firstItem="nL8-ci-eLD" firstAttribute="leading" secondItem="Goe-sX-n3K" secondAttribute="leading" id="Gzv-Tw-OHk"/>
                             <constraint firstItem="nL8-ci-eLD" firstAttribute="top" secondItem="Goe-sX-n3K" secondAttribute="bottom" constant="10" id="JKh-Wp-p6p"/>
@@ -352,133 +352,114 @@
         <!--Phone Picker Delegate-->
         <scene sceneID="Pzm-ZR-YYm">
             <objects>
-                <viewController storyboardIdentifier="loginViewController" id="DBq-dO-lMZ" customClass="LoginViewController" customModule="SocraticaPlus" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="loginViewController" title="LOGIN" id="DBq-dO-lMZ" customClass="LoginViewController" customModule="SocraticaPlus" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="oEV-6K-Gh7">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ewj-LO-XZb">
-                                <rect key="frame" x="25" y="214" width="325" height="61"/>
+                                <rect key="frame" x="25" y="214" width="325" height="69"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mobile number" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0jq-CF-cYV" customClass="CustomLabel" customModule="SocraticaPlus" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="0.0" width="325" height="21"/>
+                                    <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="right" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="C5a-9R-HE2">
+                                        <rect key="frame" x="0.0" y="0.0" width="120" height="20"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="21" id="SOZ-tK-qah"/>
+                                            <constraint firstAttribute="height" constant="20" id="Rfl-bC-MJt"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                        <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="16"/>
+                                        <state key="normal" title="Mobile number">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="forgotPasswordClick:" destination="DBq-dO-lMZ" eventType="touchUpInside" id="VNb-JU-kn9"/>
+                                            <action selector="forgotpasswordClick:" destination="DBq-dO-lMZ" eventType="touchUpInside" id="Ah0-qO-5Yj"/>
+                                        </connections>
+                                    </button>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" adjustsFontForContentSizeCategory="YES" minimumFontSize="14" translatesAutoresizingMaskIntoConstraints="NO" id="byw-b7-A1e" customClass="NKVPhonePickerTextField" customModule="SocraticaPlus">
+                                        <rect key="frame" x="0.0" y="31" width="325" height="35"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="35" id="zJO-ym-Ybt"/>
+                                        </constraints>
                                         <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kZu-xh-RdL">
-                                        <rect key="frame" x="0.0" y="31" width="325" height="30"/>
-                                        <subviews>
-                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" minimumFontSize="14" translatesAutoresizingMaskIntoConstraints="NO" id="byw-b7-A1e" customClass="NKVPhonePickerTextField" customModule="SocraticaPlus">
-                                                <rect key="frame" x="0.0" y="0.0" width="325" height="30"/>
-                                                <nil key="textColor"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                <textInputTraits key="textInputTraits" keyboardType="phonePad" returnKeyType="done"/>
-                                                <connections>
-                                                    <outlet property="phonePickerDelegate" destination="DBq-dO-lMZ" id="YgM-Ma-6Kq"/>
-                                                </connections>
-                                            </textField>
-                                        </subviews>
-                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <constraints>
-                                            <constraint firstItem="byw-b7-A1e" firstAttribute="top" secondItem="kZu-xh-RdL" secondAttribute="top" id="3gd-Pv-R5G"/>
-                                            <constraint firstAttribute="trailing" secondItem="byw-b7-A1e" secondAttribute="trailing" id="44J-Nf-eBp"/>
-                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="30" id="6FW-84-yoA"/>
-                                            <constraint firstAttribute="height" constant="30" id="6XT-zq-4xk"/>
-                                            <constraint firstItem="byw-b7-A1e" firstAttribute="leading" secondItem="kZu-xh-RdL" secondAttribute="leading" id="Rl4-cR-cNS"/>
-                                            <constraint firstAttribute="bottom" secondItem="byw-b7-A1e" secondAttribute="bottom" id="zYh-ja-q8r"/>
-                                        </constraints>
-                                    </view>
+                                        <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="16"/>
+                                        <textInputTraits key="textInputTraits" keyboardType="phonePad" returnKeyType="done"/>
+                                        <connections>
+                                            <outlet property="phonePickerDelegate" destination="DBq-dO-lMZ" id="YgM-Ma-6Kq"/>
+                                        </connections>
+                                    </textField>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6ic-8E-BAr">
-                                        <rect key="frame" x="0.0" y="61" width="325" height="1"/>
+                                        <rect key="frame" x="0.0" y="68" width="325" height="1"/>
                                         <color key="backgroundColor" red="0.0" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="1" id="YEB-hn-v4g"/>
-                                            <constraint firstAttribute="height" constant="1" id="qc4-mQ-XCw"/>
+                                            <constraint firstAttribute="height" constant="1" id="2gg-yv-Hte"/>
                                         </constraints>
                                     </view>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
-                                    <constraint firstItem="kZu-xh-RdL" firstAttribute="leading" secondItem="ewj-LO-XZb" secondAttribute="leading" id="7Di-re-s0z"/>
-                                    <constraint firstAttribute="trailing" secondItem="kZu-xh-RdL" secondAttribute="trailing" id="HB3-8q-JxV"/>
-                                    <constraint firstItem="kZu-xh-RdL" firstAttribute="top" secondItem="0jq-CF-cYV" secondAttribute="bottom" constant="10" id="Pr2-mF-uXw"/>
-                                    <constraint firstAttribute="trailing" secondItem="0jq-CF-cYV" secondAttribute="trailing" id="T0k-DR-ECR"/>
-                                    <constraint firstItem="6ic-8E-BAr" firstAttribute="leading" secondItem="ewj-LO-XZb" secondAttribute="leading" id="Uko-ey-QI0"/>
-                                    <constraint firstItem="0jq-CF-cYV" firstAttribute="leading" secondItem="ewj-LO-XZb" secondAttribute="leading" id="mFd-L2-qPk"/>
-                                    <constraint firstAttribute="height" constant="61" id="sbY-oN-i3F"/>
-                                    <constraint firstAttribute="trailing" secondItem="6ic-8E-BAr" secondAttribute="trailing" id="vov-xn-H26"/>
-                                    <constraint firstItem="0jq-CF-cYV" firstAttribute="top" secondItem="ewj-LO-XZb" secondAttribute="top" id="wBC-EI-PNC"/>
-                                    <constraint firstItem="6ic-8E-BAr" firstAttribute="top" secondItem="kZu-xh-RdL" secondAttribute="bottom" id="ypE-73-V3f"/>
+                                    <constraint firstItem="C5a-9R-HE2" firstAttribute="top" secondItem="ewj-LO-XZb" secondAttribute="top" id="33R-OA-Oep"/>
+                                    <constraint firstItem="6ic-8E-BAr" firstAttribute="leading" secondItem="ewj-LO-XZb" secondAttribute="leading" id="6d7-dR-Z9q"/>
+                                    <constraint firstItem="C5a-9R-HE2" firstAttribute="leading" secondItem="ewj-LO-XZb" secondAttribute="leading" id="EZH-pd-QCX"/>
+                                    <constraint firstItem="6ic-8E-BAr" firstAttribute="top" secondItem="byw-b7-A1e" secondAttribute="bottom" constant="2" id="OZZ-sX-Lko"/>
+                                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="C5a-9R-HE2" secondAttribute="trailing" constant="20" symbolic="YES" id="aOx-Bb-493"/>
+                                    <constraint firstItem="byw-b7-A1e" firstAttribute="leading" secondItem="ewj-LO-XZb" secondAttribute="leading" id="clG-fd-Dwc"/>
+                                    <constraint firstAttribute="trailing" secondItem="6ic-8E-BAr" secondAttribute="trailing" id="dRD-Et-rE4"/>
+                                    <constraint firstItem="byw-b7-A1e" firstAttribute="top" secondItem="ewj-LO-XZb" secondAttribute="top" constant="31" id="kcL-KI-tmh"/>
+                                    <constraint firstAttribute="trailing" secondItem="byw-b7-A1e" secondAttribute="trailing" id="ngO-el-Ppm"/>
+                                    <constraint firstAttribute="height" constant="69" id="sbY-oN-i3F"/>
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IwV-QS-DjZ">
-                                <rect key="frame" x="25" y="305" width="325" height="61"/>
+                                <rect key="frame" x="25" y="313" width="325" height="69"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Password" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lR4-39-2Ta" customClass="CustomLabel" customModule="SocraticaPlus" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="0.0" width="325" height="21"/>
+                                    <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="right" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cMc-8O-6Yf">
+                                        <rect key="frame" x="0.0" y="0.0" width="77" height="20"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="21" id="qUD-4k-Agw"/>
+                                            <constraint firstAttribute="height" constant="20" id="juF-tE-Js4"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                        <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="16"/>
+                                        <state key="normal" title="Password">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                    </button>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" adjustsFontForContentSizeCategory="YES" minimumFontSize="14" translatesAutoresizingMaskIntoConstraints="NO" id="Vf1-LZ-bfO">
+                                        <rect key="frame" x="0.0" y="31" width="325" height="35"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="35" id="gmh-Tp-iwy"/>
+                                        </constraints>
                                         <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cdU-98-1E5">
-                                        <rect key="frame" x="0.0" y="31" width="325" height="30"/>
-                                        <subviews>
-                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" minimumFontSize="14" translatesAutoresizingMaskIntoConstraints="NO" id="Vf1-LZ-bfO">
-                                                <rect key="frame" x="0.0" y="0.0" width="325" height="30"/>
-                                                <nil key="textColor"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                <textInputTraits key="textInputTraits" keyboardType="phonePad" returnKeyType="done"/>
-                                            </textField>
-                                        </subviews>
-                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="30" id="2qB-5O-jfe"/>
-                                            <constraint firstItem="Vf1-LZ-bfO" firstAttribute="top" secondItem="cdU-98-1E5" secondAttribute="top" id="O5q-oD-TYo"/>
-                                            <constraint firstAttribute="trailing" secondItem="Vf1-LZ-bfO" secondAttribute="trailing" id="R9V-n7-Tb6"/>
-                                            <constraint firstAttribute="bottom" secondItem="Vf1-LZ-bfO" secondAttribute="bottom" id="min-uw-8rU"/>
-                                            <constraint firstAttribute="height" constant="30" id="rX2-T3-BRb"/>
-                                            <constraint firstItem="Vf1-LZ-bfO" firstAttribute="leading" secondItem="cdU-98-1E5" secondAttribute="leading" id="ruB-qj-aa0"/>
-                                        </constraints>
-                                    </view>
+                                        <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="16"/>
+                                        <textInputTraits key="textInputTraits" returnKeyType="done" secureTextEntry="YES"/>
+                                    </textField>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CQR-vk-qWO">
-                                        <rect key="frame" x="0.0" y="61" width="325" height="1"/>
+                                        <rect key="frame" x="0.0" y="68" width="325" height="1"/>
                                         <color key="backgroundColor" red="0.0" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="1" id="5L4-DY-w00"/>
-                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="1" id="xJT-1o-Ibs"/>
+                                            <constraint firstAttribute="height" constant="1" id="Vrb-ds-4Ni"/>
                                         </constraints>
                                     </view>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
-                                    <constraint firstAttribute="trailing" secondItem="CQR-vk-qWO" secondAttribute="trailing" id="5Va-O9-Zf8"/>
-                                    <constraint firstItem="lR4-39-2Ta" firstAttribute="top" secondItem="IwV-QS-DjZ" secondAttribute="top" id="CLs-kJ-3wi"/>
-                                    <constraint firstAttribute="trailing" secondItem="cdU-98-1E5" secondAttribute="trailing" id="IC4-b4-XmO"/>
-                                    <constraint firstItem="cdU-98-1E5" firstAttribute="top" secondItem="lR4-39-2Ta" secondAttribute="bottom" constant="10" id="R3O-8c-sjR"/>
-                                    <constraint firstAttribute="trailing" secondItem="lR4-39-2Ta" secondAttribute="trailing" id="Z4P-Po-GY3"/>
-                                    <constraint firstItem="lR4-39-2Ta" firstAttribute="leading" secondItem="IwV-QS-DjZ" secondAttribute="leading" id="Zib-kN-J8s"/>
-                                    <constraint firstItem="cdU-98-1E5" firstAttribute="leading" secondItem="IwV-QS-DjZ" secondAttribute="leading" id="hUI-Ej-KdH"/>
-                                    <constraint firstAttribute="height" constant="61" id="in7-QG-eI6"/>
-                                    <constraint firstItem="CQR-vk-qWO" firstAttribute="top" secondItem="cdU-98-1E5" secondAttribute="bottom" id="kyu-jd-IcQ"/>
-                                    <constraint firstItem="CQR-vk-qWO" firstAttribute="leading" secondItem="IwV-QS-DjZ" secondAttribute="leading" id="oEB-lf-9Py"/>
+                                    <constraint firstAttribute="trailing" secondItem="CQR-vk-qWO" secondAttribute="trailing" id="0kL-DW-1Ms"/>
+                                    <constraint firstAttribute="trailing" secondItem="Vf1-LZ-bfO" secondAttribute="trailing" id="2ma-ST-itE"/>
+                                    <constraint firstItem="CQR-vk-qWO" firstAttribute="top" secondItem="Vf1-LZ-bfO" secondAttribute="bottom" constant="2" id="DnO-lj-gsG"/>
+                                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="cMc-8O-6Yf" secondAttribute="trailing" constant="20" symbolic="YES" id="T79-2F-Mwh"/>
+                                    <constraint firstItem="cMc-8O-6Yf" firstAttribute="leading" secondItem="IwV-QS-DjZ" secondAttribute="leading" id="VfJ-Wf-Ad9"/>
+                                    <constraint firstItem="Vf1-LZ-bfO" firstAttribute="top" secondItem="IwV-QS-DjZ" secondAttribute="top" constant="31" id="bEf-8S-70C"/>
+                                    <constraint firstItem="CQR-vk-qWO" firstAttribute="leading" secondItem="IwV-QS-DjZ" secondAttribute="leading" id="fHc-vn-bHv"/>
+                                    <constraint firstAttribute="height" constant="69" id="in7-QG-eI6"/>
+                                    <constraint firstItem="cMc-8O-6Yf" firstAttribute="top" secondItem="IwV-QS-DjZ" secondAttribute="top" id="kCz-zP-CEW"/>
+                                    <constraint firstItem="Vf1-LZ-bfO" firstAttribute="leading" secondItem="IwV-QS-DjZ" secondAttribute="leading" id="y1Y-Hv-7PH"/>
                                 </constraints>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="U5h-Ib-Lxk">
-                                <rect key="frame" x="25" y="386" width="150" height="20"/>
+                                <rect key="frame" x="25" y="402" width="142" height="20"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="150" id="bal-w6-ab6"/>
                                     <constraint firstAttribute="height" constant="20" id="wtm-RM-SiL"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="16"/>
                                 <state key="normal" title="Forgot Password?">
-                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="titleColor" red="0.0" green="0.5725490196078431" blue="0.56862745098039214" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
                                     <action selector="forgotPasswordClick:" destination="DBq-dO-lMZ" eventType="touchUpInside" id="r0T-bj-dES"/>
@@ -487,7 +468,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uBe-94-P31">
-                                <rect key="frame" x="305" y="396" width="50" height="50"/>
+                                <rect key="frame" x="305" y="412" width="50" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="50" id="Cp4-pA-tz7"/>
                                     <constraint firstAttribute="height" constant="50" id="hyw-X5-yqa"/>
@@ -523,6 +504,7 @@
                             <constraint firstItem="U5h-Ib-Lxk" firstAttribute="leading" secondItem="xBm-dI-u1s" secondAttribute="leading" constant="25" id="Ybi-be-dZI"/>
                             <constraint firstItem="ewj-LO-XZb" firstAttribute="leading" secondItem="xBm-dI-u1s" secondAttribute="leading" constant="25" id="ZmL-Aa-RQJ"/>
                             <constraint firstItem="xBm-dI-u1s" firstAttribute="trailing" secondItem="IwV-QS-DjZ" secondAttribute="trailing" constant="25" id="ZxG-51-eWM"/>
+                            <constraint firstItem="uBe-94-P31" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="U5h-Ib-Lxk" secondAttribute="trailing" constant="8" symbolic="YES" id="cJS-5i-pCj"/>
                             <constraint firstItem="U5h-Ib-Lxk" firstAttribute="top" secondItem="IwV-QS-DjZ" secondAttribute="bottom" constant="20" id="hZH-Co-8Wa"/>
                             <constraint firstItem="uBe-94-P31" firstAttribute="top" secondItem="IwV-QS-DjZ" secondAttribute="bottom" constant="30" id="mIl-QX-ggU"/>
                             <constraint firstItem="xBm-dI-u1s" firstAttribute="trailing" secondItem="iak-To-79v" secondAttribute="trailing" constant="25" id="pBJ-E1-C82"/>
@@ -538,12 +520,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mNH-Ri-ROQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="374" y="90"/>
+            <point key="canvasLocation" x="373.60000000000002" y="89.505247376311857"/>
         </scene>
-        <!--View Controller-->
+        <!--Enter OTP-->
         <scene sceneID="0mg-TF-AdW">
             <objects>
-                <viewController storyboardIdentifier="oTPViewController" id="uEv-K1-M32" customClass="OTPViewController" customModule="SocraticaPlus" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="oTPViewController" title="Enter OTP" id="uEv-K1-M32" customClass="OTPViewController" customModule="SocraticaPlus" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="MFD-Vx-C4K">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -566,7 +548,7 @@
                                             <constraint firstAttribute="height" constant="30" id="WBR-uh-yh5"/>
                                         </constraints>
                                         <nil key="textColor"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="16"/>
                                         <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                                     </textField>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Xsw-7g-OWQ">
@@ -632,7 +614,7 @@
                                 </constraints>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LVO-0L-nPm">
-                                <rect key="frame" x="25" y="30" width="44" height="44"/>
+                                <rect key="frame" x="15" y="30" width="44" height="44"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="44" id="C58-Zl-oBn"/>
                                     <constraint firstAttribute="width" constant="44" id="vsC-ee-lOG"/>
@@ -649,7 +631,7 @@
                             <constraint firstItem="Oxa-3b-DAc" firstAttribute="top" secondItem="E8z-QS-RKt" secondAttribute="top" constant="150" id="KhW-Fh-b0l"/>
                             <constraint firstItem="LVO-0L-nPm" firstAttribute="top" secondItem="E8z-QS-RKt" secondAttribute="top" constant="10" id="hei-wL-kpy"/>
                             <constraint firstItem="E8z-QS-RKt" firstAttribute="trailing" secondItem="Oxa-3b-DAc" secondAttribute="trailing" id="kaz-ds-Wnu"/>
-                            <constraint firstItem="LVO-0L-nPm" firstAttribute="leading" secondItem="E8z-QS-RKt" secondAttribute="leading" constant="25" id="osq-uh-r2j"/>
+                            <constraint firstItem="LVO-0L-nPm" firstAttribute="leading" secondItem="E8z-QS-RKt" secondAttribute="leading" constant="15" id="osq-uh-r2j"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="E8z-QS-RKt"/>
                     </view>
@@ -718,10 +700,10 @@
             </objects>
             <point key="canvasLocation" x="785" y="892"/>
         </scene>
-        <!--Create Pwd View Controller-->
+        <!--Create Password-->
         <scene sceneID="fLD-sC-6fb">
             <objects>
-                <viewController storyboardIdentifier="createPwdViewController" id="kMU-d1-Axo" customClass="CreatePwdViewController" customModule="SocraticaPlus" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="createPwdViewController" title="Create Password" id="kMU-d1-Axo" customClass="CreatePwdViewController" customModule="SocraticaPlus" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="vp6-GV-IsQ">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -730,11 +712,11 @@
                                 <rect key="frame" x="0.0" y="170" width="375" height="200"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Password" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RT4-Bw-77U" customClass="CustomLabel" customModule="SocraticaPlus" customModuleProvider="target">
-                                        <rect key="frame" x="25" y="10" width="62.5" height="21"/>
+                                        <rect key="frame" x="25" y="10" width="76.5" height="21"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="21" id="jX3-7U-sDs"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="16"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
@@ -744,7 +726,7 @@
                                             <constraint firstAttribute="height" constant="30" id="MyV-hP-WNm"/>
                                         </constraints>
                                         <nil key="textColor"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="16"/>
                                         <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                                     </textField>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Dw7-BU-lXA">
@@ -771,15 +753,15 @@
                                             <constraint firstAttribute="height" constant="30" id="x6s-4x-WSH"/>
                                         </constraints>
                                         <nil key="textColor"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="16"/>
                                         <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                                     </textField>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Confirm password" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KYc-6y-JTT" customClass="CustomLabel" customModule="SocraticaPlus" customModuleProvider="target">
-                                        <rect key="frame" x="25" y="82" width="117.5" height="21"/>
+                                        <rect key="frame" x="25" y="82" width="147" height="21"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="21" id="abs-Bo-QdM"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="16"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
@@ -818,7 +800,7 @@
                                 </constraints>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nUS-Fi-PIL">
-                                <rect key="frame" x="25" y="30" width="44" height="44"/>
+                                <rect key="frame" x="15" y="30" width="44" height="44"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="44" id="31l-2K-Fq1"/>
                                     <constraint firstAttribute="height" constant="44" id="MTV-EI-ot7"/>
@@ -832,7 +814,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="1tc-vw-28i" firstAttribute="leading" secondItem="vp6-GV-IsQ" secondAttribute="leading" id="2AU-z1-3e0"/>
-                            <constraint firstItem="nUS-Fi-PIL" firstAttribute="leading" secondItem="MrJ-vR-gir" secondAttribute="leading" constant="25" id="Jdi-MT-EFs"/>
+                            <constraint firstItem="nUS-Fi-PIL" firstAttribute="leading" secondItem="MrJ-vR-gir" secondAttribute="leading" constant="15" id="Jdi-MT-EFs"/>
                             <constraint firstItem="nUS-Fi-PIL" firstAttribute="top" secondItem="MrJ-vR-gir" secondAttribute="top" constant="10" id="VPs-Ia-8hA"/>
                             <constraint firstItem="1tc-vw-28i" firstAttribute="top" secondItem="MrJ-vR-gir" secondAttribute="top" constant="150" id="Z7A-UW-3tQ"/>
                             <constraint firstItem="MrJ-vR-gir" firstAttribute="trailing" secondItem="1tc-vw-28i" secondAttribute="trailing" id="gQP-mb-Xcp"/>
@@ -990,7 +972,7 @@
         <image name="check" width="30" height="30"/>
         <image name="dashboard.png" width="770" height="1080"/>
         <image name="image.png" width="1390" height="1026"/>
-        <image name="navBack" width="44" height="44"/>
+        <image name="navBack" width="22" height="22"/>
         <image name="next" width="80" height="80"/>
         <image name="notifications.png" width="684" height="968"/>
         <image name="uncheck" width="30" height="30"/>

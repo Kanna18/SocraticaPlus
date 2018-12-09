@@ -569,17 +569,17 @@
 			baseConfigurationReference = 2659D0C365AA67865B87134D /* Pods-SocraticaPlus.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Manual;
-				DEVELOPMENT_TEAM = 7CQW6NRRPC;
+				DEVELOPMENT_TEAM = 97LAY2T7JT;
 				INFOPLIST_FILE = SocraticaPlus/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.damac.salesapp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.tech.socratica.dev;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = HelloDamac1;
+				PROVISIONING_PROFILE_SPECIFIER = RegistrationNewScoratica;
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -590,17 +590,17 @@
 			baseConfigurationReference = 10E58274DC412E945A7102C3 /* Pods-SocraticaPlus.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Manual;
-				DEVELOPMENT_TEAM = 7CQW6NRRPC;
+				DEVELOPMENT_TEAM = 97LAY2T7JT;
 				INFOPLIST_FILE = SocraticaPlus/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.damac.salesapp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.tech.socratica.dev;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = HelloDamac1;
+				PROVISIONING_PROFILE_SPECIFIER = RegistrationNewScoratica;
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

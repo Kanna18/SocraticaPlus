@@ -172,8 +172,8 @@ open class NKVPhonePickerTextField: TextFieldPatternFormat {
         plusLabel?.textColor = self.textColor
         
         // Setting a plus label frame
-        let width = (self.font?.pointSize ?? 10) / 1.5
-        var x = self.flagView.bounds.width
+        let width = (self.font?.pointSize ?? 10) / 1.2
+        var x = self.flagView.bounds.width - 5
         if rightToLeftOrientation {
             x = self.bounds.width - width - self.flagView.bounds.width
         }

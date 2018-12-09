@@ -19,7 +19,7 @@ class CustomTextField: UITextField {
     */
     override func awakeFromNib() {
         super.awakeFromNib()
-        self.font = UIFont(name: "Poppins-Regular", size: 12.0)
+        self.font = UIFont(name: "Poppins-Regular", size: 16.0)
     }
 
 }

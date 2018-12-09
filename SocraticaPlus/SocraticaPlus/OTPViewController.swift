@@ -36,7 +36,7 @@ class OTPViewController: UIViewController {
         }
 //        let createPwdVC = self.storyboard?.instantiateViewController(withIdentifier: "createPwdViewController") as! CreatePwdViewController
 //        self.navigationController?.pushViewController(createPwdVC, animated: true)
-        
+        ZVProgressHUD.show()
         if(isRegistrationOTP){
             self.verifyOTPforRegistrarion()
         }
@@ -54,22 +54,25 @@ class OTPViewController: UIViewController {
         var request = URLRequest.init(url: requestURL!)
         let refDict = SocraticaSharedClass.shared.registrationDict
         
-        let json = "{\"phoneNumber\":\"\(refDict["phoneNumber"] as! String)\",\"email\":\"\(refDict["email"] as! String)\",\"token\":\"\(otpTextFied.text!)\"}"
+        let json = "{\"phoneNumber\":\"\(refDict["phone"] as! String)\",\"email\":\"\(refDict["email"] as! String)\",\"token\":\"\(otpTextFied.text!)\"}"
         request.httpBody = json.data(using: .utf8)
         SocraticaWebserviceCalls().sendPOST(request, withSuccess: { (data) in
+            ZVProgressHUD.dismiss()
             guard let data = data else {
                 print("Error: No data to decode")
                 return
             }
             do{
                 let myDict = try JSONSerialization.jsonObject(with: data, options: []) as? [String : AnyObject]
-                self.movetoTabbarAfterOTPisverifiedforRegistration(boolVal: (myDict!["status"] as! Bool))
+//                self.movetoTabbarAfterOTPisverifiedforRegistration(boolVal: (myDict!["status"] as! Bool))
+                self.perform(#selector(self.movetoTabbarAfterOTPisverifiedforRegistration(boolVal:)), on: .main, with: (myDict!["status"] as! Bool), waitUntilDone: true)
                 print(myDict!)                                                
             }catch{
                 print("Error")
             }
         }) { (error) in
             print(error?.localizedDescription as Any)
+            ZVProgressHUD.dismiss()
         }
     }
     //MARK: ForgotPasswprd Flow
@@ -81,6 +84,7 @@ class OTPViewController: UIViewController {
         let json = "{\"phoneNumber\":\"\(phoneNumberWhileForgot)\",\"token\":\"\(otpTextFied.text!)\"}"
         request.httpBody = json.data(using: .utf8)
         SocraticaWebserviceCalls().sendPOST(request, withSuccess: { (data) in
+            ZVProgressHUD.dismiss()
             guard let data = data else {
                 print("Error: No data to decode")
                 return
@@ -96,6 +100,7 @@ class OTPViewController: UIViewController {
             }
         }) { (error) in
             print(error?.localizedDescription as Any)
+            ZVProgressHUD.dismiss()
         }
     }
     
@@ -201,7 +206,7 @@ class OTPViewController: UIViewController {
             print(error?.localizedDescription as Any)
         }
     }
-    func movetoTabbarAfterOTPisverifiedforRegistration(boolVal : Bool) {
+    @objc func movetoTabbarAfterOTPisverifiedforRegistration(boolVal : Bool) {
         if(boolVal){
             let refDict = SocraticaSharedClass.shared.registrationDict
             let tabB = self.storyboard?.instantiateViewController(withIdentifier: "myTabBar") as! UITabBarController

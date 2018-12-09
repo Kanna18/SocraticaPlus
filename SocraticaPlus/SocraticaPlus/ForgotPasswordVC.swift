@@ -30,6 +30,7 @@ class ForgotPasswordVC: UIViewController {
             ZVProgressHUD.showWarning(with: "please enter a valid phone number", in: self.view, delay: 0.0)
             return
         }
+        ZVProgressHUD.show()
         self.forgotPasswordFunction()
         
         
@@ -54,7 +55,8 @@ class ForgotPasswordVC: UIViewController {
         
         let json = "{\"phoneNumber\":\"\(phoneNume)\",\"isParentLogin\":\"\(true)\"}"
         request.httpBody = json.data(using: .utf8)
-        SocraticaWebserviceCalls().sendPOST(request, withSuccess: { (data) in
+        SocraticaWebserviceCalls().sendPOST(request, withSuccess: { (data) in            
+            ZVProgressHUD.dismiss()
             guard let data = data else {
                 print("Error: No data to decode")
                 return
@@ -73,7 +75,7 @@ class ForgotPasswordVC: UIViewController {
             }
         }) { (error) in
             print(error?.localizedDescription as Any)
-            
+            ZVProgressHUD.dismiss()
         }
     }
     @objc func movetootpVc() {

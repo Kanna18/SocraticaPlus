@@ -35,6 +35,18 @@ class ViewController: UIViewController,UITextFieldDelegate {
 //        popupImageView.addGestureRecognizer(tapGe)
         self.navigationController?.isNavigationBarHidden = true
         self.title = "Registration"
+        
+        if #available(iOS 12, *) {
+            // iOS 12: Not the best solution, but it works.
+            phoneTxtField.textContentType = .oneTimeCode
+            emailTxtField.textContentType = .oneTimeCode
+        } else {
+            // iOS 11: Disables the autofill accessory view.
+            // For more information see the explanation below.
+            phoneTxtField.textContentType = .init(rawValue: "")
+            emailTxtField.textContentType = .init(rawValue: "")
+        }
+        
     }
 
     override func viewWillAppear(_ animated: Bool) {
@@ -54,6 +66,7 @@ class ViewController: UIViewController,UITextFieldDelegate {
         let otpVC = self.storyboard?.instantiateViewController(withIdentifier: "oTPViewController") as! OTPViewController
         self.navigationController?.pushViewController(otpVC, animated: true)
     }
+    
     func pickerTextfield() {
         
         phoneTxtField.phonePickerDelegate = self
@@ -85,7 +98,7 @@ class ViewController: UIViewController,UITextFieldDelegate {
          return
         }
         self.loParentFunction(a: "+\(phoneNumberText)", b: passwordtext)
-        ZVProgressHUD.showProgress(0.0)
+        ZVProgressHUD.show()
     }
     
     func loParentFunction(a: String, b: String) {
@@ -96,6 +109,7 @@ class ViewController: UIViewController,UITextFieldDelegate {
         let json = "{\"phoneNumber\":\"\(a)\",\"password\":\"\(b)\",\"isParentLogin\":\"\(true)\"}"
         request.httpBody = json.data(using: .utf8)
         SocraticaWebserviceCalls().sendPOST(request, withSuccess: { (data) in
+            ZVProgressHUD.dismiss()
             guard let data = data else {
                 print("Error: No data to decode")
                 return
@@ -116,7 +130,9 @@ class ViewController: UIViewController,UITextFieldDelegate {
             }
         }) { (error) in
             print(error?.localizedDescription as Any)
+            ZVProgressHUD.dismiss()
         }
+        
     }
     
    @objc private func otpAlert()

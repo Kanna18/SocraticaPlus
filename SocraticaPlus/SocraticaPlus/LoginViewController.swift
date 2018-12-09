@@ -13,6 +13,7 @@ class LoginViewController: UIViewController {
     
     @IBOutlet weak var passwordTF: UITextField!
     @IBOutlet weak var phoneTextField: NKVPhonePickerTextField!
+    var rememberPhoneNumber = String()
     
     
     override func viewDidLoad() {
@@ -22,8 +23,23 @@ class LoginViewController: UIViewController {
         self.pickerTextfield()
         self.navigationController?.isNavigationBarHidden = true
         ZVProgressHUD.displayStyle = .dark
-        self.title = "Login"
+        if #available(iOS 12, *) {
+            // iOS 12: Not the best solution, but it works.
+            phoneTextField.textContentType = .oneTimeCode
+            passwordTF.textContentType = .oneTimeCode
+        } else {
+            // iOS 11: Disables the autofill accessory view.
+            // For more information see the explanation below.
+            phoneTextField.textContentType = .init(rawValue: "")
+            passwordTF.textContentType = .init(rawValue: "")
+        }
     }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(true)
+        phoneTextField.text = rememberPhoneNumber
+    }
+    
     func pickerTextfield() {
         
         phoneTextField.phonePickerDelegate = self
@@ -33,6 +49,7 @@ class LoginViewController: UIViewController {
         let country = Country.country(for: NKVSource.init(countryCode: Locale.isoCurrencyCodes[0]))
         phoneTextField?.country = country
         phoneTextField.shouldScrollToSelectedCountry = true
+        rememberPhoneNumber = phoneTextField.text
         
     }
     /*
@@ -48,6 +65,7 @@ class LoginViewController: UIViewController {
     }
     @IBAction func loginClick(_ sender: Any) {
         
+        
         guard let phoneNum = phoneTextField.phoneNumber, phoneNum.isPhoneNumber else {
             ZVProgressHUD.showError(with: "Please enter a valid phone number", in: self.view, delay: 0.0)
             return
@@ -56,7 +74,7 @@ class LoginViewController: UIViewController {
             ZVProgressHUD.showError(with: "Please enter a valid password", in: self.view, delay: 0.0)
             return
         }
-        
+        ZVProgressHUD.show()
         self.loginParentFunction(a: "+\(phoneNum)", b: password)
 
     }
@@ -67,6 +85,7 @@ class LoginViewController: UIViewController {
         self.view.endEditing(true)
     }
     
+
     
     func loginParentFunction(a: String, b: String) {
         let url = "\(ServiceDataConst.kParentLogin)"
@@ -76,6 +95,7 @@ class LoginViewController: UIViewController {
          let json = "{\"phoneNumber\":\"\(a)\",\"password\":\"\(b)\",\"isParentLogin\":\"\(true)\"}"        
         request.httpBody = json.data(using: .utf8)
         SocraticaWebserviceCalls().sendPOST(request, withSuccess: { (data) in
+            ZVProgressHUD.dismiss()
             guard let data = data else {
                 print("Error: No data to decode")
                 return
@@ -89,8 +109,10 @@ class LoginViewController: UIViewController {
             }
         }) { (error) in
             print(error?.localizedDescription as Any)
+            ZVProgressHUD.dismiss()
             
         }
+        
     }
     
     @objc func movetoTabbarAfterSuccessfulllogin(dict : Dictionary<String, AnyObject>) {

@@ -1,0 +1,57 @@
+
+/* Class = "UILabel"; text = "Mobile number"; ObjectID = "0jq-CF-cYV"; */
+"0jq-CF-cYV.text" = "Mobile number";
+
+/* Class = "UITabBarItem"; title = "Dashboard"; ObjectID = "80d-xa-PMC"; */
+"80d-xa-PMC.title" = "Dashboard";
+
+/* Class = "UILabel"; text = "I don't have an email address"; ObjectID = "EVv-AL-dw3"; */
+"EVv-AL-dw3.text" = "I don't have an email address";
+
+/* Class = "UIButton"; normalTitle = "Logout"; ObjectID = "GTd-h1-Giu"; */
+"GTd-h1-Giu.normalTitle" = "Logout";
+
+/* Class = "UILabel"; text = "Mobile number"; ObjectID = "Goe-sX-n3K"; */
+"Goe-sX-n3K.text" = "Mobile number";
+
+/* Class = "UILabel"; text = "Confirm password"; ObjectID = "KYc-6y-JTT"; */
+"KYc-6y-JTT.text" = "Confirm password";
+
+/* Class = "UILabel"; text = "Password"; ObjectID = "RT4-Bw-77U"; */
+"RT4-Bw-77U.text" = "Password";
+
+/* Class = "UIButton"; normalTitle = "Ok"; ObjectID = "SE1-JL-qCy"; */
+"SE1-JL-qCy.normalTitle" = "Ok";
+
+/* Class = "UITabBarItem"; title = "Chat"; ObjectID = "Ttz-ZY-FpH"; */
+"Ttz-ZY-FpH.title" = "Chat";
+
+/* Class = "UIButton"; normalTitle = "Forgot Password?"; ObjectID = "U5h-Ib-Lxk"; */
+"U5h-Ib-Lxk.normalTitle" = "Forgot Password?";
+
+/* Class = "UILabel"; text = "Mobile number"; ObjectID = "aOo-lC-nnD"; */
+"aOo-lC-nnD.text" = "Mobile number";
+
+/* Class = "UITabBarItem"; title = "Notifications"; ObjectID = "gT3-Le-kZB"; */
+"gT3-Le-kZB.title" = "Notifications";
+
+/* Class = "UIButton"; normalTitle = "New User? Register here"; ObjectID = "iak-To-79v"; */
+"iak-To-79v.normalTitle" = "New User? Register here";
+
+/* Class = "UITextField"; placeholder = "  password"; ObjectID = "jZ8-IS-Lg3"; */
+"jZ8-IS-Lg3.placeholder" = "  password";
+
+/* Class = "UILabel"; text = "A verification code has been sent to your mobile number please enter the code to continue"; ObjectID = "jvI-PM-Tam"; */
+"jvI-PM-Tam.text" = "A verification code has been sent to your mobile number please enter the code to continue";
+
+/* Class = "UILabel"; text = "Password"; ObjectID = "lR4-39-2Ta"; */
+"lR4-39-2Ta.text" = "Password";
+
+/* Class = "UILabel"; text = "Resend verification code"; ObjectID = "nZS-ok-ePs"; */
+"nZS-ok-ePs.text" = "Resend verification code";
+
+/* Class = "UITabBarItem"; title = "Reports"; ObjectID = "xO2-WU-7ID"; */
+"xO2-WU-7ID.title" = "Reports";
+
+/* Class = "UILabel"; text = "Enter verification code"; ObjectID = "yDc-pP-PH2"; */
+"yDc-pP-PH2.text" = "Enter verification code";

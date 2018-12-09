@@ -23,6 +23,17 @@ class CreatePwdViewController: UIViewController,UITextFieldDelegate {
         confirmPwdTxtField.delegate = self
         pwdTxtField.delegate = self
         self.title = "Create password"
+        
+        if #available(iOS 12, *) {
+            // iOS 12: Not the best solution, but it works.
+            pwdTxtField.textContentType = .oneTimeCode
+            confirmPwdTxtField.textContentType = .oneTimeCode
+        } else {
+            // iOS 11: Disables the autofill accessory view.
+            // For more information see the explanation below.
+            pwdTxtField.textContentType = .init(rawValue: "")
+            confirmPwdTxtField.textContentType = .init(rawValue: "")
+        }
     }
 
     override func didReceiveMemoryWarning() {
@@ -55,6 +66,7 @@ class CreatePwdViewController: UIViewController,UITextFieldDelegate {
         else
         {
             self.createaNewPassword()
+            ZVProgressHUD.show()
         }
         
     }
@@ -99,7 +111,7 @@ class CreatePwdViewController: UIViewController,UITextFieldDelegate {
         }
     }
     @objc func movetologinVC() {
-        
+        ZVProgressHUD.dismiss()
         let tabB = self.storyboard?.instantiateViewController(withIdentifier: "myTabBar") as! UITabBarController
         self.navigationController?.pushViewController(tabB, animated: true)
     }
