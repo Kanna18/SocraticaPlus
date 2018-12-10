@@ -94,7 +94,11 @@ class ViewController: UIViewController,UITextFieldDelegate {
             return
         }
         guard let passwordtext = emailTxtField.text, passwordtext.isValidPassword else {
-            ZVProgressHUD.showText("Please should contain atleast 6 letters")
+            if(emailTxtField.text?.trimmingCharacters(in: .whitespaces).count == 0){
+                ZVProgressHUD.showText("Please enter a valid password")
+            }else{
+                ZVProgressHUD.showText("Please should contain atleast 6 letters")
+            }
          return
         }
         self.loParentFunction(a: "+\(phoneNumberText)", b: passwordtext)

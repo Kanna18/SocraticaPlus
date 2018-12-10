@@ -91,7 +91,8 @@ class OTPViewController: UIViewController {
             }
             do{
                 let myDict = try JSONSerialization.jsonObject(with: data, options: []) as? [String : AnyObject]
-                print(myDict!)
+                print(myDict!)                
+                ZVProgressHUD.showText(myDict!["message"] as! String)
                 if((myDict!["status"] as! Bool) == true){
                 self.perform(#selector(self.moveToChangePasswordVC(jsonDict:)), on: .main, with: myDict, waitUntilDone: true)
                 }

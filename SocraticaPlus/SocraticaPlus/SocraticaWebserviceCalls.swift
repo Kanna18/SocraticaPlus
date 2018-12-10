@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import ZVProgressHUD
 
 let apiKey = "x-api-key"
 let apiValue = "taya@123"
@@ -58,7 +59,7 @@ class SocraticaWebserviceCalls: NSObject {
         // Setup URLRequest
         var request = request
         request.cachePolicy = .useProtocolCachePolicy
-        request.timeoutInterval = 30.0
+        request.timeoutInterval = 10.0
         if request.value(forHTTPHeaderField: "Content-Type") == nil {
             request.addValue("application/json", forHTTPHeaderField: "Content-Type")
         }
@@ -79,14 +80,16 @@ class SocraticaWebserviceCalls: NSObject {
         // Setup URLSession
         let dataTask = session.dataTask(with: request, completionHandler: { data, response, error in
             if error == nil, let data = data, let response = response as? HTTPURLResponse {
-                if(response.statusCode == 400||response.statusCode == 200)
+                if(response.statusCode == 400||response.statusCode == 200||response.statusCode == 401)
                 {
                 print("Network Response:", request.url!, String(data: data, encoding: .utf8)!, separator:"\n" )
                 withSuccess(data)
                 }
+                ZVProgressHUD.dismiss()
             }else{
                 print("Network error: ", request.url!, error?.localizedDescription ?? "Some thing went wrong!", separator:"\n")
                 withFailure(error)
+                ZVProgressHUD.dismiss()
             }
         })
         dataTask.resume()
