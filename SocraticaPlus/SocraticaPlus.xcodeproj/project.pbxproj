@@ -8,6 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		7D2D30301217C146BA891671 /* Pods_SocraticaPlus.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D06FA636C327549F13908808 /* Pods_SocraticaPlus.framework */; };
+		89C650F82211398F00CAB0B5 /* PatientDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89C650F72211398F00CAB0B5 /* PatientDetailsViewController.swift */; };
+		89C650FC2212840C00CAB0B5 /* NotificationsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89C650FA2212840C00CAB0B5 /* NotificationsCell.swift */; };
+		89C650FD2212840C00CAB0B5 /* NotificationsCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 89C650FB2212840C00CAB0B5 /* NotificationsCell.xib */; };
+		89C650FF2212926B00CAB0B5 /* NotificationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89C650FE2212926B00CAB0B5 /* NotificationsViewController.swift */; };
+		89C6510222129F3300CAB0B5 /* ReportsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89C6510022129F3300CAB0B5 /* ReportsCell.swift */; };
+		89C6510322129F3300CAB0B5 /* ReportsCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 89C6510122129F3300CAB0B5 /* ReportsCell.xib */; };
+		89C6510522129F9000CAB0B5 /* ReportsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89C6510422129F9000CAB0B5 /* ReportsViewController.swift */; };
 		F620E7F7216933EE001FFECC /* Poppins-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F620E7F1216933EE001FFECC /* Poppins-Light.ttf */; };
 		F620E7F8216933EE001FFECC /* Poppins-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F620E7F2216933EE001FFECC /* Poppins-Medium.ttf */; };
 		F620E7F9216933EE001FFECC /* OFL.txt in Resources */ = {isa = PBXBuildFile; fileRef = F620E7F3216933EE001FFECC /* OFL.txt */; };
@@ -59,6 +66,13 @@
 /* Begin PBXFileReference section */
 		10E58274DC412E945A7102C3 /* Pods-SocraticaPlus.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SocraticaPlus.release.xcconfig"; path = "Pods/Target Support Files/Pods-SocraticaPlus/Pods-SocraticaPlus.release.xcconfig"; sourceTree = "<group>"; };
 		2659D0C365AA67865B87134D /* Pods-SocraticaPlus.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SocraticaPlus.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SocraticaPlus/Pods-SocraticaPlus.debug.xcconfig"; sourceTree = "<group>"; };
+		89C650F72211398F00CAB0B5 /* PatientDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PatientDetailsViewController.swift; sourceTree = "<group>"; };
+		89C650FA2212840C00CAB0B5 /* NotificationsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationsCell.swift; sourceTree = "<group>"; };
+		89C650FB2212840C00CAB0B5 /* NotificationsCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NotificationsCell.xib; sourceTree = "<group>"; };
+		89C650FE2212926B00CAB0B5 /* NotificationsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationsViewController.swift; sourceTree = "<group>"; };
+		89C6510022129F3300CAB0B5 /* ReportsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReportsCell.swift; sourceTree = "<group>"; };
+		89C6510122129F3300CAB0B5 /* ReportsCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ReportsCell.xib; sourceTree = "<group>"; };
+		89C6510422129F9000CAB0B5 /* ReportsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReportsViewController.swift; sourceTree = "<group>"; };
 		D06FA636C327549F13908808 /* Pods_SocraticaPlus.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SocraticaPlus.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F620E7F1216933EE001FFECC /* Poppins-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Light.ttf"; sourceTree = "<group>"; };
 		F620E7F2216933EE001FFECC /* Poppins-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Medium.ttf"; sourceTree = "<group>"; };
@@ -122,6 +136,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		89C650F9221283CD00CAB0B5 /* CustomCells */ = {
+			isa = PBXGroup;
+			children = (
+				89C650FA2212840C00CAB0B5 /* NotificationsCell.swift */,
+				89C650FB2212840C00CAB0B5 /* NotificationsCell.xib */,
+				89C6510022129F3300CAB0B5 /* ReportsCell.swift */,
+				89C6510122129F3300CAB0B5 /* ReportsCell.xib */,
+			);
+			path = CustomCells;
+			sourceTree = "<group>";
+		};
 		CB862470DA095E655C94DE7B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -190,6 +215,7 @@
 				F6769C7B21674BE300739EBA /* OTPViewController.swift */,
 				F67ADBFB2167779000FD5878 /* CreatePwdViewController.swift */,
 				F67ADBFD21677D6300FD5878 /* HomeViewController.swift */,
+				89C650F72211398F00CAB0B5 /* PatientDetailsViewController.swift */,
 				F6EF318D216A77AC008DA4F5 /* popup.png */,
 				F6769C6A21672B9100739EBA /* Main.storyboard */,
 				F6769C7021672B9300739EBA /* Assets.xcassets */,
@@ -200,6 +226,8 @@
 				F6769C7221672B9300739EBA /* LaunchScreen.storyboard */,
 				F6769C7521672B9300739EBA /* Info.plist */,
 				F6769C6D21672B9100739EBA /* SocraticaPlus.xcdatamodeld */,
+				89C650FE2212926B00CAB0B5 /* NotificationsViewController.swift */,
+				89C6510422129F9000CAB0B5 /* ReportsViewController.swift */,
 			);
 			path = SocraticaPlus;
 			sourceTree = "<group>";
@@ -238,6 +266,7 @@
 		F6929418216CABFB00D8B782 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				89C650F9221283CD00CAB0B5 /* CustomCells */,
 				F6929419216CABFB00D8B782 /* CountryCode.swift */,
 				F692941A216CABFB00D8B782 /* PhoneExtension.swift */,
 				F692941B216CABFB00D8B782 /* NKVSource.swift */,
@@ -345,9 +374,11 @@
 				F6929429216CABFC00D8B782 /* Countries.bundle in Resources */,
 				F6E1FCE3216B9C7A00C12CDE /* chat.png in Resources */,
 				F620E7F7216933EE001FFECC /* Poppins-Light.ttf in Resources */,
+				89C650FD2212840C00CAB0B5 /* NotificationsCell.xib in Resources */,
 				F6E1FCE5216B9C7A00C12CDE /* noti.png in Resources */,
 				F620E7F8216933EE001FFECC /* Poppins-Medium.ttf in Resources */,
 				F6E1FCDD216B9B5700C12CDE /* notifications.png in Resources */,
+				89C6510322129F3300CAB0B5 /* ReportsCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -402,7 +433,9 @@
 				F6297B0221A9E354007AB15B /* Constants.swift in Sources */,
 				F6929432216CABFC00D8B782 /* NKVPhonePickerPresenter.swift in Sources */,
 				F6297B0021A9E34E007AB15B /* SocraticaSharedClass.swift in Sources */,
+				89C6510222129F3300CAB0B5 /* ReportsCell.swift in Sources */,
 				F6769C7C21674BE300739EBA /* OTPViewController.swift in Sources */,
+				89C650FC2212840C00CAB0B5 /* NotificationsCell.swift in Sources */,
 				F6769C6F21672B9100739EBA /* SocraticaPlus.xcdatamodeld in Sources */,
 				F67ADBF821676A1B00FD5878 /* CustomButton.swift in Sources */,
 				F692942B216CABFC00D8B782 /* CountryCode.swift in Sources */,
@@ -419,10 +452,13 @@
 				F6929430216CABFC00D8B782 /* NKVPhonePickerTextField.swift in Sources */,
 				F692942C216CABFC00D8B782 /* PhoneExtension.swift in Sources */,
 				F6929437216CABFC00D8B782 /* NKVLocalizationHelper.swift in Sources */,
+				89C650F82211398F00CAB0B5 /* PatientDetailsViewController.swift in Sources */,
+				89C6510522129F9000CAB0B5 /* ReportsViewController.swift in Sources */,
 				F67ADBFE21677D6300FD5878 /* HomeViewController.swift in Sources */,
 				F6769C6721672B9100739EBA /* AppDelegate.swift in Sources */,
 				F6297B0421A9E3F8007AB15B /* SocraticaWebserviceCalls.swift in Sources */,
 				F67ADBFC2167779000FD5878 /* CreatePwdViewController.swift in Sources */,
+				89C650FF2212926B00CAB0B5 /* NotificationsViewController.swift in Sources */,
 				F692942D216CABFC00D8B782 /* NKVSource.swift in Sources */,
 				F67ADBF721676A1B00FD5878 /* CustomTextField.swift in Sources */,
 			);
