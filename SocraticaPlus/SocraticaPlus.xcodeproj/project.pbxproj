@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		7D2D30301217C146BA891671 /* Pods_SocraticaPlus.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D06FA636C327549F13908808 /* Pods_SocraticaPlus.framework */; };
-		89C650F82211398F00CAB0B5 /* PatientDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89C650F72211398F00CAB0B5 /* PatientDetailsViewController.swift */; };
+		89C650F82211398F00CAB0B5 /* ParentDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89C650F72211398F00CAB0B5 /* ParentDetailsViewController.swift */; };
 		89C650FC2212840C00CAB0B5 /* NotificationsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89C650FA2212840C00CAB0B5 /* NotificationsCell.swift */; };
 		89C650FD2212840C00CAB0B5 /* NotificationsCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 89C650FB2212840C00CAB0B5 /* NotificationsCell.xib */; };
 		89C650FF2212926B00CAB0B5 /* NotificationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89C650FE2212926B00CAB0B5 /* NotificationsViewController.swift */; };
@@ -66,7 +66,7 @@
 /* Begin PBXFileReference section */
 		10E58274DC412E945A7102C3 /* Pods-SocraticaPlus.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SocraticaPlus.release.xcconfig"; path = "Pods/Target Support Files/Pods-SocraticaPlus/Pods-SocraticaPlus.release.xcconfig"; sourceTree = "<group>"; };
 		2659D0C365AA67865B87134D /* Pods-SocraticaPlus.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SocraticaPlus.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SocraticaPlus/Pods-SocraticaPlus.debug.xcconfig"; sourceTree = "<group>"; };
-		89C650F72211398F00CAB0B5 /* PatientDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PatientDetailsViewController.swift; sourceTree = "<group>"; };
+		89C650F72211398F00CAB0B5 /* ParentDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParentDetailsViewController.swift; sourceTree = "<group>"; };
 		89C650FA2212840C00CAB0B5 /* NotificationsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationsCell.swift; sourceTree = "<group>"; };
 		89C650FB2212840C00CAB0B5 /* NotificationsCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NotificationsCell.xib; sourceTree = "<group>"; };
 		89C650FE2212926B00CAB0B5 /* NotificationsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationsViewController.swift; sourceTree = "<group>"; };
@@ -215,7 +215,7 @@
 				F6769C7B21674BE300739EBA /* OTPViewController.swift */,
 				F67ADBFB2167779000FD5878 /* CreatePwdViewController.swift */,
 				F67ADBFD21677D6300FD5878 /* HomeViewController.swift */,
-				89C650F72211398F00CAB0B5 /* PatientDetailsViewController.swift */,
+				89C650F72211398F00CAB0B5 /* ParentDetailsViewController.swift */,
 				F6EF318D216A77AC008DA4F5 /* popup.png */,
 				F6769C6A21672B9100739EBA /* Main.storyboard */,
 				F6769C7021672B9300739EBA /* Assets.xcassets */,
@@ -452,7 +452,7 @@
 				F6929430216CABFC00D8B782 /* NKVPhonePickerTextField.swift in Sources */,
 				F692942C216CABFC00D8B782 /* PhoneExtension.swift in Sources */,
 				F6929437216CABFC00D8B782 /* NKVLocalizationHelper.swift in Sources */,
-				89C650F82211398F00CAB0B5 /* PatientDetailsViewController.swift in Sources */,
+				89C650F82211398F00CAB0B5 /* ParentDetailsViewController.swift in Sources */,
 				89C6510522129F9000CAB0B5 /* ReportsViewController.swift in Sources */,
 				F67ADBFE21677D6300FD5878 /* HomeViewController.swift in Sources */,
 				F6769C6721672B9100739EBA /* AppDelegate.swift in Sources */,

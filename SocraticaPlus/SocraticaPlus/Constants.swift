@@ -39,7 +39,9 @@ struct ServiceDataConst {
     static var kChangePasswordPassword: String {
         return kRootURL + "token/" + "changepassword"
     }
-    
+    static var kParentProfile: String{
+        return kRootURL + "parent/profile/"
+    }
     
 //    static var kRegistrationURL: String {
 //        return kRootURL + "users_register"

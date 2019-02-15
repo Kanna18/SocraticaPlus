@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="ze9-CP-Bxh">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="RUI-Um-6uX">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -1030,10 +1030,10 @@
             </objects>
             <point key="canvasLocation" x="2471" y="826"/>
         </scene>
-        <!--Patient Details View Controller-->
+        <!--Parent Details View Controller-->
         <scene sceneID="QMP-CU-3hh">
             <objects>
-                <viewController id="BMl-Wb-f8x" customClass="PatientDetailsViewController" customModule="SocraticaPlus" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ParentProfile" id="BMl-Wb-f8x" customClass="ParentDetailsViewController" customModule="SocraticaPlus" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="y71-W8-qdV">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1088,7 +1088,7 @@
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8dB-ID-HrK">
                                                 <rect key="frame" x="30" y="251" width="315" height="31"/>
                                                 <subviews>
-                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Enter Mobile Number" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="4TK-nS-PdB">
+                                                    <textField opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Enter Mobile Number" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="4TK-nS-PdB">
                                                         <rect key="frame" x="0.0" y="0.0" width="315" height="30"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="30" id="Erk-zC-8MU"/>
@@ -1189,7 +1189,7 @@
                                                     <constraint firstAttribute="width" constant="72" id="sVc-Fa-YwN"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" name="Poppins-Medium" family="Poppins" pointSize="16"/>
-                                                <state key="normal" title="Save">
+                                                <state key="normal" title="Edit">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 </state>
                                                 <connections>
@@ -1252,6 +1252,9 @@
                     </view>
                     <connections>
                         <outlet property="addressTextView" destination="wT9-81-C8Y" id="JNG-9U-S5p"/>
+                        <outlet property="emailTxt" destination="ech-hP-gLf" id="Cn3-Ik-7M1"/>
+                        <outlet property="mobileTxt" destination="4TK-nS-PdB" id="Ow0-kQ-w2l"/>
+                        <outlet property="nameTxt" destination="3d9-rr-byu" id="NZf-VT-fin"/>
                         <outlet property="profileBtn" destination="TVs-AA-trV" id="VO5-tC-xC1"/>
                     </connections>
                 </viewController>

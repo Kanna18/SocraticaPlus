@@ -118,12 +118,16 @@ class LoginViewController: UIViewController {
     @objc func movetoTabbarAfterSuccessfulllogin(dict : Dictionary<String, AnyObject>) {
         
         let boolVal = dict["token"]
+       
         if(boolVal != nil){
-            let tabB = self.storyboard?.instantiateViewController(withIdentifier: "myTabBar") as! UITabBarController
-            self.navigationController?.pushViewController(tabB, animated: true)
+            //let tabB = self.storyboard?.instantiateViewController(withIdentifier: "myTabBar") as! UITabBarController
+            let parentProfile = self.storyboard?.instantiateViewController(withIdentifier: "ParentProfile") as! UIViewController
+            self.navigationController?.pushViewController(parentProfile, animated: true)
             let defa = UserDefaults.standard
             defa.set(phoneTextField.text , forKey: savedPhoneNumber)
             defa.set(passwordTF.text , forKey: savedPassword)
+            defa.set(boolVal, forKey: "parentToken")
+            
         }else{
             ZVProgressHUD.showText(dict["message"] as! String)
         }

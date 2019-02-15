@@ -106,6 +106,7 @@ class ViewController: UIViewController,UITextFieldDelegate {
     }
     
     func loParentFunction(a: String, b: String) {
+        
         let url = "\(ServiceDataConst.kParentRegistration)"
         let requestURL = URL.init(string: url);
         var request = URLRequest.init(url: requestURL!)
