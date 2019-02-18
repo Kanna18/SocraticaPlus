@@ -848,6 +848,7 @@
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
                     <connections>
+                        <segue destination="BMl-Wb-f8x" kind="relationship" relationship="viewControllers" id="lUp-wc-JTa"/>
                         <segue destination="mbp-sI-M5r" kind="relationship" relationship="viewControllers" id="QvQ-6D-3Mx"/>
                         <segue destination="bJo-KA-wDY" kind="relationship" relationship="viewControllers" id="5Um-uP-g9p"/>
                         <segue destination="bm1-HW-vve" kind="relationship" relationship="viewControllers" id="aeW-YZ-PHQ"/>
@@ -856,7 +857,7 @@
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="r53-UK-WQR" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3311" y="-116"/>
+            <point key="canvasLocation" x="3348" y="-360"/>
         </scene>
         <!--Reports-->
         <scene sceneID="Ugo-yN-Fg5">
@@ -990,7 +991,7 @@
         <!--Chat-->
         <scene sceneID="z5J-Cb-Eau">
             <objects>
-                <viewController id="WQE-io-fsu" sceneMemberID="viewController">
+                <viewController id="WQE-io-fsu" customClass="ChatViewController" customModule="SocraticaPlus" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="J4a-wa-fwT">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -998,27 +999,42 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="mxo-Mo-d0T">
                                 <rect key="frame" x="0.0" y="20" width="375" height="598"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GTd-h1-Giu">
-                                <rect key="frame" x="87.5" y="308.5" width="200" height="50"/>
-                                <color key="backgroundColor" red="0.40784313729999999" green="0.69411764710000001" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="RBj-DO-QaP">
+                                <rect key="frame" x="87.5" y="278.5" width="200" height="110"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GTd-h1-Giu">
+                                        <rect key="frame" x="0.0" y="0.0" width="200" height="50"/>
+                                        <color key="backgroundColor" red="0.40784313729999999" green="0.69411764710000001" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <state key="normal" title="Logout">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <segue destination="RUI-Um-6uX" kind="show" id="S02-92-dri"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Sv-j2-zLM">
+                                        <rect key="frame" x="0.0" y="60" width="200" height="50"/>
+                                        <color key="backgroundColor" red="0.47632056474685669" green="0.68643611669540405" blue="0.95615082979202271" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <state key="normal" title="Delete">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="removeParentTapped:" destination="WQE-io-fsu" eventType="touchUpInside" id="g4x-Wk-S9S"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="50" id="gzF-Xt-u0j"/>
-                                    <constraint firstAttribute="width" constant="200" id="oVj-FM-rrZ"/>
+                                    <constraint firstAttribute="height" constant="110" id="87e-TY-vQF"/>
+                                    <constraint firstAttribute="width" constant="200" id="9H7-ld-Cq2"/>
                                 </constraints>
-                                <state key="normal" title="Logout">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
-                                <connections>
-                                    <segue destination="RUI-Um-6uX" kind="show" id="S02-92-dri"/>
-                                </connections>
-                            </button>
+                            </stackView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="mxo-Mo-d0T" firstAttribute="leading" secondItem="2fj-Lo-fgd" secondAttribute="leading" id="6g0-CS-mjO"/>
-                            <constraint firstItem="GTd-h1-Giu" firstAttribute="centerY" secondItem="J4a-wa-fwT" secondAttribute="centerY" id="B3Q-gc-oMY"/>
-                            <constraint firstItem="GTd-h1-Giu" firstAttribute="centerX" secondItem="J4a-wa-fwT" secondAttribute="centerX" id="C4c-gD-CKL"/>
+                            <constraint firstItem="RBj-DO-QaP" firstAttribute="centerY" secondItem="J4a-wa-fwT" secondAttribute="centerY" id="Aor-Da-RFn"/>
                             <constraint firstItem="mxo-Mo-d0T" firstAttribute="trailing" secondItem="2fj-Lo-fgd" secondAttribute="trailing" id="NXh-AG-vvl"/>
+                            <constraint firstItem="RBj-DO-QaP" firstAttribute="centerX" secondItem="J4a-wa-fwT" secondAttribute="centerX" id="SeX-dD-Myb"/>
                             <constraint firstItem="2fj-Lo-fgd" firstAttribute="bottom" secondItem="mxo-Mo-d0T" secondAttribute="bottom" id="vVA-Td-d72"/>
                             <constraint firstItem="mxo-Mo-d0T" firstAttribute="top" secondItem="2fj-Lo-fgd" secondAttribute="top" id="vfv-aF-DJ5"/>
                         </constraints>
@@ -1028,9 +1044,9 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kCh-vo-BDd" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2471" y="826"/>
+            <point key="canvasLocation" x="2452" y="952"/>
         </scene>
-        <!--Parent Details View Controller-->
+        <!--Profile-->
         <scene sceneID="QMP-CU-3hh">
             <objects>
                 <viewController storyboardIdentifier="ParentProfile" id="BMl-Wb-f8x" customClass="ParentDetailsViewController" customModule="SocraticaPlus" customModuleProvider="target" sceneMemberID="viewController">
@@ -1039,10 +1055,10 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bIH-cg-yj3">
-                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                                <rect key="frame" x="0.0" y="20" width="375" height="598"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GAP-ey-bso">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="598"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="My Profile" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wpr-7M-2lF">
                                                 <rect key="frame" x="62.5" y="40" width="250" height="30"/>
@@ -1250,6 +1266,8 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="iPL-1H-YF2"/>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Profile" id="khd-ys-ufX"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="addressTextView" destination="wT9-81-C8Y" id="JNG-9U-S5p"/>
                         <outlet property="emailTxt" destination="ech-hP-gLf" id="Cn3-Ik-7M1"/>
@@ -1260,12 +1278,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tUH-0I-i0s" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2796" y="1510.7946026986508"/>
+            <point key="canvasLocation" x="4321" y="-366"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="INB-z8-mFY">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="RUI-Um-6uX" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="navLoginController" automaticallyAdjustsScrollViewInsets="NO" id="RUI-Um-6uX" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="ZcI-w4-s4A">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>

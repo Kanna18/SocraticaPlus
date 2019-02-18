@@ -88,6 +88,7 @@ class LoginViewController: UIViewController {
 
     
     func loginParentFunction(a: String, b: String) {
+        
         let url = "\(ServiceDataConst.kParentLogin)"
         let requestURL = URL.init(string: url);
         var request = URLRequest.init(url: requestURL!)
@@ -103,7 +104,10 @@ class LoginViewController: UIViewController {
             do{
                 let myDict = try JSONSerialization.jsonObject(with: data, options: []) as? [String : AnyObject]
                 print(myDict!)
-                self.perform(#selector(self.movetoTabbarAfterSuccessfulllogin(dict:)), on: .main, with: myDict, waitUntilDone: true)
+                
+                    self.perform(#selector(self.movetoTabbarAfterSuccessfulllogin(dict:)), on: .main, with: myDict, waitUntilDone: true)
+
+                
             }catch{
                 print("Error")
             }
@@ -120,17 +124,31 @@ class LoginViewController: UIViewController {
         let boolVal = dict["token"]
        
         if(boolVal != nil){
-            //let tabB = self.storyboard?.instantiateViewController(withIdentifier: "myTabBar") as! UITabBarController
-            let parentProfile = self.storyboard?.instantiateViewController(withIdentifier: "ParentProfile") as! UIViewController
-            self.navigationController?.pushViewController(parentProfile, animated: true)
+            let tabB = self.storyboard?.instantiateViewController(withIdentifier: "myTabBar") as! UITabBarController
+            //let parentProfile = self.storyboard?.instantiateViewController(withIdentifier: "ParentProfile") as! UIViewController
+            self.navigationController?.pushViewController(tabB, animated: true)
             let defa = UserDefaults.standard
-            defa.set(phoneTextField.text , forKey: savedPhoneNumber)
+          
+            
+            
+            defa.set("+\(phoneTextField.phoneNumber!)" , forKey: savedPhoneNumber)
             defa.set(passwordTF.text , forKey: savedPassword)
             defa.set(boolVal, forKey: "parentToken")
             
         }else{
-            ZVProgressHUD.showText(dict["message"] as! String)
+            //ZVProgressHUD.showText(dict["message"] as! String)
+            self.perform(#selector(self.presentAlertonMainThread(dic:)), on: .main, with: dict, waitUntilDone: true)
         }
+    }
+    @objc func presentAlertonMainThread(dic:Dictionary<String,AnyObject>){
+        let alert = UIAlertController(title: "Socratica", message: (dic["message"] as! String), preferredStyle: .alert)
+        let okAction = UIAlertAction(title: "OK", style: .default, handler: { (action) in
+            
+        })
+        alert.addAction(okAction)
+        
+        self.present(alert, animated: true, completion: nil)
+        
     }
     
 

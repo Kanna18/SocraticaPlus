@@ -90,9 +90,11 @@ var imagePickerController : UIImagePickerController!
    @objc func assignDataForFields(dict : Dictionary<String, AnyObject>){
     let urlString = dict["imagePath"] != nil ? dict["imagePath"] as? String : ""
         let url = URL(string:urlString!)
-        let data = try? Data(contentsOf: url!) //make sure your image in this url does exist, otherwise unwrap in a if let check / try-catch
-        let parentImg  = UIImage(data: data!)
+    if let data = try? Data(contentsOf: url!){
+        let parentImg  = UIImage(data: data)
         self.profileBtn.setBackgroundImage(parentImg, for: .normal)
+    } 
+    
     self.nameTxt.text = dict["firstName"] != nil ? dict["firstName"] as? String : ""
      self.emailTxt.text = dict["email"] != nil ? dict["email"] as? String : ""
     self.mobileTxt.text = dict["phoneNumber"] != nil ? dict["phoneNumber"] as? String : ""

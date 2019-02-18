@@ -42,6 +42,9 @@ struct ServiceDataConst {
     static var kParentProfile: String{
         return kRootURL + "parent/profile/"
     }
+    static var kRemoveParentProfile: String{
+        return kRootURL + "Register/RemoveParent"
+    }
     
 //    static var kRegistrationURL: String {
 //        return kRootURL + "users_register"

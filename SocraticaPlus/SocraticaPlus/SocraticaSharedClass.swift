@@ -17,5 +17,6 @@ class SocraticaSharedClass: NSObject {
     // MARK: Shared Instance
     static let shared = SocraticaSharedClass()
     
-    // MARK: Local Variable    
+    // MARK: Local Variable
+    
 }
