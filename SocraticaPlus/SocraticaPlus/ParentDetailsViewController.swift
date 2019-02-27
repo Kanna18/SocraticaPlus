@@ -78,11 +78,38 @@ var imagePickerController : UIImagePickerController!
         let parentToken = def.value(forKey: "parentToken") as! String
         
         request.setValue("Bearer \(parentToken)", forHTTPHeaderField: "Authorization")
-       // let json = "{\"FirstName\":\"\(self.nameTxt.text)\",\"LastName\":\"\(self.nameTxt.text)\",\"Email\":\"\(self.emailTxt.text)\",\"PhoneNumber\":\"\(self.mobileTxt.text)\",\"Address\":\"\(self.addressTextView.text)\",\"ImageFile\":\"\()\"}"
+
+       
         request.httpBody = json.data(using: .utf8)
         SocraticaWebserviceCalls().sendPOST(request as URLRequest, withSuccess: { (data) in
+            guard let data = data else {
+                print("Error: No data to decode")
+                return
+            }
+            guard data.count != 0 else {
+                print("Zero bytes of data")
+                DispatchQueue.main.async {
+                    ZVProgressHUD.showText("Zero bytes of data")
+                }
+                return
+            }
+            do{
+                let myDict = try JSONSerialization.jsonObject(with: data, options: []) as? [String : AnyObject]
+                print(myDict!)
+                
+               
+                
+                
+            }catch{
+                print("Error")
+                DispatchQueue.main.async {
+                    ZVProgressHUD.showText("Error")
+                }
+                
+            }
             
         }) { (error) in
+            
             
         }
         
@@ -133,10 +160,32 @@ var imagePickerController : UIImagePickerController!
     }
     
     @IBAction func onSaveBtnClick(_ sender: UIButton) {
+        print("button clickk")
         if(sender.title(for: .normal ) == "Edit"){
             self.disabelFieldsInteraction(bool: true)
+            sender.setTitle("Save", for: .normal)
             self.nameTxt.becomeFirstResponder()
         }else{
+            var data :NSData? = nil
+            if let img = profileBtn.imageView?.image{
+                data = UIImagePNGRepresentation(img) as! NSData
+            }
+            guard let firstName = self.nameTxt.text,!firstName.isEmpty, let email = self.emailTxt.text,!email.isEmpty, let address = self.addressTextView.text,!address.isEmpty, let phoneNumber = self.mobileTxt.text,!phoneNumber.isEmpty else{
+                 DispatchQueue.main.async {
+                ZVProgressHUD.showText("All fields are mandatory")
+                }
+                return
+                
+            }
+            var json : String?
+            if let imgData = data{
+                    json = "{\"PhoneNumber\":\"\(phoneNumber)\",\"Email\":\"\(email)\",\"Address\":\"\(address)\",\"ImageFile\":\"\(imgData)\",\"FirstName\":\"\(firstName)\",\"LastName\":\"\(firstName)\"}"
+            }else{
+                 json = "{\"PhoneNumber\":\"\(phoneNumber)\",\"Email\":\"\(email)\",\"Address\":\"\(address)\",\"FirstName\":\"\(firstName)\",\"LastName\":\"\(firstName)\"}"
+            }
+         
+            self.updateParentProfile(with: json!)
+            sender.setTitle("Edit", for: .normal)
             
         }
     }

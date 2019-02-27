@@ -100,8 +100,9 @@ class CreatePwdViewController: UIViewController,UITextFieldDelegate {
             do{
                 let myDict = try JSONSerialization.jsonObject(with: data, options: []) as? [String : AnyObject]
                 print(myDict!)
-                
-                ZVProgressHUD.showText(myDict?["message"] as! String)
+                DispatchQueue.main.async {
+                ZVProgressHUD.showText(myDict?["message"] as! String,in:self.view)
+                }
                 self.perform(#selector(self.movetologinVC), on: .main, with: nil, waitUntilDone: true)
             }catch{
                 print("Error")

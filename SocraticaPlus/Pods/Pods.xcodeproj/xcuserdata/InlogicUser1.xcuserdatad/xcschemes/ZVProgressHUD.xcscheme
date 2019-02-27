@@ -14,10 +14,10 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "2C71307DE2619226FBEED5F8F2BC4327"
-               BlueprintName = "ZVActivityIndicatorView"
-               ReferencedContainer = "container:Pods.xcodeproj"
-               BuildableName = "ZVActivityIndicatorView.framework">
+               BlueprintIdentifier = "9F0330599DA3CD3A4B7E55C4FD0C6961"
+               BuildableName = "ZVProgressHUD.framework"
+               BlueprintName = "ZVProgressHUD"
+               ReferencedContainer = "container:Pods.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>

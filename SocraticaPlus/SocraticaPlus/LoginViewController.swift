@@ -11,6 +11,7 @@ import ZVProgressHUD
 class LoginViewController: UIViewController {
     
     
+    @IBOutlet var contentView: UIView!
     @IBOutlet weak var passwordTF: UITextField!
     @IBOutlet weak var phoneTextField: NKVPhonePickerTextField!
     var rememberPhoneNumber = String()
@@ -66,7 +67,7 @@ class LoginViewController: UIViewController {
     @IBAction func loginClick(_ sender: Any) {
         
         
-        guard let phoneNum = phoneTextField.phoneNumber, phoneNum.isPhoneNumber else {
+        guard let phoneNum = phoneTextField.phoneNumber, phoneNum.isPhoneNumber,SocraticaSharedClass.shared.validatePhoneNumber(for: phoneNum, country: (phoneTextField.country?.countryCode)!, and: phoneTextField.code!) else {
             ZVProgressHUD.showError(with: "Please enter a valid phone number", in: self.view, delay: 0.0)
             return
         }
@@ -74,6 +75,7 @@ class LoginViewController: UIViewController {
             ZVProgressHUD.showError(with: "Please enter a valid password", in: self.view, delay: 0.0)
             return
         }
+        
         ZVProgressHUD.show()
         self.loginParentFunction(a: "+\(phoneNum)", b: password)
 
@@ -92,8 +94,8 @@ class LoginViewController: UIViewController {
         let url = "\(ServiceDataConst.kParentLogin)"
         let requestURL = URL.init(string: url);
         var request = URLRequest.init(url: requestURL!)
-        
-         let json = "{\"phoneNumber\":\"\(a)\",\"password\":\"\(b)\",\"isParentLogin\":\"\(true)\"}"        
+
+         let json = "{\"phoneNumber\":\"\(a)\",\"password\":\"\(b)\",\"isParentLogin\":\"\(true)\"}"
         request.httpBody = json.data(using: .utf8)
         SocraticaWebserviceCalls().sendPOST(request, withSuccess: { (data) in
             ZVProgressHUD.dismiss()
@@ -101,21 +103,33 @@ class LoginViewController: UIViewController {
                 print("Error: No data to decode")
                 return
             }
+            guard data.count != 0 else {
+                print("Zero bytes of data")
+                DispatchQueue.main.async {
+                    ZVProgressHUD.showText("Zero bytes of data")
+                }
+                return
+            }
             do{
                 let myDict = try JSONSerialization.jsonObject(with: data, options: []) as? [String : AnyObject]
                 print(myDict!)
-                
+
                     self.perform(#selector(self.movetoTabbarAfterSuccessfulllogin(dict:)), on: .main, with: myDict, waitUntilDone: true)
 
-                
+
             }catch{
                 print("Error")
+                DispatchQueue.main.async {
+                     ZVProgressHUD.showText("Error")
+                }
+                
             }
         }) { (error) in
             print(error?.localizedDescription as Any)
             ZVProgressHUD.dismiss()
-            
+
         }
+        //ZVProgressHUD.showText("submit clicked")
         
     }
     
@@ -136,8 +150,11 @@ class LoginViewController: UIViewController {
             defa.set(boolVal, forKey: "parentToken")
             
         }else{
-            //ZVProgressHUD.showText(dict["message"] as! String)
-            self.perform(#selector(self.presentAlertonMainThread(dic:)), on: .main, with: dict, waitUntilDone: true)
+             DispatchQueue.main.async {
+            ZVProgressHUD.showText(dict["message"] as! String, in:self.view)
+            }
+            
+            //self.perform(#selector(self.presentAlertonMainThread(dic:)), on: .main, with: dict, waitUntilDone: true)
         }
     }
     @objc func presentAlertonMainThread(dic:Dictionary<String,AnyObject>){

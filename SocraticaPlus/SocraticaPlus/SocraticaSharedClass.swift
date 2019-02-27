@@ -19,4 +19,29 @@ class SocraticaSharedClass: NSObject {
     
     // MARK: Local Variable
     
+    func validatePhoneNumber(for number:String,country:String,and code:String) -> Bool{
+        
+        
+        var phoneNumber : String!
+        if let range =  number.range(of: code) {
+            phoneNumber = number.replacingOccurrences(of: code, with: "", options: String.CompareOptions.caseInsensitive, range: range)
+        }
+        if( country == "AU" ){
+           
+            if phoneNumber.count == 8{
+                return true
+            } else{
+                return false
+            }
+        } else if (country == "IN"){
+            if phoneNumber.count == 10{
+                return true
+            } else{
+                return false
+            }
+        }
+        return true
+        
+    }
+    
 }

@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		7D2D30301217C146BA891671 /* Pods_SocraticaPlus.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D06FA636C327549F13908808 /* Pods_SocraticaPlus.framework */; };
 		890E4F3B221AB833002EF346 /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 890E4F3A221AB833002EF346 /* ChatViewController.swift */; };
 		89C650F82211398F00CAB0B5 /* ParentDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89C650F72211398F00CAB0B5 /* ParentDetailsViewController.swift */; };
 		89C650FC2212840C00CAB0B5 /* NotificationsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89C650FA2212840C00CAB0B5 /* NotificationsCell.swift */; };
@@ -16,6 +15,7 @@
 		89C6510222129F3300CAB0B5 /* ReportsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89C6510022129F3300CAB0B5 /* ReportsCell.swift */; };
 		89C6510322129F3300CAB0B5 /* ReportsCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 89C6510122129F3300CAB0B5 /* ReportsCell.xib */; };
 		89C6510522129F9000CAB0B5 /* ReportsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89C6510422129F9000CAB0B5 /* ReportsViewController.swift */; };
+		DD54D26CBB725914D86D84BF /* Pods_SocraticaPlus.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8FC21B10CB4F76FB1718CBE2 /* Pods_SocraticaPlus.framework */; };
 		F620E7F7216933EE001FFECC /* Poppins-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F620E7F1216933EE001FFECC /* Poppins-Light.ttf */; };
 		F620E7F8216933EE001FFECC /* Poppins-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F620E7F2216933EE001FFECC /* Poppins-Medium.ttf */; };
 		F620E7F9216933EE001FFECC /* OFL.txt in Resources */ = {isa = PBXBuildFile; fileRef = F620E7F3216933EE001FFECC /* OFL.txt */; };
@@ -65,8 +65,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		10E58274DC412E945A7102C3 /* Pods-SocraticaPlus.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SocraticaPlus.release.xcconfig"; path = "Pods/Target Support Files/Pods-SocraticaPlus/Pods-SocraticaPlus.release.xcconfig"; sourceTree = "<group>"; };
-		2659D0C365AA67865B87134D /* Pods-SocraticaPlus.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SocraticaPlus.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SocraticaPlus/Pods-SocraticaPlus.debug.xcconfig"; sourceTree = "<group>"; };
+		3AEC233B7657EE1D32336F3E /* Pods-SocraticaPlus.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SocraticaPlus.debug.xcconfig"; path = "Target Support Files/Pods-SocraticaPlus/Pods-SocraticaPlus.debug.xcconfig"; sourceTree = "<group>"; };
 		890E4F3A221AB833002EF346 /* ChatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
 		89C650F72211398F00CAB0B5 /* ParentDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParentDetailsViewController.swift; sourceTree = "<group>"; };
 		89C650FA2212840C00CAB0B5 /* NotificationsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationsCell.swift; sourceTree = "<group>"; };
@@ -75,7 +74,8 @@
 		89C6510022129F3300CAB0B5 /* ReportsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReportsCell.swift; sourceTree = "<group>"; };
 		89C6510122129F3300CAB0B5 /* ReportsCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ReportsCell.xib; sourceTree = "<group>"; };
 		89C6510422129F9000CAB0B5 /* ReportsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReportsViewController.swift; sourceTree = "<group>"; };
-		D06FA636C327549F13908808 /* Pods_SocraticaPlus.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SocraticaPlus.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8FC21B10CB4F76FB1718CBE2 /* Pods_SocraticaPlus.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SocraticaPlus.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F53E7D7B80D7BDAFF2DE3021 /* Pods-SocraticaPlus.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SocraticaPlus.release.xcconfig"; path = "Target Support Files/Pods-SocraticaPlus/Pods-SocraticaPlus.release.xcconfig"; sourceTree = "<group>"; };
 		F620E7F1216933EE001FFECC /* Poppins-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Light.ttf"; sourceTree = "<group>"; };
 		F620E7F2216933EE001FFECC /* Poppins-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Medium.ttf"; sourceTree = "<group>"; };
 		F620E7F3216933EE001FFECC /* OFL.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = OFL.txt; sourceTree = "<group>"; };
@@ -131,13 +131,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7D2D30301217C146BA891671 /* Pods_SocraticaPlus.framework in Frameworks */,
+				DD54D26CBB725914D86D84BF /* Pods_SocraticaPlus.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0BF6BCB1EB377CA273BFD1EE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8FC21B10CB4F76FB1718CBE2 /* Pods_SocraticaPlus.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		89574E52221EAADE00D06AE5 /* CustomViews */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = CustomViews;
+			sourceTree = "<group>";
+		};
 		89C650F9221283CD00CAB0B5 /* CustomCells */ = {
 			isa = PBXGroup;
 			children = (
@@ -149,21 +164,13 @@
 			path = CustomCells;
 			sourceTree = "<group>";
 		};
-		CB862470DA095E655C94DE7B /* Frameworks */ = {
+		C7833AC8CB1D3D852B6E1825 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				D06FA636C327549F13908808 /* Pods_SocraticaPlus.framework */,
+				3AEC233B7657EE1D32336F3E /* Pods-SocraticaPlus.debug.xcconfig */,
+				F53E7D7B80D7BDAFF2DE3021 /* Pods-SocraticaPlus.release.xcconfig */,
 			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		EE39BD782E7055A1D8C9DA4A /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				2659D0C365AA67865B87134D /* Pods-SocraticaPlus.debug.xcconfig */,
-				10E58274DC412E945A7102C3 /* Pods-SocraticaPlus.release.xcconfig */,
-			);
-			name = Pods;
+			path = Pods;
 			sourceTree = "<group>";
 		};
 		F620E7F0216933EE001FFECC /* Poppins */ = {
@@ -190,8 +197,8 @@
 				F620E7F0216933EE001FFECC /* Poppins */,
 				F6769C6521672B9100739EBA /* SocraticaPlus */,
 				F6769C6421672B9100739EBA /* Products */,
-				EE39BD782E7055A1D8C9DA4A /* Pods */,
-				CB862470DA095E655C94DE7B /* Frameworks */,
+				C7833AC8CB1D3D852B6E1825 /* Pods */,
+				0BF6BCB1EB377CA273BFD1EE /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -269,6 +276,7 @@
 		F6929418216CABFB00D8B782 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				89574E52221EAADE00D06AE5 /* CustomViews */,
 				89C650F9221283CD00CAB0B5 /* CustomCells */,
 				F6929419216CABFB00D8B782 /* CountryCode.swift */,
 				F692941A216CABFB00D8B782 /* PhoneExtension.swift */,
@@ -307,11 +315,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F6769C7821672B9300739EBA /* Build configuration list for PBXNativeTarget "SocraticaPlus" */;
 			buildPhases = (
-				B82F2E6F6921165DAE52B980 /* [CP] Check Pods Manifest.lock */,
+				837D29706D84A7DC6A446D62 /* [CP] Check Pods Manifest.lock */,
 				F6769C5F21672B9100739EBA /* Sources */,
 				F6769C6021672B9100739EBA /* Frameworks */,
 				F6769C6121672B9100739EBA /* Resources */,
-				3115A2A1FEE82F2FCD494B50 /* [CP] Embed Pods Frameworks */,
+				D0B926E7F5CCFF4490DC91D7 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -388,42 +396,50 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		3115A2A1FEE82F2FCD494B50 /* [CP] Embed Pods Frameworks */ = {
+		837D29706D84A7DC6A446D62 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-SocraticaPlus/Pods-SocraticaPlus-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/ZVActivityIndicatorView/ZVActivityIndicatorView.framework",
-				"${BUILT_PRODUCTS_DIR}/ZVProgressHUD/ZVProgressHUD.framework",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ZVActivityIndicatorView.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ZVProgressHUD.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SocraticaPlus/Pods-SocraticaPlus-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		B82F2E6F6921165DAE52B980 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
+			inputFileListPaths = (
 			);
 			inputPaths = (
 				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
 				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
 			outputPaths = (
 				"$(DERIVED_FILE_DIR)/Pods-SocraticaPlus-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D0B926E7F5CCFF4490DC91D7 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SocraticaPlus/Pods-SocraticaPlus-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/ZVActivityIndicatorView/ZVActivityIndicatorView.framework",
+				"${BUILT_PRODUCTS_DIR}/ZVProgressHUD/ZVProgressHUD.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ZVActivityIndicatorView.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ZVProgressHUD.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SocraticaPlus/Pods-SocraticaPlus-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -606,20 +622,21 @@
 		};
 		F6769C7921672B9300739EBA /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2659D0C365AA67865B87134D /* Pods-SocraticaPlus.debug.xcconfig */;
+			baseConfigurationReference = 3AEC233B7657EE1D32336F3E /* Pods-SocraticaPlus.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = 97LAY2T7JT;
 				INFOPLIST_FILE = SocraticaPlus/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.tech.socratica.dev;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = RegistrationNewScoratica;
+				PROVISIONING_PROFILE_SPECIFIER = SocraticaPlus_AppStore;
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -627,20 +644,21 @@
 		};
 		F6769C7A21672B9300739EBA /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 10E58274DC412E945A7102C3 /* Pods-SocraticaPlus.release.xcconfig */;
+			baseConfigurationReference = F53E7D7B80D7BDAFF2DE3021 /* Pods-SocraticaPlus.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = 97LAY2T7JT;
 				INFOPLIST_FILE = SocraticaPlus/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.tech.socratica.dev;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = RegistrationNewScoratica;
+				PROVISIONING_PROFILE_SPECIFIER = SocraticaPlus_AppStore;
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

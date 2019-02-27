@@ -521,6 +521,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="S2Q-Xb-GCG"/>
                     <connections>
+                        <outlet property="contentView" destination="oEV-6K-Gh7" id="xfM-Ti-VNV"/>
                         <outlet property="passwordTF" destination="Vf1-LZ-bfO" id="ReN-rd-3TP"/>
                         <outlet property="phoneTextField" destination="byw-b7-A1e" id="OT1-dV-AMe"/>
                     </connections>

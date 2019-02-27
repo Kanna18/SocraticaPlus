@@ -26,7 +26,7 @@ class ForgotPasswordVC: UIViewController {
         self.navigationController?.popViewController(animated: true)
     }
     @IBAction func sendtoOTPScreen(_ sender: Any) {
-        guard let phoneNum =  phoneTextField.phoneNumber, phoneNum.isPhoneNumber else {
+        guard let phoneNum =  phoneTextField.phoneNumber, phoneNum.isPhoneNumber ,SocraticaSharedClass.shared.validatePhoneNumber(for: phoneNum, country: (phoneTextField.country?.countryCode)!, and: phoneTextField.code!)else {
             ZVProgressHUD.showWarning(with: "please enter a valid phone number", in: self.view, delay: 0.0)
             return
         }
@@ -68,7 +68,9 @@ class ForgotPasswordVC: UIViewController {
                 if(bo){
                     self.perform(#selector(self.movetootpVc), on: .main, with: nil, waitUntilDone: true)
                 }else{
-                    ZVProgressHUD.showText(myDict!["message"] as! String)
+                     DispatchQueue.main.async {
+                    ZVProgressHUD.showText(myDict!["message"] as! String,in:self.view)
+                    }
                 }
             }catch{
                 print("Error")

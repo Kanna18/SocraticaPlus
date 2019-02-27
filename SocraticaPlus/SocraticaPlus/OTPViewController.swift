@@ -43,7 +43,9 @@ class OTPViewController: UIViewController {
         else if(isForgotPasswordOTP){
             self.verifyOTPforForgotPassword()
         }else{
-            ZVProgressHUD.showText("error")
+            DispatchQueue.main.async {
+            ZVProgressHUD.showText("error",in:self.view)
+            }
         }
         
     }
@@ -65,7 +67,14 @@ class OTPViewController: UIViewController {
             do{
                 let myDict = try JSONSerialization.jsonObject(with: data, options: []) as? [String : AnyObject]
 //                self.movetoTabbarAfterOTPisverifiedforRegistration(boolVal: (myDict!["status"] as! Bool))
+                print("otp succes string \(myDict!["status"] as! Bool)")
+                if((myDict!["status"] as! Bool) == true){
                 self.perform(#selector(self.movetoTabbarAfterOTPisverifiedforRegistration(boolVal:)), on: .main, with: (myDict!["status"] as! Bool), waitUntilDone: true)
+                }else{
+                    DispatchQueue.main.async {
+                        ZVProgressHUD.showText("Please enter valid OTP",in:self.view)
+                    }
+                }
                 print(myDict!)                                                
             }catch{
                 print("Error")
@@ -91,8 +100,10 @@ class OTPViewController: UIViewController {
             }
             do{
                 let myDict = try JSONSerialization.jsonObject(with: data, options: []) as? [String : AnyObject]
-                print(myDict!)                
-                ZVProgressHUD.showText(myDict!["message"] as! String)
+                print(myDict!)
+                 DispatchQueue.main.async {
+                ZVProgressHUD.showText(myDict!["message"] as! String,in:self.view)
+                }
                 if((myDict!["status"] as! Bool) == true){
                 self.perform(#selector(self.moveToChangePasswordVC(jsonDict:)), on: .main, with: myDict, waitUntilDone: true)
                 }
@@ -208,16 +219,16 @@ class OTPViewController: UIViewController {
         }
     }
     @objc func movetoTabbarAfterOTPisverifiedforRegistration(boolVal : Bool) {
-        if(boolVal){
+        
+       
             let refDict = SocraticaSharedClass.shared.registrationDict
             let tabB = self.storyboard?.instantiateViewController(withIdentifier: "myTabBar") as! UITabBarController
             self.navigationController?.pushViewController(tabB, animated: true)
             let defa = UserDefaults.standard
             defa.set(phoneNumberWhileForgot , forKey: savedPhoneNumber)
             defa.set(passwordWhileRegistration , forKey: savedPassword)
-        }else{
-            ZVProgressHUD.showText("Please enter valid OTP")
-        }
+      
+        
     }
 
 }

@@ -1,20 +1,28 @@
 PODS:
-  - ZVActivityIndicatorView (0.1.2)
-  - ZVProgressHUD (2.0.0):
+  - ZVActivityIndicatorView (0.1.3)
+  - ZVProgressHUD (2.0.3):
     - ZVActivityIndicatorView
 
 DEPENDENCIES:
-  - ZVProgressHUD
+  - ZVProgressHUD (from `https://github.com/zevwings/ZVProgressHUD.git`)
 
 SPEC REPOS:
-  https://github.com/CocoaPods/Specs.git:
+  https://github.com/cocoapods/specs.git:
     - ZVActivityIndicatorView
-    - ZVProgressHUD
+
+EXTERNAL SOURCES:
+  ZVProgressHUD:
+    :git: https://github.com/zevwings/ZVProgressHUD.git
+
+CHECKOUT OPTIONS:
+  ZVProgressHUD:
+    :commit: fe7309402633482a93908c5f39bf8c2a0e8bd34f
+    :git: https://github.com/zevwings/ZVProgressHUD.git
 
 SPEC CHECKSUMS:
-  ZVActivityIndicatorView: 14668601b0616d2b749004d8fa42913fc813e151
-  ZVProgressHUD: b90892e51d56fb6dd03f8147f158594450ce354c
+  ZVActivityIndicatorView: f652f592d048e1b189d5e90a01107ca2de9742a1
+  ZVProgressHUD: eae3c3f358d36b3bacc2f7d1dcc6b3b59d101c47
 
-PODFILE CHECKSUM: fddb7e05602c9d1744cf6fd2cd8428e8f9e1087e
+PODFILE CHECKSUM: d95a79bff1417166c3f8ea7c44b3fd9073933855
 
-COCOAPODS: 1.5.0
+COCOAPODS: 1.6.1

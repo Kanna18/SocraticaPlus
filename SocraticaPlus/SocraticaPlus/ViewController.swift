@@ -89,15 +89,17 @@ class ViewController: UIViewController,UITextFieldDelegate {
         }
         
         
-        guard let phoneNumberText = phoneTxtField.phoneNumber , phoneNumberText.isPhoneNumber  else {
-            ZVProgressHUD.showText("Please enter a valid phone number")
+        guard let phoneNumberText = phoneTxtField.phoneNumber , phoneNumberText.isPhoneNumber,SocraticaSharedClass.shared.validatePhoneNumber(for: phoneNumberText, country: (phoneTxtField.country?.countryCode)!, and: phoneTxtField.code!)  else {
+            DispatchQueue.main.async {
+            ZVProgressHUD.showText("Please enter a valid phone number",in:self.view)
+            }
             return
         }
         guard let passwordtext = emailTxtField.text, passwordtext.isValidPassword else {
             if(emailTxtField.text?.trimmingCharacters(in: .whitespaces).count == 0){
-                ZVProgressHUD.showText("Please enter a valid password")
+                ZVProgressHUD.showText("Please enter a valid password",in:self.view)
             }else{
-                ZVProgressHUD.showText("Please should contain atleast 6 letters")
+                ZVProgressHUD.showText("Please should contain atleast 6 letters",in:self.view)
             }
          return
         }
@@ -127,7 +129,9 @@ class ViewController: UIViewController,UITextFieldDelegate {
                     
                     self.perform(#selector(self.otpAlert), on: .main, with: nil, waitUntilDone: true)
                 }else{
-                    ZVProgressHUD.showText(myDict!["message"] as! String)
+                     DispatchQueue.main.async {
+                    ZVProgressHUD.showText(myDict!["message"] as! String,in:self.view)
+                    }
                 }
                 
             }catch{

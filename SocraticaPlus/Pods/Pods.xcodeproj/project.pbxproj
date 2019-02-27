@@ -7,311 +7,330 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		28CA93E1C5191059B38DBC5DD97DB4CC /* Pods-SocraticaPlus-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 30CB0AED775C2606ECD42BA547029545 /* Pods-SocraticaPlus-dummy.m */; };
-		309CBE51D872D95EF4020B174D347BF2 /* ZVActivityIndicatorView-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EE3F389643A317B9BD94CBB45A147F7 /* ZVActivityIndicatorView-dummy.m */; };
-		393C29EC3D405FF288FF440AB3F851F1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A8F0C69F29CD3879E340617573F11526 /* Foundation.framework */; };
-		514CB3CF9BFDF4860E90C43FA911652D /* ZVProgressHUD+PF.swift in Sources */ = {isa = PBXBuildFile; fileRef = B415D08A9EE1062EAA0A3352446A45AA /* ZVProgressHUD+PF.swift */; };
-		547D37353C726DB6327A0954FE2E244F /* ZVActivityIndicatorView.h in Headers */ = {isa = PBXBuildFile; fileRef = 65EDDCAF20ECE11B8E0554199A54F5F8 /* ZVActivityIndicatorView.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		687BD27BC260E4F3B0213732D9806367 /* IndicatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C459712227DFE9B0DE8F7E7B5468CB82 /* IndicatorView.swift */; };
-		6F08E130A19D0D3F8AEC7C70B050C456 /* ZVProgressHUD-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = DC5F210614CECAF2DDAF227C95273392 /* ZVProgressHUD-dummy.m */; };
-		88265F228D2E6814B1F4E69CDE270EBA /* ZVProgressHUD.swift in Sources */ = {isa = PBXBuildFile; fileRef = 514D205B809817AF0B0EABC3894F3EFA /* ZVProgressHUD.swift */; };
-		A661633C52761D1DA15E9386B1AA4C5F /* ZVActivityIndicatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 295DFC471866963C7D1CC8058F7D1425 /* ZVActivityIndicatorView.swift */; };
-		B301FC32FE749CA8E768687D5DA2B4FE /* Resource.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 504A80AED92459FED8459DBA804EBF45 /* Resource.bundle */; };
-		C64DF3E3A399671BFB4401A7BA3211FC /* Pods-SocraticaPlus-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = CBCBE64BEF1BBD4EC74FDBAB17920B90 /* Pods-SocraticaPlus-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		D20353E47746DE7821900AFFBA5F4491 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A8F0C69F29CD3879E340617573F11526 /* Foundation.framework */; };
-		DE83BCA31A7726833BD276B64936DD26 /* ProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00B3FCC0E83A00905C284763EC0A974D /* ProgressView.swift */; };
-		E244A2CA38BBC5656547F57592CD9F59 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A8F0C69F29CD3879E340617573F11526 /* Foundation.framework */; };
-		F13FA18060DA0B0F21F51ECFD26EF301 /* ZVActivityIndicatorView-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 40647C42DA95C40E0D679389FBC337D9 /* ZVActivityIndicatorView-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		F8C4C090B42A7A272EE59FC2E500043A /* ZVProgressHUD-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = AF1051F71CE6053119D45D721A6ED89A /* ZVProgressHUD-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		F95D0818000B180F5519695C9008D1E2 /* ZVProgressHUD.h in Headers */ = {isa = PBXBuildFile; fileRef = B8A5F595131CF9DA7CD4B600D31F96A5 /* ZVProgressHUD.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		FFA21A4D7FED4C1B1B05DD7D6481642B /* ZVActivityIndicatorView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0DB66C2EF79C18CCA5ACA929A0AB512B /* ZVActivityIndicatorView.framework */; };
+		069CD96D33C9D675E06CD13FFC7FB795 /* ZVActivityIndicatorView-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 9ECE8BD68CE74A053F94FC5E79DB9E0B /* ZVActivityIndicatorView-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0FA8B7285E77D468BE9DC58DBA0C28E4 /* ZVProgressHUD.h in Headers */ = {isa = PBXBuildFile; fileRef = 038AE305DDE07BACBA1FC13E93E276D3 /* ZVProgressHUD.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		26BB526C10222D69CEEDD1645AF76261 /* ZVActivityIndicatorView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 85ED045ADD94F4B94CC0EAC858484783 /* ZVActivityIndicatorView.framework */; };
+		340812B5E9F3712276FB1FBA36E7AB16 /* Pods-SocraticaPlus-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 5109B598E26FAD965AE35335C4BC1333 /* Pods-SocraticaPlus-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3464F292709B00EF6CEFB8BEF661C750 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D38B9B521783C9584246FC9F3B872DA9 /* Foundation.framework */; };
+		383A4D885C039D40960D244FABFFBD1D /* ZVActivityIndicatorView-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2280738E35B34644C885C60A86E21FA0 /* ZVActivityIndicatorView-dummy.m */; };
+		49078FBC4A5A6DBB869626FF46867B45 /* ZVProgressHUD.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAB272F9F3EF4C0DA91CC9DCD4E451A3 /* ZVProgressHUD.swift */; };
+		64F29395906915C78DE9E8615579641A /* ZVProgressHUD+PF.swift in Sources */ = {isa = PBXBuildFile; fileRef = 511159D7C452929A47D3C4641DB78F59 /* ZVProgressHUD+PF.swift */; };
+		7D9EFAABF9F49AAC4AC85E26F7931BD8 /* Resource.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 01A6C32472A879E1C256DED740B7DEFE /* Resource.bundle */; };
+		AF3AB37A726F72DD206FFEF295CCE853 /* ZVProgressHUD-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = CCF690135156926143651213FD96E0D0 /* ZVProgressHUD-dummy.m */; };
+		C1EDBB5DB50EA88D236D10B853A91028 /* IndicatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D45B8F2A7C66909B98E0D9736A1115AF /* IndicatorView.swift */; };
+		C7B2559B92077D413EAF6017C74A0DAB /* ZVActivityIndicatorView.h in Headers */ = {isa = PBXBuildFile; fileRef = 7C805BA1BE85F66324B67A42615CE956 /* ZVActivityIndicatorView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CE61AD91EBAB0153DA67A056043FDB2E /* Pods-SocraticaPlus-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E0DA288735384D225CFCFB8A502DC4C /* Pods-SocraticaPlus-dummy.m */; };
+		D124E450527DE3BE7049A9D9C71A7E80 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D38B9B521783C9584246FC9F3B872DA9 /* Foundation.framework */; };
+		DB0B35F5446415791B86C9A567C320FC /* ZVActivityIndicatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACBB14EE693C1C4985BB40868C21CA67 /* ZVActivityIndicatorView.swift */; };
+		DD1C72D958E12C91EC8A1BA5D8941074 /* ProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E45A1D46C8B2419B090E01E318553FC3 /* ProgressView.swift */; };
+		FABDE3DE74F1F3DC313AF374D63D9017 /* ZVProgressHUD-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 9B59F9280DAAC96C27D094567AD9107E /* ZVProgressHUD-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FD540268A7893A8B308F889FE7DF5805 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D38B9B521783C9584246FC9F3B872DA9 /* Foundation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		0D0FFE90EAED80318BCFCADEE108501E /* PBXContainerItemProxy */ = {
+		1EF3274FC052D4D3631DFEA61864C519 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = AC5F63C852213D1D976E7FAA5A5EB102;
-			remoteInfo = ZVProgressHUD;
-		};
-		411F3E0B777FA57B17E19C0450637CC3 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 2C71307DE2619226FBEED5F8F2BC4327;
+			remoteGlobalIDString = F5FAAF01C06FA5889E2A645B0F3D0F0C;
 			remoteInfo = ZVActivityIndicatorView;
 		};
-		45B5F3D506A5A08F0E5AA936A91A6BE1 /* PBXContainerItemProxy */ = {
+		1F882019D3B1F87B4DD8DEC2A9060A00 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 2C71307DE2619226FBEED5F8F2BC4327;
+			remoteGlobalIDString = 9F0330599DA3CD3A4B7E55C4FD0C6961;
+			remoteInfo = ZVProgressHUD;
+		};
+		7E0742315DCF800A6B48DCE9748087DD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F5FAAF01C06FA5889E2A645B0F3D0F0C;
 			remoteInfo = ZVActivityIndicatorView;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		00B3FCC0E83A00905C284763EC0A974D /* ProgressView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ProgressView.swift; path = ZVProgressHUD/ProgressView.swift; sourceTree = "<group>"; };
-		06CD402406A99AFA38AA5E6BCBE595C5 /* Pods-SocraticaPlus.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SocraticaPlus.debug.xcconfig"; sourceTree = "<group>"; };
-		0D80345B459D99CAC6D47A134B79B1AF /* Pods_SocraticaPlus.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_SocraticaPlus.framework; path = "Pods-SocraticaPlus.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		0DB66C2EF79C18CCA5ACA929A0AB512B /* ZVActivityIndicatorView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ZVActivityIndicatorView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		13C0224A63E2315A4019E4FCEF7E1B56 /* Pods-SocraticaPlus-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SocraticaPlus-resources.sh"; sourceTree = "<group>"; };
-		295DFC471866963C7D1CC8058F7D1425 /* ZVActivityIndicatorView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ZVActivityIndicatorView.swift; path = ZVActivityIndicatorView/ZVActivityIndicatorView.swift; sourceTree = "<group>"; };
-		2EE3F389643A317B9BD94CBB45A147F7 /* ZVActivityIndicatorView-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ZVActivityIndicatorView-dummy.m"; sourceTree = "<group>"; };
-		30CB0AED775C2606ECD42BA547029545 /* Pods-SocraticaPlus-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-SocraticaPlus-dummy.m"; sourceTree = "<group>"; };
-		3430CF626C50B02813D18BE5958AB20F /* Pods-SocraticaPlus-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SocraticaPlus-frameworks.sh"; sourceTree = "<group>"; };
-		40647C42DA95C40E0D679389FBC337D9 /* ZVActivityIndicatorView-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ZVActivityIndicatorView-umbrella.h"; sourceTree = "<group>"; };
-		40B0B23D7876B5B9F9ED819A411101EA /* Pods-SocraticaPlus-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-SocraticaPlus-acknowledgements.markdown"; sourceTree = "<group>"; };
-		42CE67303C1CE8DB27F9764D117DA4C5 /* ZVActivityIndicatorView.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = ZVActivityIndicatorView.modulemap; sourceTree = "<group>"; };
-		4E2C480935841FD1C709F4D52DDF17BB /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		4FCD81A977DEF9272533E2C6F3326F9C /* ZVActivityIndicatorView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = ZVActivityIndicatorView.framework; path = ZVActivityIndicatorView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		504A80AED92459FED8459DBA804EBF45 /* Resource.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = Resource.bundle; path = ZVProgressHUD/Resource.bundle; sourceTree = "<group>"; };
-		514D205B809817AF0B0EABC3894F3EFA /* ZVProgressHUD.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ZVProgressHUD.swift; path = ZVProgressHUD/ZVProgressHUD.swift; sourceTree = "<group>"; };
-		5C608A41F6739B6CB4A4E82011282C27 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		65EDDCAF20ECE11B8E0554199A54F5F8 /* ZVActivityIndicatorView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ZVActivityIndicatorView.h; path = ZVActivityIndicatorView/ZVActivityIndicatorView.h; sourceTree = "<group>"; };
-		69DDDD52DB973D66D025A8B531913356 /* ZVProgressHUD-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ZVProgressHUD-prefix.pch"; sourceTree = "<group>"; };
-		7D0A2C4A2AB95CA7D49A629B04863C2E /* Pods-SocraticaPlus.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-SocraticaPlus.modulemap"; sourceTree = "<group>"; };
-		8A36CEC221FD57F4897803E222D16ADC /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		A8F0C69F29CD3879E340617573F11526 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		AEAF783409D1AB5C0E2BC3E7D3B729B3 /* ZVActivityIndicatorView.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ZVActivityIndicatorView.xcconfig; sourceTree = "<group>"; };
-		AF1051F71CE6053119D45D721A6ED89A /* ZVProgressHUD-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ZVProgressHUD-umbrella.h"; sourceTree = "<group>"; };
-		B415D08A9EE1062EAA0A3352446A45AA /* ZVProgressHUD+PF.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "ZVProgressHUD+PF.swift"; path = "ZVProgressHUD/ZVProgressHUD+PF.swift"; sourceTree = "<group>"; };
-		B7150F3A9796EBEDDD9B810563EC0D58 /* Pods-SocraticaPlus-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SocraticaPlus-acknowledgements.plist"; sourceTree = "<group>"; };
-		B8A5F595131CF9DA7CD4B600D31F96A5 /* ZVProgressHUD.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ZVProgressHUD.h; path = ZVProgressHUD/ZVProgressHUD.h; sourceTree = "<group>"; };
-		C459712227DFE9B0DE8F7E7B5468CB82 /* IndicatorView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IndicatorView.swift; path = ZVProgressHUD/IndicatorView.swift; sourceTree = "<group>"; };
-		C6C7CCE026690A2C5CEF60DCB216D41B /* ZVActivityIndicatorView-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ZVActivityIndicatorView-prefix.pch"; sourceTree = "<group>"; };
-		CBCBE64BEF1BBD4EC74FDBAB17920B90 /* Pods-SocraticaPlus-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-SocraticaPlus-umbrella.h"; sourceTree = "<group>"; };
-		D75B4CD8F0F8A1D847BDDBCD69A1F3F2 /* ZVProgressHUD.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = ZVProgressHUD.modulemap; sourceTree = "<group>"; };
-		DC5F210614CECAF2DDAF227C95273392 /* ZVProgressHUD-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ZVProgressHUD-dummy.m"; sourceTree = "<group>"; };
-		E83171CC22955302B031796D935937C1 /* Pods-SocraticaPlus.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SocraticaPlus.release.xcconfig"; sourceTree = "<group>"; };
-		F7895405D7632F4BE2219AC95FD822C9 /* ZVProgressHUD.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ZVProgressHUD.xcconfig; sourceTree = "<group>"; };
-		FD4806CCEFE7BF84F63981695B969C89 /* ZVProgressHUD.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = ZVProgressHUD.framework; path = ZVProgressHUD.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		01A6C32472A879E1C256DED740B7DEFE /* Resource.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = Resource.bundle; path = ZVProgressHUD/Resource.bundle; sourceTree = "<group>"; };
+		03326626C4DAB6EA387C8E61CEE415CB /* Pods-SocraticaPlus-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SocraticaPlus-acknowledgements.plist"; sourceTree = "<group>"; };
+		038AE305DDE07BACBA1FC13E93E276D3 /* ZVProgressHUD.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ZVProgressHUD.h; path = ZVProgressHUD/ZVProgressHUD.h; sourceTree = "<group>"; };
+		055BF2B8516D94DE14A5853B1CFC8465 /* ZVProgressHUD.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = ZVProgressHUD.modulemap; sourceTree = "<group>"; };
+		06D23AF82052FA525F6B6644CD02DC79 /* Pods-SocraticaPlus-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SocraticaPlus-frameworks.sh"; sourceTree = "<group>"; };
+		0AB0D32C33FDFFEA5A5A6D2B0E991BF3 /* ZVActivityIndicatorView-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ZVActivityIndicatorView-prefix.pch"; sourceTree = "<group>"; };
+		1EE3BAA0F9C1DC69C8103026AAA906B4 /* ZVActivityIndicatorView.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = ZVActivityIndicatorView.modulemap; sourceTree = "<group>"; };
+		2280738E35B34644C885C60A86E21FA0 /* ZVActivityIndicatorView-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ZVActivityIndicatorView-dummy.m"; sourceTree = "<group>"; };
+		300D3372363A71CDB88AD733EC71597C /* Pods-SocraticaPlus.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SocraticaPlus.debug.xcconfig"; sourceTree = "<group>"; };
+		3184904455CD83486C03F707190C1F50 /* ZVProgressHUD.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ZVProgressHUD.xcconfig; sourceTree = "<group>"; };
+		4E0DA288735384D225CFCFB8A502DC4C /* Pods-SocraticaPlus-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-SocraticaPlus-dummy.m"; sourceTree = "<group>"; };
+		5109B598E26FAD965AE35335C4BC1333 /* Pods-SocraticaPlus-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-SocraticaPlus-umbrella.h"; sourceTree = "<group>"; };
+		511159D7C452929A47D3C4641DB78F59 /* ZVProgressHUD+PF.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "ZVProgressHUD+PF.swift"; path = "ZVProgressHUD/ZVProgressHUD+PF.swift"; sourceTree = "<group>"; };
+		521126079CA456E91DCBF58F7CC2EB2A /* Pods_SocraticaPlus.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_SocraticaPlus.framework; path = "Pods-SocraticaPlus.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5ABDE39C6EB5450DB5271809D5CBE89E /* Pods-SocraticaPlus.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SocraticaPlus.release.xcconfig"; sourceTree = "<group>"; };
+		7C805BA1BE85F66324B67A42615CE956 /* ZVActivityIndicatorView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ZVActivityIndicatorView.h; path = ZVActivityIndicatorView/ZVActivityIndicatorView.h; sourceTree = "<group>"; };
+		85ED045ADD94F4B94CC0EAC858484783 /* ZVActivityIndicatorView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ZVActivityIndicatorView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8CDB8D221EF0E3F61F0CC2DF8ED643A5 /* Pods-SocraticaPlus.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-SocraticaPlus.modulemap"; sourceTree = "<group>"; };
+		9B59F9280DAAC96C27D094567AD9107E /* ZVProgressHUD-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ZVProgressHUD-umbrella.h"; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9ECE8BD68CE74A053F94FC5E79DB9E0B /* ZVActivityIndicatorView-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ZVActivityIndicatorView-umbrella.h"; sourceTree = "<group>"; };
+		A69ECEE4B9687B2750CFB5E9C7D6CEC0 /* ZVProgressHUD-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ZVProgressHUD-prefix.pch"; sourceTree = "<group>"; };
+		ACBB14EE693C1C4985BB40868C21CA67 /* ZVActivityIndicatorView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ZVActivityIndicatorView.swift; path = ZVActivityIndicatorView/ZVActivityIndicatorView.swift; sourceTree = "<group>"; };
+		AE66E62E8C5C4B6CB4ACFB8332F4AE92 /* ZVProgressHUD-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ZVProgressHUD-Info.plist"; sourceTree = "<group>"; };
+		AF4BBE5431E856DB7FF55BE02FE9C822 /* ZVActivityIndicatorView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = ZVActivityIndicatorView.framework; path = ZVActivityIndicatorView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B9D567B7E87AF9DAA2255C768F6E1411 /* ZVActivityIndicatorView-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ZVActivityIndicatorView-Info.plist"; sourceTree = "<group>"; };
+		BAB272F9F3EF4C0DA91CC9DCD4E451A3 /* ZVProgressHUD.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ZVProgressHUD.swift; path = ZVProgressHUD/ZVProgressHUD.swift; sourceTree = "<group>"; };
+		C23EE343EDF36562EF3D5AE582A357E3 /* ZVProgressHUD.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = ZVProgressHUD.framework; path = ZVProgressHUD.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CCF690135156926143651213FD96E0D0 /* ZVProgressHUD-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ZVProgressHUD-dummy.m"; sourceTree = "<group>"; };
+		CD39D5A06BB272DF4465BCAC86B489C8 /* Pods-SocraticaPlus-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-SocraticaPlus-acknowledgements.markdown"; sourceTree = "<group>"; };
+		D38B9B521783C9584246FC9F3B872DA9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		D45B8F2A7C66909B98E0D9736A1115AF /* IndicatorView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IndicatorView.swift; path = ZVProgressHUD/IndicatorView.swift; sourceTree = "<group>"; };
+		D845168638DE6D66C5DDCCA743B46B58 /* Pods-SocraticaPlus-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SocraticaPlus-Info.plist"; sourceTree = "<group>"; };
+		E45A1D46C8B2419B090E01E318553FC3 /* ProgressView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ProgressView.swift; path = ZVProgressHUD/ProgressView.swift; sourceTree = "<group>"; };
+		FAEFBA1D560370A4852B7BB418AC1FF4 /* ZVActivityIndicatorView.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ZVActivityIndicatorView.xcconfig; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		A737242D3AA9854D0CCAB310E1F4AA59 /* Frameworks */ = {
+		19BB1F02CBE69D139B44DEAC232D649E /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E244A2CA38BBC5656547F57592CD9F59 /* Foundation.framework in Frameworks */,
-				FFA21A4D7FED4C1B1B05DD7D6481642B /* ZVActivityIndicatorView.framework in Frameworks */,
+				FD540268A7893A8B308F889FE7DF5805 /* Foundation.framework in Frameworks */,
+				26BB526C10222D69CEEDD1645AF76261 /* ZVActivityIndicatorView.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		B2C8255B836A12C103688DC7CE297401 /* Frameworks */ = {
+		6568235858440EF27C850C4F947975DA /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D20353E47746DE7821900AFFBA5F4491 /* Foundation.framework in Frameworks */,
+				3464F292709B00EF6CEFB8BEF661C750 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		D90F3B31745AC65E892FBB9E91CD4483 /* Frameworks */ = {
+		E05405ADD69E37739BBBBBF83992B0B1 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				393C29EC3D405FF288FF440AB3F851F1 /* Foundation.framework in Frameworks */,
+				D124E450527DE3BE7049A9D9C71A7E80 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		1F95E4E3A13A8759B18DF8A2594F29B7 /* Support Files */ = {
+		0BCF547807C0704F4B5F6EC325546BAC /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				8A36CEC221FD57F4897803E222D16ADC /* Info.plist */,
-				D75B4CD8F0F8A1D847BDDBCD69A1F3F2 /* ZVProgressHUD.modulemap */,
-				F7895405D7632F4BE2219AC95FD822C9 /* ZVProgressHUD.xcconfig */,
-				DC5F210614CECAF2DDAF227C95273392 /* ZVProgressHUD-dummy.m */,
-				69DDDD52DB973D66D025A8B531913356 /* ZVProgressHUD-prefix.pch */,
-				AF1051F71CE6053119D45D721A6ED89A /* ZVProgressHUD-umbrella.h */,
+				01A6C32472A879E1C256DED740B7DEFE /* Resource.bundle */,
 			);
-			name = "Support Files";
-			path = "../Target Support Files/ZVProgressHUD";
+			name = Resources;
 			sourceTree = "<group>";
 		};
-		295BB622A12ACC269536E0C39E865B09 /* Pods-SocraticaPlus */ = {
+		360D35AD9D236BE7960D36C42DA1D9F5 /* iOS */ = {
 			isa = PBXGroup;
 			children = (
-				4E2C480935841FD1C709F4D52DDF17BB /* Info.plist */,
-				7D0A2C4A2AB95CA7D49A629B04863C2E /* Pods-SocraticaPlus.modulemap */,
-				40B0B23D7876B5B9F9ED819A411101EA /* Pods-SocraticaPlus-acknowledgements.markdown */,
-				B7150F3A9796EBEDDD9B810563EC0D58 /* Pods-SocraticaPlus-acknowledgements.plist */,
-				30CB0AED775C2606ECD42BA547029545 /* Pods-SocraticaPlus-dummy.m */,
-				3430CF626C50B02813D18BE5958AB20F /* Pods-SocraticaPlus-frameworks.sh */,
-				13C0224A63E2315A4019E4FCEF7E1B56 /* Pods-SocraticaPlus-resources.sh */,
-				CBCBE64BEF1BBD4EC74FDBAB17920B90 /* Pods-SocraticaPlus-umbrella.h */,
-				06CD402406A99AFA38AA5E6BCBE595C5 /* Pods-SocraticaPlus.debug.xcconfig */,
-				E83171CC22955302B031796D935937C1 /* Pods-SocraticaPlus.release.xcconfig */,
+				D38B9B521783C9584246FC9F3B872DA9 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		3D99A546C0685307C8EF0A17DFB9BA57 /* Pods-SocraticaPlus */ = {
+			isa = PBXGroup;
+			children = (
+				8CDB8D221EF0E3F61F0CC2DF8ED643A5 /* Pods-SocraticaPlus.modulemap */,
+				CD39D5A06BB272DF4465BCAC86B489C8 /* Pods-SocraticaPlus-acknowledgements.markdown */,
+				03326626C4DAB6EA387C8E61CEE415CB /* Pods-SocraticaPlus-acknowledgements.plist */,
+				4E0DA288735384D225CFCFB8A502DC4C /* Pods-SocraticaPlus-dummy.m */,
+				06D23AF82052FA525F6B6644CD02DC79 /* Pods-SocraticaPlus-frameworks.sh */,
+				D845168638DE6D66C5DDCCA743B46B58 /* Pods-SocraticaPlus-Info.plist */,
+				5109B598E26FAD965AE35335C4BC1333 /* Pods-SocraticaPlus-umbrella.h */,
+				300D3372363A71CDB88AD733EC71597C /* Pods-SocraticaPlus.debug.xcconfig */,
+				5ABDE39C6EB5450DB5271809D5CBE89E /* Pods-SocraticaPlus.release.xcconfig */,
 			);
 			name = "Pods-SocraticaPlus";
 			path = "Target Support Files/Pods-SocraticaPlus";
 			sourceTree = "<group>";
 		};
-		47F0EBBFF96C296D6BB0AF6187B81847 /* ZVActivityIndicatorView */ = {
+		474388DD0E717FC20D4192FB06E43EE8 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				65EDDCAF20ECE11B8E0554199A54F5F8 /* ZVActivityIndicatorView.h */,
-				295DFC471866963C7D1CC8058F7D1425 /* ZVActivityIndicatorView.swift */,
-				A7426FCDEDF8A6D20F45021EA07448E5 /* Support Files */,
-			);
-			name = ZVActivityIndicatorView;
-			path = ZVActivityIndicatorView;
-			sourceTree = "<group>";
-		};
-		7DB346D0F39D3F0E887471402A8071AB = {
-			isa = PBXGroup;
-			children = (
-				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
-				8BD28214571061BC2A9D038F1510CE82 /* Frameworks */,
-				862B74D8C3799F8F45F5B79BE74484D6 /* Pods */,
-				B93B97CB502909764D18C719CDAEE1CF /* Products */,
-				E874AA07F81FC5AC73FBE448A5D17465 /* Targets Support Files */,
-			);
-			sourceTree = "<group>";
-		};
-		862B74D8C3799F8F45F5B79BE74484D6 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				47F0EBBFF96C296D6BB0AF6187B81847 /* ZVActivityIndicatorView */,
-				96F1EC228C37250CEA48B8271F929AFB /* ZVProgressHUD */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
-		8BD28214571061BC2A9D038F1510CE82 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				0DB66C2EF79C18CCA5ACA929A0AB512B /* ZVActivityIndicatorView.framework */,
-				E15F1ACFD256578A100F6F417C85B976 /* iOS */,
+				85ED045ADD94F4B94CC0EAC858484783 /* ZVActivityIndicatorView.framework */,
+				360D35AD9D236BE7960D36C42DA1D9F5 /* iOS */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		96F1EC228C37250CEA48B8271F929AFB /* ZVProgressHUD */ = {
+		520B719DF1B4CE6DD9B03A824CF84B93 /* Targets Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				C459712227DFE9B0DE8F7E7B5468CB82 /* IndicatorView.swift */,
-				00B3FCC0E83A00905C284763EC0A974D /* ProgressView.swift */,
-				B8A5F595131CF9DA7CD4B600D31F96A5 /* ZVProgressHUD.h */,
-				514D205B809817AF0B0EABC3894F3EFA /* ZVProgressHUD.swift */,
-				B415D08A9EE1062EAA0A3352446A45AA /* ZVProgressHUD+PF.swift */,
-				CA8F8DEA59A6A1157FBDE09F1C09EF7E /* Resources */,
-				1F95E4E3A13A8759B18DF8A2594F29B7 /* Support Files */,
+				3D99A546C0685307C8EF0A17DFB9BA57 /* Pods-SocraticaPlus */,
 			);
-			name = ZVProgressHUD;
-			path = ZVProgressHUD;
+			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		A7426FCDEDF8A6D20F45021EA07448E5 /* Support Files */ = {
+		A6CCDABC76105BBC35967B173C466459 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				5C608A41F6739B6CB4A4E82011282C27 /* Info.plist */,
-				42CE67303C1CE8DB27F9764D117DA4C5 /* ZVActivityIndicatorView.modulemap */,
-				AEAF783409D1AB5C0E2BC3E7D3B729B3 /* ZVActivityIndicatorView.xcconfig */,
-				2EE3F389643A317B9BD94CBB45A147F7 /* ZVActivityIndicatorView-dummy.m */,
-				C6C7CCE026690A2C5CEF60DCB216D41B /* ZVActivityIndicatorView-prefix.pch */,
-				40647C42DA95C40E0D679389FBC337D9 /* ZVActivityIndicatorView-umbrella.h */,
+				1EE3BAA0F9C1DC69C8103026AAA906B4 /* ZVActivityIndicatorView.modulemap */,
+				FAEFBA1D560370A4852B7BB418AC1FF4 /* ZVActivityIndicatorView.xcconfig */,
+				2280738E35B34644C885C60A86E21FA0 /* ZVActivityIndicatorView-dummy.m */,
+				B9D567B7E87AF9DAA2255C768F6E1411 /* ZVActivityIndicatorView-Info.plist */,
+				0AB0D32C33FDFFEA5A5A6D2B0E991BF3 /* ZVActivityIndicatorView-prefix.pch */,
+				9ECE8BD68CE74A053F94FC5E79DB9E0B /* ZVActivityIndicatorView-umbrella.h */,
 			);
 			name = "Support Files";
 			path = "../Target Support Files/ZVActivityIndicatorView";
 			sourceTree = "<group>";
 		};
-		B93B97CB502909764D18C719CDAEE1CF /* Products */ = {
+		C0B216D0852AF32ECC530C5B9D7507F0 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				0D80345B459D99CAC6D47A134B79B1AF /* Pods_SocraticaPlus.framework */,
-				4FCD81A977DEF9272533E2C6F3326F9C /* ZVActivityIndicatorView.framework */,
-				FD4806CCEFE7BF84F63981695B969C89 /* ZVProgressHUD.framework */,
+				055BF2B8516D94DE14A5853B1CFC8465 /* ZVProgressHUD.modulemap */,
+				3184904455CD83486C03F707190C1F50 /* ZVProgressHUD.xcconfig */,
+				CCF690135156926143651213FD96E0D0 /* ZVProgressHUD-dummy.m */,
+				AE66E62E8C5C4B6CB4ACFB8332F4AE92 /* ZVProgressHUD-Info.plist */,
+				A69ECEE4B9687B2750CFB5E9C7D6CEC0 /* ZVProgressHUD-prefix.pch */,
+				9B59F9280DAAC96C27D094567AD9107E /* ZVProgressHUD-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/ZVProgressHUD";
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				474388DD0E717FC20D4192FB06E43EE8 /* Frameworks */,
+				E5CA3E8BAF7A3D945C324E7BEFC84D9E /* Pods */,
+				DAF6928CC26C50D1C221D3669C2D8B3D /* Products */,
+				520B719DF1B4CE6DD9B03A824CF84B93 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		DAF6928CC26C50D1C221D3669C2D8B3D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				521126079CA456E91DCBF58F7CC2EB2A /* Pods_SocraticaPlus.framework */,
+				AF4BBE5431E856DB7FF55BE02FE9C822 /* ZVActivityIndicatorView.framework */,
+				C23EE343EDF36562EF3D5AE582A357E3 /* ZVProgressHUD.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		CA8F8DEA59A6A1157FBDE09F1C09EF7E /* Resources */ = {
+		E5CA3E8BAF7A3D945C324E7BEFC84D9E /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				504A80AED92459FED8459DBA804EBF45 /* Resource.bundle */,
+				F944173CE5F03F244723D5461078C0A5 /* ZVActivityIndicatorView */,
+				E8E075B400EB745A7AEB5476D43ED6D1 /* ZVProgressHUD */,
 			);
-			name = Resources;
+			name = Pods;
 			sourceTree = "<group>";
 		};
-		E15F1ACFD256578A100F6F417C85B976 /* iOS */ = {
+		E8E075B400EB745A7AEB5476D43ED6D1 /* ZVProgressHUD */ = {
 			isa = PBXGroup;
 			children = (
-				A8F0C69F29CD3879E340617573F11526 /* Foundation.framework */,
+				D45B8F2A7C66909B98E0D9736A1115AF /* IndicatorView.swift */,
+				E45A1D46C8B2419B090E01E318553FC3 /* ProgressView.swift */,
+				038AE305DDE07BACBA1FC13E93E276D3 /* ZVProgressHUD.h */,
+				BAB272F9F3EF4C0DA91CC9DCD4E451A3 /* ZVProgressHUD.swift */,
+				511159D7C452929A47D3C4641DB78F59 /* ZVProgressHUD+PF.swift */,
+				0BCF547807C0704F4B5F6EC325546BAC /* Resources */,
+				C0B216D0852AF32ECC530C5B9D7507F0 /* Support Files */,
 			);
-			name = iOS;
+			name = ZVProgressHUD;
+			path = ZVProgressHUD;
 			sourceTree = "<group>";
 		};
-		E874AA07F81FC5AC73FBE448A5D17465 /* Targets Support Files */ = {
+		F944173CE5F03F244723D5461078C0A5 /* ZVActivityIndicatorView */ = {
 			isa = PBXGroup;
 			children = (
-				295BB622A12ACC269536E0C39E865B09 /* Pods-SocraticaPlus */,
+				7C805BA1BE85F66324B67A42615CE956 /* ZVActivityIndicatorView.h */,
+				ACBB14EE693C1C4985BB40868C21CA67 /* ZVActivityIndicatorView.swift */,
+				A6CCDABC76105BBC35967B173C466459 /* Support Files */,
 			);
-			name = "Targets Support Files";
+			name = ZVActivityIndicatorView;
+			path = ZVActivityIndicatorView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		8678B2ECC3C026A0107737453ADA006E /* Headers */ = {
+		0A9AF2A3E31D143D8FAFCDBD4A808C6A /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F8C4C090B42A7A272EE59FC2E500043A /* ZVProgressHUD-umbrella.h in Headers */,
-				F95D0818000B180F5519695C9008D1E2 /* ZVProgressHUD.h in Headers */,
+				069CD96D33C9D675E06CD13FFC7FB795 /* ZVActivityIndicatorView-umbrella.h in Headers */,
+				C7B2559B92077D413EAF6017C74A0DAB /* ZVActivityIndicatorView.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		8F57428428870E15555F3538043AE0E7 /* Headers */ = {
+		1B295DC4B85F24144F810B7DD3868D13 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F13FA18060DA0B0F21F51ECFD26EF301 /* ZVActivityIndicatorView-umbrella.h in Headers */,
-				547D37353C726DB6327A0954FE2E244F /* ZVActivityIndicatorView.h in Headers */,
+				340812B5E9F3712276FB1FBA36E7AB16 /* Pods-SocraticaPlus-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		CBBC442AEDBC7562D4608E60E6348F4D /* Headers */ = {
+		B5E92E13FDD90EDF469BBAB8FD8E3A7A /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C64DF3E3A399671BFB4401A7BA3211FC /* Pods-SocraticaPlus-umbrella.h in Headers */,
+				FABDE3DE74F1F3DC313AF374D63D9017 /* ZVProgressHUD-umbrella.h in Headers */,
+				0FA8B7285E77D468BE9DC58DBA0C28E4 /* ZVProgressHUD.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		08048336AF7083BF8D7D4BD6A39C9C9F /* Pods-SocraticaPlus */ = {
+		38257D2C36DAF7B5C0A3949D1DB6E373 /* Pods-SocraticaPlus */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = B396038B2B1A5BA35DA03982B4F2E9FE /* Build configuration list for PBXNativeTarget "Pods-SocraticaPlus" */;
+			buildConfigurationList = AE6ECB171ACE6DCA59F4BC76A370CD0E /* Build configuration list for PBXNativeTarget "Pods-SocraticaPlus" */;
 			buildPhases = (
-				F3D3528FC56AE5FAC91BEAFF89BC274D /* Sources */,
-				D90F3B31745AC65E892FBB9E91CD4483 /* Frameworks */,
-				CBBC442AEDBC7562D4608E60E6348F4D /* Headers */,
+				1B295DC4B85F24144F810B7DD3868D13 /* Headers */,
+				DCB912532CEB5257068E2A77C0DADD26 /* Sources */,
+				6568235858440EF27C850C4F947975DA /* Frameworks */,
+				B755D799934CC19843A9B9B070254D36 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				F2EBA98A388E18A926AD47B45E18EFE7 /* PBXTargetDependency */,
-				D923E4326842A600B5D120DC9C1C4F6A /* PBXTargetDependency */,
+				AD45791B9815F579EF05F1987567AD66 /* PBXTargetDependency */,
+				60AD3887537D7BBD5AB49605D8143866 /* PBXTargetDependency */,
 			);
 			name = "Pods-SocraticaPlus";
 			productName = "Pods-SocraticaPlus";
-			productReference = 0D80345B459D99CAC6D47A134B79B1AF /* Pods_SocraticaPlus.framework */;
+			productReference = 521126079CA456E91DCBF58F7CC2EB2A /* Pods_SocraticaPlus.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		2C71307DE2619226FBEED5F8F2BC4327 /* ZVActivityIndicatorView */ = {
+		9F0330599DA3CD3A4B7E55C4FD0C6961 /* ZVProgressHUD */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = F71518E3FFF1191F65FE013B0C842CB1 /* Build configuration list for PBXNativeTarget "ZVActivityIndicatorView" */;
+			buildConfigurationList = AB4B5D78BEA38FF664C83B6ACD4119E7 /* Build configuration list for PBXNativeTarget "ZVProgressHUD" */;
 			buildPhases = (
-				09E8C11B66DA7D322A6BF136DCF25B04 /* Sources */,
-				B2C8255B836A12C103688DC7CE297401 /* Frameworks */,
-				8F57428428870E15555F3538043AE0E7 /* Headers */,
+				B5E92E13FDD90EDF469BBAB8FD8E3A7A /* Headers */,
+				D26E8225C78B1A9E2170271CF44A8515 /* Sources */,
+				19BB1F02CBE69D139B44DEAC232D649E /* Frameworks */,
+				C3165B1DBBF16FC5A5D74A7AFF290C82 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DD367F0ACF23652331033877F9A5F673 /* PBXTargetDependency */,
+			);
+			name = ZVProgressHUD;
+			productName = ZVProgressHUD;
+			productReference = C23EE343EDF36562EF3D5AE582A357E3 /* ZVProgressHUD.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		F5FAAF01C06FA5889E2A645B0F3D0F0C /* ZVActivityIndicatorView */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 13647EE5D041A3DB55D19DE45072EB0C /* Build configuration list for PBXNativeTarget "ZVActivityIndicatorView" */;
+			buildPhases = (
+				0A9AF2A3E31D143D8FAFCDBD4A808C6A /* Headers */,
+				084CA59F2C3927B49E50BC8B9EA71B37 /* Sources */,
+				E05405ADD69E37739BBBBBF83992B0B1 /* Frameworks */,
+				7239791D37195D1EDEB5EAAA82970033 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -319,224 +338,117 @@
 			);
 			name = ZVActivityIndicatorView;
 			productName = ZVActivityIndicatorView;
-			productReference = 4FCD81A977DEF9272533E2C6F3326F9C /* ZVActivityIndicatorView.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		AC5F63C852213D1D976E7FAA5A5EB102 /* ZVProgressHUD */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 2873354E8E00BAB6FB7769B70F8E387B /* Build configuration list for PBXNativeTarget "ZVProgressHUD" */;
-			buildPhases = (
-				36A0D72C712C75003E3A6FD61B247229 /* Sources */,
-				A737242D3AA9854D0CCAB310E1F4AA59 /* Frameworks */,
-				8678B2ECC3C026A0107737453ADA006E /* Headers */,
-				7906E5A51BA110E85C731FB08BAD9B93 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				5EA035435CE6F28142D18275F4B9A774 /* PBXTargetDependency */,
-			);
-			name = ZVProgressHUD;
-			productName = ZVProgressHUD;
-			productReference = FD4806CCEFE7BF84F63981695B969C89 /* ZVProgressHUD.framework */;
+			productReference = AF4BBE5431E856DB7FF55BE02FE9C822 /* ZVActivityIndicatorView.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0930;
 				LastUpgradeCheck = 0930;
 			};
-			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 			);
-			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = B93B97CB502909764D18C719CDAEE1CF /* Products */;
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = DAF6928CC26C50D1C221D3669C2D8B3D /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				08048336AF7083BF8D7D4BD6A39C9C9F /* Pods-SocraticaPlus */,
-				2C71307DE2619226FBEED5F8F2BC4327 /* ZVActivityIndicatorView */,
-				AC5F63C852213D1D976E7FAA5A5EB102 /* ZVProgressHUD */,
+				38257D2C36DAF7B5C0A3949D1DB6E373 /* Pods-SocraticaPlus */,
+				F5FAAF01C06FA5889E2A645B0F3D0F0C /* ZVActivityIndicatorView */,
+				9F0330599DA3CD3A4B7E55C4FD0C6961 /* ZVProgressHUD */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		7906E5A51BA110E85C731FB08BAD9B93 /* Resources */ = {
+		7239791D37195D1EDEB5EAAA82970033 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B301FC32FE749CA8E768687D5DA2B4FE /* Resource.bundle in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B755D799934CC19843A9B9B070254D36 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C3165B1DBBF16FC5A5D74A7AFF290C82 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7D9EFAABF9F49AAC4AC85E26F7931BD8 /* Resource.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		09E8C11B66DA7D322A6BF136DCF25B04 /* Sources */ = {
+		084CA59F2C3927B49E50BC8B9EA71B37 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				309CBE51D872D95EF4020B174D347BF2 /* ZVActivityIndicatorView-dummy.m in Sources */,
-				A661633C52761D1DA15E9386B1AA4C5F /* ZVActivityIndicatorView.swift in Sources */,
+				383A4D885C039D40960D244FABFFBD1D /* ZVActivityIndicatorView-dummy.m in Sources */,
+				DB0B35F5446415791B86C9A567C320FC /* ZVActivityIndicatorView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		36A0D72C712C75003E3A6FD61B247229 /* Sources */ = {
+		D26E8225C78B1A9E2170271CF44A8515 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				687BD27BC260E4F3B0213732D9806367 /* IndicatorView.swift in Sources */,
-				DE83BCA31A7726833BD276B64936DD26 /* ProgressView.swift in Sources */,
-				514CB3CF9BFDF4860E90C43FA911652D /* ZVProgressHUD+PF.swift in Sources */,
-				6F08E130A19D0D3F8AEC7C70B050C456 /* ZVProgressHUD-dummy.m in Sources */,
-				88265F228D2E6814B1F4E69CDE270EBA /* ZVProgressHUD.swift in Sources */,
+				C1EDBB5DB50EA88D236D10B853A91028 /* IndicatorView.swift in Sources */,
+				DD1C72D958E12C91EC8A1BA5D8941074 /* ProgressView.swift in Sources */,
+				64F29395906915C78DE9E8615579641A /* ZVProgressHUD+PF.swift in Sources */,
+				AF3AB37A726F72DD206FFEF295CCE853 /* ZVProgressHUD-dummy.m in Sources */,
+				49078FBC4A5A6DBB869626FF46867B45 /* ZVProgressHUD.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		F3D3528FC56AE5FAC91BEAFF89BC274D /* Sources */ = {
+		DCB912532CEB5257068E2A77C0DADD26 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				28CA93E1C5191059B38DBC5DD97DB4CC /* Pods-SocraticaPlus-dummy.m in Sources */,
+				CE61AD91EBAB0153DA67A056043FDB2E /* Pods-SocraticaPlus-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		5EA035435CE6F28142D18275F4B9A774 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = ZVActivityIndicatorView;
-			target = 2C71307DE2619226FBEED5F8F2BC4327 /* ZVActivityIndicatorView */;
-			targetProxy = 411F3E0B777FA57B17E19C0450637CC3 /* PBXContainerItemProxy */;
-		};
-		D923E4326842A600B5D120DC9C1C4F6A /* PBXTargetDependency */ = {
+		60AD3887537D7BBD5AB49605D8143866 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = ZVProgressHUD;
-			target = AC5F63C852213D1D976E7FAA5A5EB102 /* ZVProgressHUD */;
-			targetProxy = 0D0FFE90EAED80318BCFCADEE108501E /* PBXContainerItemProxy */;
+			target = 9F0330599DA3CD3A4B7E55C4FD0C6961 /* ZVProgressHUD */;
+			targetProxy = 1F882019D3B1F87B4DD8DEC2A9060A00 /* PBXContainerItemProxy */;
 		};
-		F2EBA98A388E18A926AD47B45E18EFE7 /* PBXTargetDependency */ = {
+		AD45791B9815F579EF05F1987567AD66 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = ZVActivityIndicatorView;
-			target = 2C71307DE2619226FBEED5F8F2BC4327 /* ZVActivityIndicatorView */;
-			targetProxy = 45B5F3D506A5A08F0E5AA936A91A6BE1 /* PBXContainerItemProxy */;
+			target = F5FAAF01C06FA5889E2A645B0F3D0F0C /* ZVActivityIndicatorView */;
+			targetProxy = 1EF3274FC052D4D3631DFEA61864C519 /* PBXContainerItemProxy */;
+		};
+		DD367F0ACF23652331033877F9A5F673 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = ZVActivityIndicatorView;
+			target = F5FAAF01C06FA5889E2A645B0F3D0F0C /* ZVActivityIndicatorView */;
+			targetProxy = 7E0742315DCF800A6B48DCE9748087DD /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		102EFE026A4E4679AEB0CEB21F33D8AA /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 06CD402406A99AFA38AA5E6BCBE595C5 /* Pods-SocraticaPlus.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-SocraticaPlus/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-SocraticaPlus/Pods-SocraticaPlus.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		22449CB16AC18F6F0414BA9D5274E522 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = F7895405D7632F4BE2219AC95FD822C9 /* ZVProgressHUD.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/ZVProgressHUD/ZVProgressHUD-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/ZVProgressHUD/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/ZVProgressHUD/ZVProgressHUD.modulemap";
-				PRODUCT_MODULE_NAME = ZVProgressHUD;
-				PRODUCT_NAME = ZVProgressHUD;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		28FFC7B2D756FD5232BD604428A660F6 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = AEAF783409D1AB5C0E2BC3E7D3B729B3 /* ZVActivityIndicatorView.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/ZVActivityIndicatorView/ZVActivityIndicatorView-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/ZVActivityIndicatorView/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/ZVActivityIndicatorView/ZVActivityIndicatorView.modulemap";
-				PRODUCT_MODULE_NAME = ZVActivityIndicatorView;
-				PRODUCT_NAME = ZVActivityIndicatorView;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		5DC0083F57E9AB706B46C5B5D73B38D8 /* Debug */ = {
+		05DF210AC65EBB0E593AAF976B2C2177 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -568,8 +480,103 @@
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGNING_ALLOWED = NO;
-				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 4.2;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		1B02D74AF601AF45D5D3515E4CCD2832 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 300D3372363A71CDB88AD733EC71597C /* Pods-SocraticaPlus.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-SocraticaPlus/Pods-SocraticaPlus-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-SocraticaPlus/Pods-SocraticaPlus.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		421ECB1396280A8D83853C3DDBED1700 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -589,19 +596,22 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
-				MTL_ENABLE_DEBUG_INFO = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
 				SYMROOT = "${SRCROOT}/../build";
 			};
 			name = Debug;
 		};
-		75B618DCAFC7A0E653E1EEA48F3E1849 /* Debug */ = {
+		602C20EBF8AE2AA37B6EF46ADDFC216D /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = AEAF783409D1AB5C0E2BC3E7D3B729B3 /* ZVActivityIndicatorView.xcconfig */;
+			baseConfigurationReference = FAEFBA1D560370A4852B7BB418AC1FF4 /* ZVActivityIndicatorView.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -613,63 +623,30 @@
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				GCC_PREFIX_HEADER = "Target Support Files/ZVActivityIndicatorView/ZVActivityIndicatorView-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/ZVActivityIndicatorView/Info.plist";
+				INFOPLIST_FILE = "Target Support Files/ZVActivityIndicatorView/ZVActivityIndicatorView-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				MODULEMAP_FILE = "Target Support Files/ZVActivityIndicatorView/ZVActivityIndicatorView.modulemap";
 				PRODUCT_MODULE_NAME = ZVActivityIndicatorView;
 				PRODUCT_NAME = ZVActivityIndicatorView;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
 		};
-		965749CD07D2C6093ED08AC5D2B1A357 /* Release */ = {
+		629119CC6EB87C336F21F06C61156C55 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E83171CC22955302B031796D935937C1 /* Pods-SocraticaPlus.release.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-SocraticaPlus/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-SocraticaPlus/Pods-SocraticaPlus.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		98F7723D6E9A43212446F43EF7728384 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = F7895405D7632F4BE2219AC95FD822C9 /* ZVProgressHUD.xcconfig */;
+			baseConfigurationReference = 3184904455CD83486C03F707190C1F50 /* ZVProgressHUD.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -681,122 +658,177 @@
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				GCC_PREFIX_HEADER = "Target Support Files/ZVProgressHUD/ZVProgressHUD-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/ZVProgressHUD/Info.plist";
+				INFOPLIST_FILE = "Target Support Files/ZVProgressHUD/ZVProgressHUD-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				MODULEMAP_FILE = "Target Support Files/ZVProgressHUD/ZVProgressHUD.modulemap";
 				PRODUCT_MODULE_NAME = ZVProgressHUD;
 				PRODUCT_NAME = ZVProgressHUD;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		A927A625225F5BB009E0CA7B433C156E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FAEFBA1D560370A4852B7BB418AC1FF4 /* ZVActivityIndicatorView.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/ZVActivityIndicatorView/ZVActivityIndicatorView-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/ZVActivityIndicatorView/ZVActivityIndicatorView-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/ZVActivityIndicatorView/ZVActivityIndicatorView.modulemap";
+				PRODUCT_MODULE_NAME = ZVActivityIndicatorView;
+				PRODUCT_NAME = ZVActivityIndicatorView;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		BEDE725A78D25B4707F8AF608BE651BC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3184904455CD83486C03F707190C1F50 /* ZVProgressHUD.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/ZVProgressHUD/ZVProgressHUD-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/ZVProgressHUD/ZVProgressHUD-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/ZVProgressHUD/ZVProgressHUD.modulemap";
+				PRODUCT_MODULE_NAME = ZVProgressHUD;
+				PRODUCT_NAME = ZVProgressHUD;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
 		};
-		AEEA80476F98EB645C4DD53EB2BB6D88 /* Release */ = {
+		FC492E52AE3CD81D96167269A0021C78 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5ABDE39C6EB5450DB5271809D5CBE89E /* Pods-SocraticaPlus.release.xcconfig */;
 			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_ENABLE_OBJC_WEAK = YES;
-				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_COMMA = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INFINITE_RECURSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
-				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
-				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
-				CLANG_WARN_STRICT_PROTOTYPES = YES;
-				CLANG_WARN_SUSPICIOUS_MOVE = YES;
-				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGNING_ALLOWED = NO;
-				CODE_SIGNING_REQUIRED = NO;
-				COPY_PHASE_STRIP = NO;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				ENABLE_NS_ASSERTIONS = NO;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu11;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"POD_CONFIGURATION_RELEASE=1",
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-SocraticaPlus/Pods-SocraticaPlus-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
 				);
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
-				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				STRIP_INSTALLED_PRODUCT = NO;
-				SYMROOT = "${SRCROOT}/../build";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-SocraticaPlus/Pods-SocraticaPlus.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		2873354E8E00BAB6FB7769B70F8E387B /* Build configuration list for PBXNativeTarget "ZVProgressHUD" */ = {
+		13647EE5D041A3DB55D19DE45072EB0C /* Build configuration list for PBXNativeTarget "ZVActivityIndicatorView" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				98F7723D6E9A43212446F43EF7728384 /* Debug */,
-				22449CB16AC18F6F0414BA9D5274E522 /* Release */,
+				602C20EBF8AE2AA37B6EF46ADDFC216D /* Debug */,
+				A927A625225F5BB009E0CA7B433C156E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				5DC0083F57E9AB706B46C5B5D73B38D8 /* Debug */,
-				AEEA80476F98EB645C4DD53EB2BB6D88 /* Release */,
+				421ECB1396280A8D83853C3DDBED1700 /* Debug */,
+				05DF210AC65EBB0E593AAF976B2C2177 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		B396038B2B1A5BA35DA03982B4F2E9FE /* Build configuration list for PBXNativeTarget "Pods-SocraticaPlus" */ = {
+		AB4B5D78BEA38FF664C83B6ACD4119E7 /* Build configuration list for PBXNativeTarget "ZVProgressHUD" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				102EFE026A4E4679AEB0CEB21F33D8AA /* Debug */,
-				965749CD07D2C6093ED08AC5D2B1A357 /* Release */,
+				BEDE725A78D25B4707F8AF608BE651BC /* Debug */,
+				629119CC6EB87C336F21F06C61156C55 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		F71518E3FFF1191F65FE013B0C842CB1 /* Build configuration list for PBXNativeTarget "ZVActivityIndicatorView" */ = {
+		AE6ECB171ACE6DCA59F4BC76A370CD0E /* Build configuration list for PBXNativeTarget "Pods-SocraticaPlus" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				75B618DCAFC7A0E653E1EEA48F3E1849 /* Debug */,
-				28FFC7B2D756FD5232BD604428A660F6 /* Release */,
+				1B02D74AF601AF45D5D3515E4CCD2832 /* Debug */,
+				FC492E52AE3CD81D96167269A0021C78 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 }
