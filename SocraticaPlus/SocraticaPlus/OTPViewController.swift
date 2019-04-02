@@ -84,7 +84,7 @@ class OTPViewController: UIViewController {
             ZVProgressHUD.dismiss()
         }
     }
-    //MARK: ForgotPasswprd Flow
+    //MARK: ForgotPassword Flow
     func verifyOTPforForgotPassword() {
         let url = "\(ServiceDataConst.kVerifyOTPForgotPassword)"
         let requestURL = URL.init(string: url);
@@ -222,8 +222,14 @@ class OTPViewController: UIViewController {
         
        
             let refDict = SocraticaSharedClass.shared.registrationDict
-            let tabB = self.storyboard?.instantiateViewController(withIdentifier: "myTabBar") as! UITabBarController
-            self.navigationController?.pushViewController(tabB, animated: true)
+//            let tabB = self.storyboard?.instantiateViewController(withIdentifier: "myTabBar") as! UITabBarController
+//            self.navigationController?.pushViewController(tabB, animated: true)
+        let arr = self.navigationController?.viewControllers
+        for vc in arr! {
+            if vc .isKind(of: LoginViewController.self){
+                self.navigationController?.popToViewController(vc, animated: true)
+            }
+        }
             let defa = UserDefaults.standard
             defa.set(phoneNumberWhileForgot , forKey: savedPhoneNumber)
             defa.set(passwordWhileRegistration , forKey: savedPassword)

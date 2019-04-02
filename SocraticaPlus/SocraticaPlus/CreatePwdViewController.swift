@@ -103,7 +103,9 @@ class CreatePwdViewController: UIViewController,UITextFieldDelegate {
                 DispatchQueue.main.async {
                 ZVProgressHUD.showText(myDict?["message"] as! String,in:self.view)
                 }
+                DispatchQueue.main.asyncAfter(deadline: .now()+1, execute: {
                 self.perform(#selector(self.movetologinVC), on: .main, with: nil, waitUntilDone: true)
+                })
             }catch{
                 print("Error")
             }
@@ -113,8 +115,15 @@ class CreatePwdViewController: UIViewController,UITextFieldDelegate {
     }
     @objc func movetologinVC() {
         ZVProgressHUD.dismiss()
-        let tabB = self.storyboard?.instantiateViewController(withIdentifier: "myTabBar") as! UITabBarController
-        self.navigationController?.pushViewController(tabB, animated: true)
+//        let tabB = self.storyboard?.instantiateViewController(withIdentifier: "loginViewController") as! LoginViewController
+//        self.navigationController?.popToRootViewController(animated: true)
+        let arr = self.navigationController?.viewControllers
+        for vc in arr! {
+            if vc .isKind(of: LoginViewController.self){
+                self.navigationController?.popToViewController(vc, animated: true)
+            }
+        }
+        
     }
     /*
     // MARK: - Navigation
