@@ -28,7 +28,7 @@ class SocraticaSharedClass: NSObject {
         }
         if( country == "AU" ){
            
-            if phoneNumber.count == 8{
+            if phoneNumber.count == 9{
                 return true
             } else{
                 return false
